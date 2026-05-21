@@ -1,0 +1,49 @@
+Konsep Redesign  Website https://www.galeribelajar.com  
+1. Tujuan Redesign  : 
+Tampilan lebih modern & clean  
+Meningkatk an conversion  select & buy product  
+ 
+2. Target User : 
+Pelajar & orang tua  yang mencari kursus anak  
+ 
+3. Konsep Visual :  
+ Warna  
+ 
+                          
+ Style  
+Clean  
+Modern   
+Playful   
+ Font  
+-untuk judul dibuat lebih bold sebagai pe nekanan  
+ 
+ Icon  
+4. Referensi UX Flow : 
+ Hero section  
+-tetap playful namun layout di buat tetap clean dan ilustrasi tidak terlalu ramai  
+-headline di buat kuat  
+
+ 
+ 
+ 
+ 
+ About  
+ 
+ Why choose Us  
+ 
+ List Product  
+ 
+-menambahkan badge (best seller / new)  
+ 
+ 
+ 
+ 
+
+ Pict testimoni  
+ 
+ 
+ 
+ Closi ng section (CTA)  
+ 
+ 
+ 

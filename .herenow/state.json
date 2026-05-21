@@ -1,0 +1,13 @@
+{
+  "publishes": {
+    "royal-eagle-2vxy": {
+      "siteUrl": "https://royal-eagle-2vxy.here.now/"
+    },
+    "meadow-guitar-8wty": {
+      "siteUrl": "https://meadow-guitar-8wty.here.now/",
+      "claimToken": "a0d7c00b4ef028d8ba4949d935a4a1e935f76b689c39c00cc64981500b4469af",
+      "claimUrl": "https://here.now/claim?slug=meadow-guitar-8wty&token=a0d7c00b4ef028d8ba4949d935a4a1e935f76b689c39c00cc64981500b4469af",
+      "expiresAt": "2026-05-19T07:16:06.041Z"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function initScrollAnimations() {
+    // Catatan: Tidak memblokir animasi untuk reduced-motion karena
+    // animasi di sini hanya fade dan slide sederhana yang tidak mengganggu.
+    // Elemen yang opacity:0 tidak akan muncul sama sekali jika animasi diblokir.
+
+    // About Section
+    if (document.querySelector('#about')) {
+        gsap.from(".about-image", {
+            scale: 0.8,
+            opacity: 0,
+            rotation: -5,
+            duration: 1,
+            ease: "back.out(1.5)",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top 70%",
+                toggleActions: "play none none none"
+            }
+        });
+
+        gsap.from(".about-content > *", {
+            x: 50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top 60%",
+                toggleActions: "play none none none"
+            }
+        });
+    }
+
+    // Book Cards (Products Section)
+    if (document.querySelector('.book-card')) {
+        gsap.from(".book-card", {
+            y: 80, 
+            opacity: 0, 
+            duration: 0.8,
+            stagger: 0.15, 
+            ease: "back.out(1.2)",
+            scrollTrigger: { 
+                trigger: "#products",
+                start: "top 75%", 
+                toggleActions: "play none none none" 
+            }
+        });
+    }
+
+    // Blog Cards (Blogs Section)
+    if (document.querySelector('.blog-card')) {
+        gsap.from(".blog-card", {
+            y: 60,
+            scale: 0.95,
+            opacity: 0, 
+            duration: 0.8,
+            stagger: 0.2, 
+            ease: "power3.out",
+            scrollTrigger: { 
+                trigger: "#blogs",
+                start: "top 75%", 
+                toggleActions: "play none none none" 
+            }
+        });
+    }
+
+    // Generic Section Reveal (Fade Up)
+    gsap.utils.toArray('.section-reveal').forEach((section) => {
+        // Only apply if it's not the hero
+        if (section.id === 'hero-display') return;
+
+        gsap.fromTo(section, 
+            { opacity: 0, y: 30 },
+            {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 85%", // When top of section hits 85% viewport
+                    toggleActions: "play none none none"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                ease: "power2.out"
+            }
+        );
+    });
+}

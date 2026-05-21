@@ -1,0 +1,316 @@
+ERLASS
+Katalog
+Pendidikan
+Kunjungi kami di :
+Gd. Erlass Institute 
+Pejaten Office Park Blok D 
+Jl. Warung Buncit Raya No. 79 Pejaten - Jakarta Selatan
+komunitaserlass
+www.galeribelajar.com
+0823 1134 1381 (CS Alya)
+Jalan Boulevard Silk Town  No. 12
+Pd. Jagung Timur , Kec. Serpong Utara Kota 
+Tangerang SelatanMITRA PELATIHAN, EKSKUL, &
+PENGEMBANGAN P5 DI SEKOLAH
+Pelatihan Koding Scratch (+KA)
+Micro:bit dan Robotic
+Pelatihan Skills Building
+Pelatihan Motivasi Siswa dan Guru
+LMS Scratch dan Micro:bit (Online)
+Asesmen Potensi Akademik
+Pusat Sumber Daya Guru
+Program Pilihan/Unggulan
+Kontrol & M o n i t o r i n g Pembelajaran
+Dampak Nyata bagi Siswa dan Guru
+2Prokreat if IndonesiaP T. Erlass
+KAMI adalah mitra pendidikan yang
+menghadirkan program inovatif untuk siswa dan
+guru yang dirancang sesuai kebutuhan sekolah di
+Indonesia, KARENA setiap keputusan sekolah
+berdampak jangka panjang.
+Kami berkomitmen untuk menyediakan program
+pembelajaran yang inovatif dan berkualitas, berfokus pada
+penguasaan Bahasa, Koding, dan Robotik.
+Dengan bangga, kami telah bekerja sama dengan lebih dari
+150 sekolah di wilayah Jabodetabek, melayani lebih dari 2.000
+siswa dan +140.000 guru yang bersemangat untuk belajar dan
+berkembang. Keberhasilan kami didukung oleh +70 instruktur
+profesional yang ahli di bidangnya, siap memberikan
+pengalaman belajar yang inspiratif dan bermanfaat.
+3ISI
+DAFTAR
+Erlass Mitra Pendidikan 5
+Program Pelatihan Unggulan 6
+Pilihan Program & Nilai Strategis 7
+Modul 9
+Pelatihan Skills Building 13
+LMS Scratch dan Micro:bit (Online) 15
+Pusat Sumber Daya Guru 18
+Pelatihan Koding Scratch (+KA) 8
+Micro:bit dan Robotic 10
+Pelatihan Motivasi Siswa dan Guru 14
+Asesmen Potensi Akademik 17
+4
+Support Promosi ke Orang Tua dan Siswa 19Mitra Pendidikan
+Program Erlass dirancang sederhana, terstruktur, dan mudah diterapkan di sekolah. Kami
+memahami bahwa sekolah membutuhkan program yang tidak membebani guru, efektif untuk
+siswa, dan berjalan konsisten sepanjang tahun.
+Melalui pendampingan berkelanjutan, modul siap pakai, serta sistem pembelajaran yang
+adaptif, Erlass hadir sebagai mitra sekolah, bukan sekadar penyedia program. Setiap tahapan
+disusun agar sekolah dapat langsung menjalankan program tanpa proses yang rumit.
+ERLASS
+Deal
+LearningPresentation
+ReportKesepakatan Kerjasama Kemitraan
+Pelaksanaan PelatihanSosialisasi ke Siswa dan Orang Tua
+Evaluasi dan Laporan Pembelajaran
+Alur Pelaksanaan Program Erlass dengan Sekolah
+5Pelatihan Unggulan
+Program
+ERBOBLOX KIT
+Erboblox adalah paket pembelajaran robotika arduino
+dengan program line followers, sensor cahaya, sensor objek
+KODING KA
+Pengenalan Koding visual lanjutan dengan fokus Kecerdasan
+Artifisial (face recognition, voice, object detection) Robotika + IoT.KODING SCRATCH
+Pengenalan Koding visual blok untuk pemula yang menyenangkan
+serta dilengkapi dengan modul proyek.
+KO D IN G  PY TH O N  TU R TLE
+Pengenalan koding visual dasar/lanjutan dengan visual teks.
+MICRO:BIT LEARNING KIT
+Pembelajaran IoT dan STEAM untuk pemula, serta dilengkapi
+juga dengan modul proyek DIY
+ROBOTIC EXPLORER KIT
+Eksplorasi robotika dasar dan pembelajaran IoT dan STEAM
+yang langsung dapat dikendalikan dan diprogram
+ARDUINO LEARNING KIT
+Arduino Learning Kit adalah paket pembelajaran robotika
+Arduino Uno dengan konsep projek, bahasa pemrograman C
+6
+No Program Jenjang Fokus Program Jenis Kerjasama
+1 Koding Scratch SD–SMPKoding visual blok  (game
+& animasi)Ekstrakurikuler/Intrakurikuler
+2 Koding KA SD–SMPKoding visual blok dengan
+KAEkstrakurikuler/Intrakurikuler
+3 Koding Python Turtle SD–SMP Koding Teks Ekstrakurikuler
+4 Microbit Learning Kit SD–SMP Proyek DIY & IoT Ekstrakurikuler
+5 Robotic Explorer Kit SD–SMPRobotika dasar, Proyek
+DIY & IoTEkstrakurikuler
+6 Erboblox Kit SD–SMP Proyek DIY & IoT Ekstrakurikuler
+7 Arduino Learning Kit SD–SMP Proyek DIY & IOT Ekstrakurikuler
+Aspek Keterangan
+Durasi 1 Semester (±16 pertemuan), 1 Tahun (±32 pertemuan) dan Perbulan
+Waktu 60 - 90 menit /pertemuan (menyesuaikan jadwal sekolah)
+Peran Sekolah Menyediakan siswa, ruang belajar, 1 guru (PIC)
+Peran Erlass Kurikulum, modul, instruktur, pendampingan, perangkat (sesuai program)
+Kebutuhan Guru IT Tidak wajib
+Output Siswa Proyek nyata (game, website, proyek DIY, IoT)
+Output Sekolah Laporan kegiatan, dokumentasi, sertifikat
+Dampak Institusi Meningkatkan citra sekolah, mendukung P5 serta daya tarik orang tua
+Keberlanjutan Program dapat diperpanjang & ditingkatkan levelnya
+P ILIH A N  P R O G R A M
+& NILAI STRATEGISSKEMA PELAKSANAAN DI SEKOLAH
+7Pelat ihan Koding
+Scratch (+KA)
+KODING KA (SD dan SMP)
+Pengenalan konsep kecerdasan
+buatan, pembelajaran mesin, dan
+pemrosesan bahasa alami (Teachable
+machine, Deep Learning, Natural
+Language Processing).KODING SCRATCH
+Visual Block Scratch (SD dan SMP) 
+Dasar pemrograman berbasis visual blok kode untuk mengajarkan
+logika dan pemecahan masalah yang dapat menghasilkan projek game
+dan animasi
+KODING PYTHON TURTLE
+Bahasa pemrograman yang dapat menghasilkan output
+visual. Siswa tidak hanya menulis kode, tetapi juga
+langsung melihat hasilnya dalam bentuk gambar dan pola
+di layar.
+8Modul
+Modul Pictoblox (Koding KA)✅ Pembelajaran berjenjang : Jilid 1–3 fokus dasar logika, Jilid 4–6 berbasis proyek.
+✅ Menggunakan pendekatan Project-Based Learning (PBL).
+✅ Melatih computational thinking dan problem solving.
+✅ Menghasilkan karya digital nyata secara progresif.
+✅ Menghasilkan karya digital nyata di setiap tahap pembelajaran.
+✅ Cocok untuk program ekstrakurikuler maupun muatan lokal TIK.Modul Scratch (Jilid 1 - 6)
+Modul Project Scratch
+Modul Python Turtle
+Modul Micro:bit Learning Kit✅ Fokus pada pembuatan proyek interaktif dan game edukatif.
+✅ Projek tantangan kepada siswa.
+✅ Menguatkan pemahaman logika, variabel, kontrol, dan sensing.
+✅ Melatih problem solving dan computational thinking secara aplikatif.
+✅ Meningkatkan kreativitas serta kepercayaan diri melalui presentasi karya.
+✅ Mengenalkan konsep Kecerdasan Artifisial (KA).
+✅ Projek KA; face recognition, speech recognition, dan computer vision.
+✅ Siswa membuat proyek interaktif berbasis teknologi kecerdasan buatan.
+✅ Melatih logika dan problem solving melalui implementasi langsung.
+✅ Mendorong kreativitas serta pemahaman teknologi.
+✅ Mengenalkan dasar pemrograman teks (text-based coding) secara bertahap.
+✅ Memahami konsep penting seperti koordinat, loop, dan conditional.
+✅ Menghasilkan karya visual interaktif melalui praktik langsung.
+✅ Mempersiapkan siswa ke level pemrograman Python yang lebih lanjut.
+✅ Panduan belajar Micro:bit.
+✅ Pembelajaran bertahap dari pengenalan perangkat hingga pemrograman blok kode.
+✅ Mengintegrasikan konsep koding dengan praktik robotik dan proyek DIY.
+✅ Melatih logika, problem solving, dan kreativitas teknologi.
+✅ Menghasilkan karya inovatif berbasis hardware dan software secara aplikatif.
+9
+Learning K itMicro:bit
+Project
+Automatic Trashbin
+ Score board
+ Pet Feeder
+10
+Scan barcode untuk melihat
+project lainnya
+Kick Bot
+ Dig Bot
+ Grabber Bot
+Project RoboticProject 
+ExplorerRobotic
+11
+KitRobotic
+Erboblox
+Erboblox adalah paket pembelajaran robotika
+lengkap untuk anak dan pemula. Siswa dapat  
+membuat berbagai proyek robot, seperti robot
+penghindar halangan (avoiding obstacle), robot
+pengikut manusia (human following), robot
+pengikut garis (line follower), robot pengikut
+cahaya (light follower), serta robot yang dapat
+dikontrol melalui smartphone Android.
+Arduino
+Learning Kit
+Arduino Learning Kit adalah paket
+pembelajaran yang menekankan
+pemahaman teknologi melalui eksplorasi
+langsung berbagai komponen elektronik,
+dipadukan dengan pemrograman
+menggunakan bahasa C++ pada platform
+Arduino. 
+12
+Skills B uildingPelatihan
+Program Bahasa & Soft Skill Erlass berfokus pada penguatan kompetensi dasar
+siswa yang menjadi penentu keberhasilan akademik dan karakter. Pendekatan
+pembelajaran dirancang aktif, komunikatif, dan kontekstual, sehingga siswa belajar
+dengan lebih percaya diri dan bermakna. Selain meningkatkan kemampuan
+akademik, program ini membantu sekolah membangun lingkungan belajar yang
+positif dan berkarakter.
+13
+Untuk melatih listening, speaking,
+reading, dan writing sejak diniUntuk Guru
+Innovative Teaching
+Teacher Well Being
+Creative Classroom
+Differentiated Instruction
+Inspiring LeadershipInnovative Teaching
+Teacher Well Being
+Creative Classroom
+Differentiated Instruction
+Inspiring Leadership
+New  Year, New  Mindset
+The Goal Getter
+Digital Resilience
+Fueling Your Passion
+Stronger TogetherNew Year, New Mindset
+The Goal Getter
+Digital Resilience
+Fueling Your Passion
+Stronger Together
+Untuk Siswa
+Siswa dan GuruPelatihan Motivasi
+14Scratch & Micro:bit (Online)
+Platform online ini menyediakan berbagai proyek menantang yang dirancang untuk melatih
+kreativitas, logika berpikir, serta kemampuan problem solving siswa secara bertahap sesuai
+levelnya. Tidak hanya belajar secara individu, siswa juga dapat bergabung dalam komunitas
+Erlass yang terdiri dari peserta dari seluruh Indonesia.
+Belajar & berbagi inspirasiBerkumpul & berbagi dengan
+siswa se-IndonesiaMelatih kreativitas logika &
+problem solving
+Capai level & raih penghargaan
+LMS
+Erlass Academy bertujuan untuk memudahkan siswa dalam belajar kapan saja dan di mana
+saja melalui sistem pembelajaran digital yang fleksibel dan terstruktur. 
+15
+Completion
+Selesaikan kursus,
+dapatkan sertifikat &
+lencana yang akan
+muncul di profilmu
+Tour InteraktifTerdapat
+Homebase, Arena
+belajar, Forum &
+Challenge
+Personal Path
+Cari minat dan
+bakatmu Welcome Kit
+Selesaikan course
+dan dapatkan
+Badgesmu, semua
+petunjuk tersedia di
+layarmu
+Join Community
+Bergabung dengan
+komunitas untuk
+diskusi & sharing
+proyek
+First Win ExperienceSelesaikan
+tantangan proyek
+pertamamu
+Pusat Panduan Pengguna
+Erlass Academy
+16Potensi AkademikAsesmen
+17Tes Potensi, Minat, 
+Bakat, dan Akademik
+Ayo... Cari tahu minat, bakat, 
+dan kemampuan akademikmu
+bersama Erlass!S um ber D aya G uruPusat
+18
+Download
+Downloadke Orang Tua dan SiswaSupport Promosi
+Poster, flyer, video
+singkat promosi
+Erlass
+Pesan WA & surat
+resmi 
+Presentasi produk
+kepada orang tua
+(offline/online)
+Bukti nyata :
+dokumentasi,
+sertifikat, laporan
+perkembangan
+Trial class,
+pendampingan
+lomba, pameran
+karya
+Kompetisi koding &
+robotik 
+Erlass menyediakan dukungan promosi lengkap untuk membantu sekolah
+meyakinkan orang tua siswa. Mulai dari materi visual menarik (poster, flyer, video),
+komunikasi resmi melalui WA & surat, hingga presentasi produk langsung secara
+online maupun offline. Kepercayaan orang tua diperkuat dengan bukti nyata
+berupa dokumentasi kegiatan, sertifikat, dan laporan perkembangan siswa.
+Selain itu, tersedia program promo khusus seperti diskon atau voucher, serta trial
+class dan pendampingan kegiatan agar orang tua dapat melihat langsung
+manfaat program bagi anak.
+19
+Follow sosial media kami dan dapatkan info terbaru,  tips menarik, dan
+promo eksklusif dari kami.
+Kantor Pusat - Jakarta
+Gd. Erlass Institute 
+Pejaten Office Park Blok D 
+Jl. Warung Buncit Raya No. 79, Pejaten - Jakarta Selatan
+Kantor Cabang - Tangerang
+Jalan Boulevard Silk Town No. 12
+Pd. Jagung Timur , Kec. Serpong Utara Kota 
+Tangerang SelatanSiap membawa program koding ke sekolah Anda?
+Hubungi kami untuk trial class, presentasi, dan kerja sama
+sekolah.
+komunitaserlass Erlass Prokreatif Indonesia
+erlassprokreatif Komunitas Erlass
+erlass prokreatif galeribelajar.com
+Info kerjasama hubungi :
+Nama ............................................................................................................
+Telp ................................................................................................................
