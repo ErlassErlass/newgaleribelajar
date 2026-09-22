@@ -1,5 +1,4 @@
 import '../css/app.css';
-import { initHero3D } from './hero-3d';
 import { initHero } from './hero';
 import lenis from './lenis';
 import { initScrollAnimations } from './scroll-animations';
@@ -13,21 +12,62 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. PRIORITAS UTAMA: Smooth Scroll (Lenis) — harus jalan duluan
-    try {
-        if (lenis) {
-            lenis.start();
-            console.log('[Lenis] ✅ Smooth scroll aktif');
-        }
-    } catch (e) {
-        console.error("[Lenis] ❌ Gagal start:", e);
+    // 0. PRELOADER ANIMATION
+    const preloader = document.getElementById('page-preloader');
+    const preloaderText = document.getElementById('preloader-text');
+    const preloaderBar = document.getElementById('preloader-bar');
+
+    if (preloader) {
+        // Disable scroll during preload
+        document.body.style.overflow = 'hidden';
+
+        const tlPreload = gsap.timeline({
+            onComplete: () => {
+                document.body.style.overflow = '';
+                initAll();
+            }
+        });
+
+        tlPreload.to(preloaderBar, {
+            width: "100%",
+            duration: 1.5,
+            ease: "power2.inOut"
+        })
+        .to(preloaderText, {
+            y: "0%",
+            duration: 0.8,
+            ease: "back.out(1.5)"
+        }, "-=1.0")
+        .to(preloader, {
+            y: "-100%",
+            duration: 0.8,
+            ease: "power3.inOut",
+            delay: 0.3
+        });
+    } else {
+        initAll();
     }
 
-    // 2. Hero 3D Background (Three.js)
-    try {
-        initHero3D();
-    } catch (e) {
-        console.error("[Hero3D] ❌ Gagal init:", e);
+    function initAll() {
+        // 1. PRIORITAS UTAMA: Smooth Scroll (Lenis) — harus jalan duluan
+        try {
+            if (lenis) {
+                lenis.start();
+                console.log('[Lenis] ✅ Smooth scroll aktif');
+            }
+        } catch (e) {
+            console.error("[Lenis] ❌ Gagal start:", e);
+        }
+
+    // 2. Hero 3D Background (Three.js) - DYNAMIC IMPORT
+    if (document.getElementById('hero-canvas')) {
+        import('./hero-3d').then(({ initHero3D }) => {
+            try {
+                initHero3D();
+            } catch (e) {
+                console.error("[Hero3D] ❌ Gagal init:", e);
+            }
+        }).catch(err => console.error("[Hero3D] Failed to load module:", err));
     }
 
     // 3. Hero Animations (GSAP)
@@ -66,5 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
         console.error("[CardHover] ❌ Gagal init:", e);
     }
+    } // End of initAll()
 
 });

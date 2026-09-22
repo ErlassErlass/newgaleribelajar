@@ -8,6 +8,28 @@ export function initScrollAnimations() {
     // animasi di sini hanya fade dan slide sederhana yang tidak mengganggu.
     // Elemen yang opacity:0 tidak akan muncul sama sekali jika animasi diblokir.
 
+    // 1. HORIZONTAL SCROLL (PROGRAMS SECTION)
+    const horizontalSection = document.querySelector("#programs");
+    if (horizontalSection) {
+        const scrollContainer = document.querySelector("#horizontal-scroll-container");
+        const panels = gsap.utils.toArray(".h-panel");
+
+        // Set the width of the container dynamically based on number of panels
+        gsap.set(scrollContainer, { width: (panels.length * 100) + "vw" });
+
+        gsap.to(panels, {
+            xPercent: -100 * (panels.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontalSection,
+                pin: true,
+                scrub: 1,
+                // snap: 1 / (panels.length - 1), // Optional: snap to sections
+                end: () => "+=" + scrollContainer.offsetWidth
+            }
+        });
+    }
+
     // About Section
     if (document.querySelector('#about')) {
         gsap.from(".about-image", {

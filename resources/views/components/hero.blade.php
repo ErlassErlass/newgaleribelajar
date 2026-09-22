@@ -4,26 +4,26 @@
         
         <!-- Label Badge -->
         <div class="inline-block bg-kids-pink text-kids-navy px-5 py-1.5 font-sans font-bold text-sm tracking-widest uppercase mb-8 shadow-sm">
-            Erlass Mitra Pendidikan
+            🚀 {{ __('content.hero.badge') }}
         </div>
         
         <!-- Headline -->
         <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 text-[#111111]">
-            Mitra Pelatihan, Ekskul, &<br/>Pengembangan P5 di Sekolah
+            {{ __('content.hero.headline_1') }} <br/>{{ __('content.hero.headline_2') }}
         </h1>
         
         <!-- Subheadline -->
         <p class="font-sans text-lg md:text-xl font-medium max-w-3xl text-[#111111]/80 leading-relaxed mb-12">
-            Menghadirkan program Koding (Scratch, Python), IoT (Micro:bit), dan Robotika inovatif yang dirancang khusus untuk memenuhi kebutuhan sekolah di Indonesia.
+            {{ __('content.hero.subheadline') }}
         </p>
         
         <!-- CTA Row -->
         <div class="flex flex-wrap items-center justify-center gap-6">
             <a href="#programs" class="group relative inline-flex items-center justify-center px-10 py-4 bg-kids-mint text-kids-navy font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-[0_8px_0_rgba(29,117,139,0.2)] hover:shadow-[0_10px_0_rgba(29,117,139,0.3)]">
-                <span class="font-sans text-lg tracking-wide">Lihat Program</span>
+                <span class="font-sans text-lg tracking-wide">{{ __('content.hero.cta_programs') }}</span>
             </a>
             <a href="#about" class="group relative inline-flex items-center justify-center px-10 py-4 bg-white text-kids-navy font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-[0_8px_0_rgba(153,225,255,0.4)] hover:shadow-[0_10px_0_rgba(153,225,255,0.5)] border-2 border-transparent hover:border-kids-blue/50">
-                <span class="font-sans text-lg tracking-wide">Tentang Kami</span>
+                <span class="font-sans text-lg tracking-wide">{{ __('content.nav.about') }}</span>
             </a>
         </div>
 

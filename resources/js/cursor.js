@@ -66,33 +66,39 @@ export class CustomCursor {
     setState(state) {
         gsap.killTweensOf(this.circle);
         gsap.killTweensOf(this.text);
+        gsap.killTweensOf(this.dot);
         
-        const fgColor = '#222';
-        const bgColor = '#fff';
+        const fgColor = 'rgba(255, 214, 0, 0.9)'; // kids-yellow opaque
+        const fgColorLight = 'rgba(255, 214, 0, 0.5)'; // kids-yellow transparent
+        const navyColor = '#1d758b';
+        const bgColor = '#111111';
 
         if (state === 'explore') {
-            gsap.to(this.circle, { width: 80, height: 80, backgroundColor: fgColor, border: 'none', duration: 0.3 });
-            this.text.textContent = 'EXPLORE';
-            gsap.to(this.text, { opacity: 1, color: bgColor, duration: 0.3 });
+            gsap.to(this.circle, { width: 90, height: 90, backgroundColor: fgColor, border: 'none', duration: 0.4, ease: "back.out(1.5)" });
+            this.text.textContent = 'KLIK SINI';
+            gsap.to(this.text, { opacity: 1, color: navyColor, duration: 0.3 });
+            gsap.to(this.dot, { opacity: 0, duration: 0.2 });
         } else if (state === 'play') {
-            // Triangle Play Icon using shape modification
-            gsap.to(this.circle, { width: 60, height: 60, borderRadius: '10%', rotation: 45, backgroundColor: fgColor, border: 'none', duration: 0.3 });
+            gsap.to(this.circle, { width: 70, height: 70, borderRadius: '20%', rotation: 45, backgroundColor: '#ffb3c6', border: 'none', duration: 0.4, ease: "power3.out" }); // kids-pink
             this.text.textContent = '';
             gsap.to(this.text, { opacity: 0, duration: 0.3 });
+            gsap.to(this.dot, { scale: 0, duration: 0.2 });
         } else if (state === 'drag') {
-            gsap.to(this.circle, { width: 80, height: 80, backgroundColor: fgColor, border: 'none', duration: 0.3 });
-            this.text.textContent = 'DRAG';
-            gsap.to(this.text, { opacity: 1, color: bgColor, duration: 0.3 });
+            gsap.to(this.circle, { width: 90, height: 90, backgroundColor: '#99e1ff', border: 'none', duration: 0.4, ease: "back.out(1.5)" }); // kids-blue
+            this.text.textContent = 'GESER';
+            gsap.to(this.text, { opacity: 1, color: navyColor, duration: 0.3 });
+            gsap.to(this.dot, { scale: 0.5, duration: 0.2 });
         } else if (state === 'default') {
-            // Expanding small bit on hover for normal interactive elements
-            gsap.to(this.circle, { width: 50, height: 50, borderRadius: '50%', rotation: 0, backgroundColor: 'transparent', border: `1.5px solid ${fgColor}`, duration: 0.3 });
+            gsap.to(this.circle, { width: 60, height: 60, borderRadius: '50%', rotation: 0, backgroundColor: fgColor, border: 'none', duration: 0.3, ease: "power2.out" });
             this.text.textContent = '';
             gsap.to(this.text, { opacity: 0, duration: 0.3 });
+            gsap.to(this.dot, { scale: 1.5, backgroundColor: '#fff', border: '2px solid #1d758b', duration: 0.3 });
         } else {
             // Base state
-            gsap.to(this.circle, { width: 40, height: 40, borderRadius: '50%', rotation: 0, backgroundColor: 'transparent', border: `1.5px solid ${fgColor}`, duration: 0.3 });
+            gsap.to(this.circle, { width: 45, height: 45, borderRadius: '50%', rotation: 0, backgroundColor: fgColorLight, border: 'none', duration: 0.3, ease: "power2.out" });
             this.text.textContent = '';
             gsap.to(this.text, { opacity: 0, duration: 0.3 });
+            gsap.to(this.dot, { scale: 1, opacity: 1, backgroundColor: navyColor, border: '2px solid #ffffff', duration: 0.3 });
         }
     }
 

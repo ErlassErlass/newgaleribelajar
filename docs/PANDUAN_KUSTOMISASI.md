@@ -7,16 +7,15 @@ Konten teks tersentralisasi di file bahasa:
 - **Indonesia**: `resources/lang/id/content.php`
 - **English**: `resources/lang/en/content.php`
 
-Untuk mengganti teks landing page (hero, about, form labels, dll), edit key-value di file tersebut.
+Semua teks *hard-coded* di landing page (Hero, About, Why Us, Programs, Clients, Testimoni, Contact form, hingga Footer) kini sudah terhubung penuh ke *translation keys* `__()`. Untuk mengganti konten apapun, cukup edit *key-value* di dalam file-file tersebut. Switcher bahasa (ID/EN) di Navbar akan langsung mengaplikasikan perubahan secara otomatis.
 
 ### Gambar
 Gambar company profile (logo sekolah mitra) berada di `public/img/cp/`.
-- Ganti file `1.png` s/d `31.png` dengan logo baru yang berukuran sama.
+- Ganti file `1.png` s/d `31.png` dengan logo baru yang berukuran sama. Komponen client-marquee akan memuat semua 31 logo ke dalam 3 baris secara otomatis.
 - Pastikan format PNG dengan background transparan untuk hasil terbaik.
 
 ### Testimoni
-Edit langsung di `resources/views/welcome.blade.php` di section `id="testimoni"`.
-Ganti nama, jabatan, dan kutipan sesuai data sekolah mitra yang sebenarnya.
+Testimoni kini juga diatur lewat fungsi lokalisasi. Edit *array* `testimoni.items` di dalam file `resources/lang/id/content.php` untuk menambahkan atau mengubah nama, jabatan, dan kutipan sesuai data sekolah mitra.
 
 ## Memodifikasi Background 3D
 

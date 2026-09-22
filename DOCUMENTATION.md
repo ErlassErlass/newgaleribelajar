@@ -249,7 +249,18 @@ Halaman utama (`welcome.blade.php`) terdiri dari section-section berikut, diurut
 
 ---
 
-### 6.6 — Testimoni
+### 6.6 — Videos (Keseruan Kami)
+**File:** `sections/videos.blade.php`
+
+- Posisi: Antara Clients Marquee dan Testimoni
+- Layout: 1 Container video rasio 16:9
+- Visual: Frame playful 3D dengan drop shadow asimetris (kuning & biru)
+- Konten: Iframe embed YouTube Ads/Kegiatan Erlass
+- Animasi: `hover:scale-[1.01]` pada container, `section-reveal` scroll
+
+---
+
+### 6.7 — Testimoni
 **File:** `welcome.blade.php` (section `id="testimoni"`)
 
 - Layout: 3 kolom kartu testimonial
@@ -260,7 +271,7 @@ Halaman utama (`welcome.blade.php`) terdiri dari section-section berikut, diurut
 
 ---
 
-### 6.7 — Contact / Lead Form
+### 6.8 — Contact / Lead Form
 **File:** `welcome.blade.php` (section `id="contact"`)
 
 - Background: `bg-kids-yellow`
@@ -270,7 +281,7 @@ Halaman utama (`welcome.blade.php`) terdiri dari section-section berikut, diurut
 
 ---
 
-### 6.8 — Footer (Global)
+### 6.9 — Footer (Global)
 **File:** `layouts/app.blade.php`
 
 - Background gelap (`bg-card`)

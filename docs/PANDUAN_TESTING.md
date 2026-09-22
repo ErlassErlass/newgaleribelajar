@@ -23,21 +23,24 @@ Pastikan server development berjalan:
 - [ ] Background 3D: partikel titik-titik muncul di belakang.
 
 ### About Erlass
+- [ ] Background section berwarna putih (bersih).
 - [ ] Badge "Erlass Mitra Pendidikan" (pink).
 - [ ] Stats: 150+ Sekolah, 2.000+ Siswa, 140.000+ Guru, 70+ Instruktur.
 - [ ] CTA "Lihat Program Kami" scroll ke section Programs.
 
 ### Why Choose Us
+- [ ] Background section berwarna abu-abu terang (`#fafafa`) sebagai jeda visual.
 - [ ] 3 kartu: Modul PBL, P5, Support Promosi.
 - [ ] Hover: shadow muncul + kartu naik.
 
 ### Programs
+- [ ] Background section kembali berwarna putih.
 - [ ] 3 kartu program: Coding 💻, Robotika 🤖, P5 🎓.
 - [ ] Klik "Koding Scratch & Python" → navigasi ke `/programs/coding`.
 - [ ] Klik "Robotika & IoT" → navigasi ke `/programs/robotics`.
 
 ### Clients Marquee
-- [ ] 2 baris logo sekolah mitra bergerak (berlawanan arah).
+- [ ] 3 baris logo sekolah mitra bergerak otomatis (2 baris ke kiri, 1 baris ke kanan).
 - [ ] Hover: animasi pause, gambar dari grayscale → full color.
 
 ### Testimoni

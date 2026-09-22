@@ -2,11 +2,16 @@
 
 return [
     'hero' => [
-        'title' => 'Empowering The Future',
+        'badge' => '✅ #1 Tech Extracurricular Partner',
+        'headline_1' => 'Coding & Robotics',
+        'headline_2' => 'Structured for Schools 🌟',
+        'subheadline' => 'From Scratch, Python, to IoT. Hassle-free for teachers, impactful for students. Trusted by 150+ schools.',
+        'cta_programs' => 'View Programs',
+        'title' => 'Empowering the Future',
         'slogan' => 'Empowering the Next Generation of Tech Innovators',
         'cta' => 'Start Learning',
-        'contact_us' => 'Contact Us',
-        'subtext' => 'Our mission is to empower the next generation of technology innovators through our exceptional coding and robotics curriculum.',
+        'contact_us' => 'Book a Demo',
+        'subtext' => 'Our mission is to empower the next generation of tech innovators through our outstanding coding and robotics curriculum.',
     ],
     'nav' => [
         'home' => 'Home',
@@ -16,10 +21,150 @@ return [
         'join_us' => 'Join Us',
     ],
     'stats' => [
-        ['value' => '120+', 'label' => 'Partner Schools'],
-        ['value' => '3000++', 'label' => 'Students'],
-        ['value' => '100+', 'label' => 'Expert Teachers'],
-        ['value' => '100%', 'label' => 'Satisfaction'],
+        ['value' => '150+', 'label' => 'Partner Schools', 'icon' => '🏫'],
+        ['value' => '2,000+', 'label' => 'Students Trained', 'icon' => '👨‍🎓'],
+        ['value' => '140,000+', 'label' => 'Teachers Connected', 'icon' => '👨‍🏫'],
+        ['value' => '70+', 'label' => 'Expert Instructors', 'icon' => '🎯'],
+    ],
+    'about' => [
+        'badge' => 'About Us',
+        'heading_1' => 'More Than Just',
+        'heading_2' => 'Extracurriculars',
+        'description' => 'We are your school\'s strategic partner. Providing structured technology programs that are hassle-free for teachers, highly interactive for students, and run consistently throughout the school year.',
+        'cta' => 'See Our Programs',
+        'stats' => [
+            'schools' => 'Partner Schools',
+            'students' => 'Students',
+            'teachers' => 'Teachers',
+        ],
+        'address' => 'Pejaten Office Park, Jl. Warung Buncit Raya No.79, South Jakarta',
+    ],
+    'why_us' => [
+        'badge' => 'Why Choose Us',
+        'heading' => 'More Than Just an Extracurricular',
+        'subheading' => 'We are not just a content provider, but your school\'s partner in building a digital technology ecosystem.',
+        'cards' => [
+            'card1' => [
+                'title' => 'Ready-to-Use Modules & PBL',
+                'desc' => 'Tiered project-based learning that produces real creations (Games, IoT, Animations).'
+            ],
+            'card2' => [
+                'title' => 'Supports P5 Curriculum',
+                'desc' => 'Materials highly relevant to the Pancasila Student Profile Strengthening Project in the smart technology era.'
+            ],
+            'card3' => [
+                'title' => 'School Promotion Support',
+                'desc' => 'Providing promotional media, evaluation reports, and Trial Classes to convince parents.'
+            ]
+        ]
+    ],
+    'programs' => [
+        'badge' => 'Featured Programs',
+        'heading' => 'Future-Ready Curriculum',
+        'subheading' => 'Prepare students for the digital era. Choose the program package that best fits your school\'s competency goals.',
+        'see_curriculum' => 'See Curriculum',
+        'coming_soon' => 'Coming Soon',
+        'coding' => [
+            'title' => 'Scratch & Python Coding',
+            'desc' => 'From visual blocks (Scratch) to text-based coding (Python Turtle) and Artificial Intelligence.',
+        ],
+        'robotics' => [
+            'title' => 'Robotics & IoT',
+            'desc' => 'Micro:bit, Robotic Explorer, Erboblox, and Arduino. STEAM-based DIY projects.',
+        ],
+        'p5' => [
+            'title' => 'P5 & Teacher Training',
+            'desc' => 'Pancasila Student Profile Strengthening Program and soft skills training for teachers and students.',
+        ],
+        'deep' => [
+            'scratch_ai' => [
+                'title' => 'Scratch & AI Coding',
+                'desc' => 'Visual block programming to design games, animations, and introduce Machine Learning and NLP concepts to students.',
+                'tag' => 'Primary & Middle School'
+            ],
+            'python' => [
+                'title' => 'Python Turtle',
+                'desc' => 'Transition to text-based programming (Python). Develop problem-solving logic through visual geometric programming.',
+                'tag' => 'Upper Middle School'
+            ],
+            'microbit' => [
+                'title' => 'Micro:bit Learning Kit',
+                'desc' => 'Explore sensors and microcontrollers. DIY IoT (Internet of Things) projects perfect for STEAM and P5 implementation.',
+                'tag' => 'Primary & Middle School'
+            ],
+            'arduino' => [
+                'title' => 'Arduino & Explorer Kit',
+                'desc' => 'Intermediate robotics using C++ and electronic components. Build Line Followers, Obstacle Avoidance, to Smart Trashbins.',
+                'tag' => 'Middle & High School'
+            ]
+        ],
+    ],
+    'clients' => [
+        'heading' => 'Our School Partners',
+    ],
+    'testimoni' => [
+        'badge' => 'Testimonials',
+        'heading' => 'Trusted by Hundreds of Schools',
+        'subheading' => 'See how our programs bring positive impact and joy to students and teachers in partner schools.',
+        'items' => [
+            [
+                'quote' => 'Since having coding extracurricular from Erlass, kids are more enthusiastic about going to school. The modules are very interactive.',
+                'name' => 'Sarah Wijaya',
+                'role' => 'Elementary Principal',
+                'image' => 'img/testimonials/1.png'
+            ],
+            [
+                'quote' => 'The IoT program with Micro:bit really opened our students\' minds about smart technology. The Erlass team is very supportive!',
+                'name' => 'Budi Santoso',
+                'role' => 'Middle School Principal',
+                'image' => 'img/testimonials/2.png'
+            ],
+            [
+                'quote' => 'As a teacher, I feel very helped by the ready-to-use and applicable P5 curriculum from Erlass for students.',
+                'name' => 'Aisyah Putri',
+                'role' => 'Lead Teacher',
+                'image' => 'img/testimonials/3.png'
+            ]
+        ]
+    ],
+    'how_it_works' => [
+        'badge' => 'Partnership Flow',
+        'heading' => 'Start in 3 Easy Steps',
+        'steps' => [
+            [
+                'title' => 'Free Consultation',
+                'desc' => 'Contact our team to discuss your school\'s needs. We will provide the best program recommendations.',
+                'icon' => '💬'
+            ],
+            [
+                'title' => 'Trial Class & Presentation',
+                'desc' => 'We will come to your school to provide a live presentation and a free trial class session for students.',
+                'icon' => '🎯'
+            ],
+            [
+                'title' => 'Program Launch',
+                'desc' => 'Once agreed, we prepare the curriculum, instructors (optional), and the extracurricular program is ready to start!',
+                'icon' => '🚀'
+            ]
+        ]
+    ],
+    'contact' => [
+        'phone' => '0812 8253 7012',
+        'heading' => 'Schedule a Free Consultation',
+    ],
+    'video' => [
+        'badge' => 'Our Videos',
+        'title' => 'The Excitement at Erlass',
+        'subtitle' => 'See how our programs bring positive impact and joy to students and teachers in partner schools.',
+    ],
+    'footer' => [
+        'programs_title' => 'Our Programs',
+        'contact_title' => 'Contact Us',
+        'coding' => 'Coding for Kids',
+        'robotics' => 'Robotics & Electronics',
+        'training' => 'Teacher Training',
+        'follow_us' => 'Follow Us',
+        'copyright' => 'All Rights Reserved.',
     ],
     'methodology' => [
         'title' => 'Our Learning Method',
@@ -39,7 +184,7 @@ return [
             ],
             'individual' => [
                 'title' => 'Individual Approach',
-                'desc' => 'Tailoring our teaching methods to each student’s learning style.',
+                'desc' => 'Tailoring our teaching methods to each student\'s learning style.',
             ],
         ],
     ],
@@ -74,15 +219,6 @@ return [
             'Creative Tutoring',
             'Quality Training for Educators',
         ],
-    ],
-    'about' => [
-        'description' => 'Erlass Institute is a premier technology education center dedicated to equipping students with the skills of the future. With over 9 years of experience, we partner with top schools to deliver world-class robotics and coding education.',
-        'stats' => [
-            'schools' => 'Partner Schools',
-            'students' => 'Students',
-            'teachers' => 'Teachers',
-        ],
-        'address' => 'Pejaten Office Park, Jl. Warung Buncit Raya No.79, South Jakarta',
     ],
     'curriculum_coding' => [
         'title' => 'Coding Extracurricular Curriculum',
@@ -130,11 +266,8 @@ return [
     'achievements' => [
         'highlight' => 'M. Zahdan Mukarram - Favorite Winner of National Coding Competition.',
     ],
-    'contact' => [
-        'phone' => '0812 8253 7012',
-    ],
     'lead_form' => [
-        'title' => 'Get a Quotation',
+        'title' => '📬 Get a Quotation',
         'subtitle' => 'Free Consultation for Parents & Schools',
         'tabs' => [
             'parent' => 'Parent / Student',
@@ -151,5 +284,33 @@ return [
         ],
         'cta' => 'Send Request',
         'success_msg' => 'Your message has been sent successfully! Our team will contact you shortly.',
+        'risk_reducer' => '✅ No commitment · ✅ Free consultation · ✅ 24-hour response',
+        'or_call' => 'Or contact us directly:',
     ],
+    'faq' => [
+        'badge' => 'Common Questions',
+        'heading' => 'Frequently Asked Questions',
+        'items' => [
+            [
+                'q' => 'Does the school need to provide computers/laptops?',
+                'a' => 'Ideally, schools provide a computer lab, but we also have tablet-based or Bring Your Own Device (BYOD) program options upon agreement.'
+            ],
+            [
+                'q' => 'Who will teach this extracurricular?',
+                'a' => 'Erlass provides professional instructors trained technically (coding/robotics) and pedagogically (how to teach children).'
+            ],
+            [
+                'q' => 'What is the average cost per student?',
+                'a' => 'Costs vary depending on the agreement (Intracurricular/Extracurricular), starting from IDR 200,000 to IDR 300,000 per student per month.'
+            ],
+            [
+                'q' => 'Is there a certificate for students?',
+                'a' => 'Absolutely. At the end of every semester/program, students will receive an official achievement certificate from Erlass Institute.'
+            ],
+            [
+                'q' => 'What if we want a demo first?',
+                'a' => 'Certainly! Please fill out the form below to schedule a free presentation or a Trial Class session at your school.'
+            ]
+        ]
+    ]
 ];

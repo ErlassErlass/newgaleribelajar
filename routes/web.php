@@ -13,19 +13,16 @@ Route::get('/lang/{locale}', function ($locale) {
 })->name('lang.switch');
 
 Route::get('/', function () {
-    return view('welcome');
+    $programs = App\Models\Program::where('is_active', true)->get();
+    return view('welcome', compact('programs'));
 })->name('home');
 
-Route::post('/leads', [LeadController::class, 'store'])->name('leads.store');
+Route::post('/leads', [LeadController::class, 'store'])->middleware('throttle:5,1')->name('leads.store');
+
+use App\Http\Controllers\ProgramController;
 
 // New Expansion Routes
-Route::get('/programs/coding', function () {
-    return view('programs.coding');
-})->name('programs.coding');
-
-Route::get('/programs/robotics', function () {
-    return view('programs.robotics');
-})->name('programs.robotics');
+Route::get('/programs/{slug}', [ProgramController::class, 'show'])->name('programs.show');
 
 Route::get('/gallery', function () {
     return view('gallery');
