@@ -42,3 +42,4 @@ class Partner extends Model
         });
     }
 }
+

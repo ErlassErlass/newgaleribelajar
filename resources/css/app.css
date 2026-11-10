@@ -7,24 +7,27 @@
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
     --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-    /* Professional B2B Brand Palette */
-    --color-brand-primary: #1d758b;
-    --color-brand-navy: #0a192f;
-    --color-brand-dark: #0f172a;
-    --color-brand-blue: #0284c7;
-    --color-brand-accent: #f59e0b;
-    --color-brand-amber: #f59e0b;
+    /* Official Brand Palette from Coolors */
+    /* #8ecae6 · #219ebc · #023047 · #ffb703 · #fb8500 */
+    --color-brand-navy: #023047;
+    --color-brand-primary: #219ebc;
+    --color-brand-sky: #8ecae6;
+    --color-brand-yellow: #ffb703;
+    --color-brand-amber: #ffb703;
+    --color-brand-orange: #fb8500;
+    --color-brand-accent: #fb8500;
+    --color-brand-dark: #023047;
     --color-brand-slate: #f8fafc;
-    --color-brand-light: #f1f5f9;
+    --color-brand-light: #e0f2fe;
     --color-border: #e2e8f0;
 
-    /* Backward compatibility for kids-* utilities mapped to professional tones */
-    --color-kids-navy: #1d758b;
-    --color-kids-yellow: #f59e0b;
-    --color-kids-blue: #0284c7;
-    --color-kids-mint: #0d9488;
-    --color-kids-pink: #e0e7ff;
-    --color-kids-orange: #ea580c;
+    /* Semantic Mappings */
+    --color-kids-navy: #023047;
+    --color-kids-yellow: #ffb703;
+    --color-kids-blue: #219ebc;
+    --color-kids-mint: #8ecae6;
+    --color-kids-pink: #e0f2fe;
+    --color-kids-orange: #fb8500;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -40,24 +43,24 @@
 .hero-grid-pattern {
     background-size: 40px 40px;
     background-image: 
-        linear-gradient(to right, rgba(29, 117, 139, 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(29, 117, 139, 0.05) 1px, transparent 1px);
+        linear-gradient(to right, rgba(142, 202, 230, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(142, 202, 230, 0.08) 1px, transparent 1px);
 }
 
 .glass-pro {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04), 0 8px 10px -6px rgba(15, 23, 42, 0.02);
+    border: 1px solid rgba(142, 202, 230, 0.3);
+    box-shadow: 0 10px 25px -5px rgba(2, 48, 71, 0.05);
 }
 
 .glass-dark {
-    background: rgba(10, 25, 47, 0.85);
+    background: rgba(2, 48, 71, 0.9);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(142, 202, 230, 0.2);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.35);
 }
 
 /* ============================================
@@ -70,7 +73,7 @@
 
 .product-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(2, 48, 71, 0.08), 0 8px 10px -6px rgba(2, 48, 71, 0.04);
 }
 
 .product-card::before {
@@ -78,7 +81,7 @@
     position: absolute;
     inset: -1px;
     z-index: 5;
-    background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(29, 117, 139, 0.12), transparent 40%);
+    background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(33, 158, 188, 0.15), transparent 40%);
     opacity: 0;
     transition: opacity 0.4s ease;
     border-radius: inherit;
@@ -136,36 +139,36 @@
 }
 
 /* ============================================
-   CSS VARIABLES — Professional Modern EdTech
+   CSS VARIABLES — Mapped to Coolors Palette
    ============================================ */
 :root {
     --background: #ffffff;
-    --foreground: #0f172a;
+    --foreground: #023047;
 
     --card: #ffffff;
-    --card-foreground: #0f172a;
+    --card-foreground: #023047;
 
     --popover: #ffffff;
-    --popover-foreground: #0f172a;
+    --popover-foreground: #023047;
 
-    --primary: #1d758b;
+    --primary: #219ebc;
     --primary-foreground: #ffffff;
 
-    --secondary: #0284c7;
-    --secondary-foreground: #ffffff;
+    --secondary: #8ecae6;
+    --secondary-foreground: #023047;
 
     --muted: #f8fafc;
     --muted-foreground: #64748b;
 
-    --accent: #f59e0b;
-    --accent-foreground: #0f172a;
+    --accent: #fb8500;
+    --accent-foreground: #ffffff;
 
     --destructive: #ef4444;
     --destructive-foreground: #ffffff;
 
     --border: #e2e8f0;
     --input: #cbd5e1;
-    --ring: #1d758b;
+    --ring: #219ebc;
 
     --radius: 0.75rem;
 
@@ -173,16 +176,16 @@
     --font-serif: 'Plus Jakarta Sans', sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 1px 2px 0 rgba(2, 48, 71, 0.05);
+    --shadow: 0 1px 3px 0 rgba(2, 48, 71, 0.07), 0 1px 2px -1px rgba(2, 48, 71, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(2, 48, 71, 0.07), 0 2px 4px -2px rgba(2, 48, 71, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(2, 48, 71, 0.08), 0 4px 6px -4px rgba(2, 48, 71, 0.04);
+    --shadow-xl: 0 20px 25px -5px rgba(2, 48, 71, 0.08), 0 8px 10px -6px rgba(2, 48, 71, 0.04);
 }
 
 @layer base {
     body {
-        @apply bg-slate-50 text-slate-900 font-sans antialiased;
+        @apply bg-slate-50 text-[#023047] font-sans antialiased;
     }
     * {
         border-color: #e2e8f0;

@@ -132,43 +132,29 @@ galeribelajar/
 
 ---
 
-## 4. Identitas Visual (Design System)
+## 4. Identitas Visual & Palet Warna Resmi (Coolors)
 
-### Palet Warna (Kids Book Theme)
-| Token | Hex | Preview | Penggunaan |
-|-------|-----|---------|------------|
-| `kids-yellow` | `#ffd600` | 🟡 | Background Hero, tombol CTA utama |
-| `kids-blue` | `#99e1ff` | 🔵 | Shadow tombol, footer background |
-| `kids-navy` | `#1d758b` | 🫐 | Teks utama, heading |
-| `kids-pink` | `#ffb3c6` | 🩷 | Badge label, dekorasi |
-| `kids-mint` | `#a2e8dd` | 🟢 | Tombol CTA, badge "New" |
-| `kids-orange` | `#ff7f50` | 🟠 | Border produk, link "Learn More" |
+### Palet Warna Resmi
+Sumber referensi: [https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500](https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500)
 
-### Palet Warna (Brand / Corporate)
-| Token | Hex | Penggunaan |
-|-------|-----|------------|
-| `erlass-dark` | `#001bb7` | Warna brand gelap |
-| `erlass-blue` | `#0046ff` | Warna brand utama |
-| `erlass-orange` | `#ff8040` | Aksen brand |
+| Token Design | Hex | Karakter / Nama | Peran Semantik Desain |
+|--------------|-----|-----------------|------------------------|
+| `brand-navy` | `#023047` | Prussian Navy | Warna dasar korporat, hero background, footer, heading teks utama kontras tinggi |
+| `brand-primary` | `#219ebc` | Blue Green / Cyan | Warna identitas brand, link hover, ikon fitur, border aktif, secondary badge |
+| `brand-sky` | `#8ecae6` | Light Sky Blue | Aksen garis pembatas lembut, grid latar, subtle badges, background glow |
+| `brand-yellow` | `#ffb703` | Selective Yellow | Highlight metrik kuantitatif (400+ sekolah), tag kategori, rating bintang |
+| `brand-orange` | `#fb8500` | UT Orange | Tombol konversi utama (CTA Primary: "Konsultasi Sekolah", "Kirim Formulir") |
 
 ### Tipografi
 | Fungsi | Font | CSS Class | Contoh Penggunaan |
 |--------|------|-----------|-------------------|
-| **Teks umum** | Source Sans 3 | `font-sans` | Paragraf, tombol, deskripsi |
-| **Heading** | Playfair Display | `font-serif` | Judul section, nama buku |
-| **Aksen** | Scribble Show | `font-popstar` | Dekorasi judul playful |
+| **Teks umum & Heading** | Plus Jakarta Sans | `font-sans` | Seluruh heading section, paragraf, label form, dan tombol |
+| **Monospace / SKU** | JetBrains Mono / SF Mono | `font-mono` | Kode SKU produk CRM (misal `ECR01`, `MLK01`) |
 
-### Gaya Tombol (Button Pattern)
-```
-┌─────────────────────────────┐
-│     Teks Tombol (Bold)      │  ← bg-kids-yellow / bg-kids-mint
-│                             │
-└─────────────────────────────┘
-  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓   ← shadow-[0_8px_0_#99e1ff] (efek 3D)
-```
-- Rounded full (pill shape)
-- Shadow solid biru sebagai efek timbul 3D
-- Hover: scale 1.05 + shadow membesar
+### Gaya Tombol (Button Pattern B2B)
+- **Primary CTA (High-conversion):** `bg-gradient-to-r from-[#fb8500] to-[#ffb703]` dengan efek shadow oranye lembut dan hover elevasi `-translate-y-0.5`.
+- **Secondary CTA:** `bg-gradient-to-r from-[#219ebc] to-[#0284c7]` dengan border halus.
+- **Outline / Light Action:** `bg-white border border-[#8ecae6]/50 text-[#023047]` dengan hover state profesional.
 
 ---
 

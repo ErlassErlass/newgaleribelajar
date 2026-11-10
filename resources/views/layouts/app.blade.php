@@ -11,7 +11,7 @@
     <meta name="keywords" content="koding sekolah, robotik sekolah, kurikulum merdeka informatika, microbit sekolah, LMS erlass academy, asesmen potensi siswa, pelatihan guru koding, kemitraan sekolah koding">
     <meta name="author" content="PT Erlass Prokreatif Indonesia">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1d758b">
+    <meta name="theme-color" content="#023047">
     <link rel="manifest" href="{{ asset('manifest.json') }}">
     <link rel="canonical" href="{{ url()->current() }}">
 
@@ -57,20 +57,20 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @yield('styles')
 </head>
-<body class="bg-slate-50 font-sans text-slate-900 antialiased overflow-x-hidden selection:bg-[#1d758b] selection:text-white">
-    <a href="#main-content" class="sr-only focus:not-sr-only bg-[#1d758b] text-white px-4 py-2 absolute top-0 left-0 z-[110]">Lewati ke konten utama</a>
+<body class="bg-slate-50 font-sans text-[#023047] antialiased overflow-x-hidden selection:bg-[#219ebc] selection:text-white">
+    <a href="#main-content" class="sr-only focus:not-sr-only bg-[#219ebc] text-white px-4 py-2 absolute top-0 left-0 z-[110]">Lewati ke konten utama</a>
 
     <!-- Top Announcement Bar -->
-    <div class="bg-[#0a192f] text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="bg-[#023047] text-slate-300 text-xs py-2 px-4 border-b border-[#8ecae6]/20">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-2 font-medium">
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#1d758b] text-white uppercase tracking-wider">Update 2026</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-[#fb8500] text-white uppercase tracking-wider">Update 2026</span>
                 <span>Dipercaya oleh 400+ Sekolah & 1.100+ Kontrak Program Pendidikan di Seluruh Indonesia.</span>
             </div>
-            <div class="flex items-center gap-4 text-slate-400">
-                <a href="#contact" class="hover:text-amber-400 transition-colors">Konsultasi Kurikulum</a>
-                <span class="text-slate-700">|</span>
-                <a href="https://wa.me/6282311341381" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1">
+            <div class="flex items-center gap-4 text-slate-300">
+                <a href="#contact" class="hover:text-[#ffb703] transition-colors">Konsultasi Kurikulum</a>
+                <span class="text-slate-600">|</span>
+                <a href="https://wa.me/6282311341381" target="_blank" class="hover:text-[#8ecae6] transition-colors flex items-center gap-1 font-semibold">
                     <span>Hotline: +62 823-1134-1381</span>
                 </a>
             </div>
@@ -84,41 +84,41 @@
                 <!-- Brand Logo -->
                 <div class="flex-shrink-0 flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1d758b] to-[#0284c7] flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#219ebc] to-[#023047] flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
                             E
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-extrabold text-2xl tracking-tight text-[#0a192f] leading-none">ERLASS</span>
-                            <span class="text-[10px] font-semibold text-[#1d758b] tracking-wider uppercase">Education Solutions</span>
+                            <span class="font-extrabold text-2xl tracking-tight text-[#023047] leading-none">ERLASS</span>
+                            <span class="text-[10px] font-bold text-[#219ebc] tracking-wider uppercase">Education Solutions</span>
                         </div>
                     </a>
                 </div>
                 
                 <!-- Desktop Menu -->
                 <nav class="hidden lg:flex space-x-1 items-center">
-                    <a href="{{ route('home') }}" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#1d758b] hover:bg-slate-50 rounded-lg transition-colors">
+                    <a href="{{ route('home') }}" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#219ebc] hover:bg-slate-50 rounded-lg transition-colors">
                         Beranda
                     </a>
-                    <a href="#solutions" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#1d758b] hover:bg-slate-50 rounded-lg transition-colors">
+                    <a href="#solutions" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#219ebc] hover:bg-slate-50 rounded-lg transition-colors">
                         Solusi Pendidikan
                     </a>
-                    <a href="#why-erlass" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#1d758b] hover:bg-slate-50 rounded-lg transition-colors">
+                    <a href="#why-erlass" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#219ebc] hover:bg-slate-50 rounded-lg transition-colors">
                         Mengapa Erlass
                     </a>
-                    <a href="#partners" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#1d758b] hover:bg-slate-50 rounded-lg transition-colors">
+                    <a href="#partners" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#219ebc] hover:bg-slate-50 rounded-lg transition-colors">
                         Sekolah Mitra
                     </a>
-                    <a href="#products" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#1d758b] hover:bg-slate-50 rounded-lg transition-colors">
+                    <a href="#products" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#219ebc] hover:bg-slate-50 rounded-lg transition-colors">
                         Katalog Produk
                     </a>
-                    <a href="#collaborate" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#1d758b] hover:bg-slate-50 rounded-lg transition-colors">
+                    <a href="#collaborate" class="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-[#219ebc] hover:bg-slate-50 rounded-lg transition-colors">
                         Kemitraan
                     </a>
                 </nav>
 
                 <!-- Actions: Language + CTA -->
                 <div class="hidden sm:flex items-center gap-3">
-                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#1d758b] to-[#155a6e] hover:from-[#155a6e] hover:to-[#0f4453] text-white font-bold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#fb8500] to-[#ffb703] hover:from-[#e07600] hover:to-[#e6a500] text-white font-bold text-sm shadow-md hover:shadow-orange-500/25 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2">
                         <span>Konsultasi Sekolah</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
@@ -142,7 +142,7 @@
             <a href="#products" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Katalog Produk</a>
             <a href="#collaborate" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Kemitraan</a>
             <div class="pt-3 border-t border-slate-100">
-                <a href="#contact" class="block w-full text-center px-4 py-3 rounded-xl bg-[#1d758b] text-white font-bold text-sm shadow-md">Konsultasi Sekolah Sekarang</a>
+                <a href="#contact" class="block w-full text-center px-4 py-3 rounded-xl bg-[#fb8500] hover:bg-[#e07600] text-white font-bold text-sm shadow-md transition-colors">Konsultasi Sekolah Sekarang</a>
             </div>
         </div>
     </header>
@@ -153,24 +153,24 @@
     </main>
 
     <!-- Professional Corporate Footer -->
-    <footer class="bg-[#0a192f] text-slate-300 relative z-20 border-t border-slate-800">
+    <footer class="bg-[#023047] text-slate-300 relative z-20 border-t border-[#8ecae6]/20">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
                 <!-- Col 1: Identity & Address -->
                 <div class="lg:col-span-2 space-y-4">
                     <div class="flex items-center gap-2">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1d758b] to-[#0284c7] flex items-center justify-center text-white font-black text-xl shadow-md">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#219ebc] to-[#023047] flex items-center justify-center text-white font-black text-xl shadow-md">
                             E
                         </div>
                         <span class="font-extrabold text-2xl tracking-tight text-white">ERLASS</span>
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                    <p class="text-slate-300 text-sm leading-relaxed max-w-sm">
                         PT Erlass Prokreatif Indonesia — Penyedia solusi teknologi pendidikan terintegrasi: Coding, Robotika, Micro:bit, LMS Kaizen, dan Asesmen Potensi Siswa untuk akselerasi masa depan pendidikan Indonesia.
                     </p>
-                    <div class="text-xs text-slate-400 space-y-1 pt-2">
-                        <p class="font-semibold text-slate-200">Kantor Pusat:</p>
+                    <div class="text-xs text-slate-300 space-y-1 pt-2">
+                        <p class="font-semibold text-white">Kantor Pusat:</p>
                         <p>Pejaten Office Park Blok D, Jl. Warung Buncit Raya No. 79, Jakarta Selatan</p>
-                        <p class="font-semibold text-slate-200 pt-2">Kantor Operasional:</p>
+                        <p class="font-semibold text-white pt-2">Kantor Operasional:</p>
                         <p>Jalan Boulevard Silk Town No. 12, Tangerang Selatan</p>
                     </div>
                 </div>
@@ -178,36 +178,36 @@
                 <!-- Col 2: Solusi Edukasi -->
                 <div>
                     <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Solusi Pendidikan</h4>
-                    <ul class="space-y-2.5 text-sm text-slate-400">
-                        <li><a href="#solutions" class="hover:text-white transition-colors">Coding & Informatika</a></li>
-                        <li><a href="#solutions" class="hover:text-white transition-colors">Robotic & Micro:bit</a></li>
-                        <li><a href="#solutions" class="hover:text-white transition-colors">Erlass Academy LMS</a></li>
-                        <li><a href="#solutions" class="hover:text-white transition-colors">Student Assessment</a></li>
-                        <li><a href="#products" class="hover:text-white transition-colors">Modul LKPD Cetak & Digital</a></li>
+                    <ul class="space-y-2.5 text-sm text-slate-300">
+                        <li><a href="#solutions" class="hover:text-[#8ecae6] transition-colors">Coding & Informatika</a></li>
+                        <li><a href="#solutions" class="hover:text-[#8ecae6] transition-colors">Robotic & Micro:bit</a></li>
+                        <li><a href="#solutions" class="hover:text-[#8ecae6] transition-colors">Erlass Academy LMS</a></li>
+                        <li><a href="#solutions" class="hover:text-[#8ecae6] transition-colors">Student Assessment</a></li>
+                        <li><a href="#products" class="hover:text-[#8ecae6] transition-colors">Modul LKPD Cetak & Digital</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 3: Kemitraan & Layanan -->
                 <div>
                     <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Kemitraan</h4>
-                    <ul class="space-y-2.5 text-sm text-slate-400">
-                        <li><a href="#partners" class="hover:text-white transition-colors">Direktori Sekolah Mitra (400+)</a></li>
-                        <li><a href="#collaborate" class="hover:text-white transition-colors">Kerja Sama Yayasan</a></li>
-                        <li><a href="#collaborate" class="hover:text-white transition-colors">Program Dinas Pendidikan</a></li>
-                        <li><a href="#why-erlass" class="hover:text-white transition-colors">Pelatihan & Sertifikasi Guru</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors">Permintaan Penawaran (RFP)</a></li>
+                    <ul class="space-y-2.5 text-sm text-slate-300">
+                        <li><a href="#partners" class="hover:text-[#8ecae6] transition-colors">Direktori Sekolah Mitra (400+)</a></li>
+                        <li><a href="#collaborate" class="hover:text-[#8ecae6] transition-colors">Kerja Sama Yayasan</a></li>
+                        <li><a href="#collaborate" class="hover:text-[#8ecae6] transition-colors">Program Dinas Pendidikan</a></li>
+                        <li><a href="#why-erlass" class="hover:text-[#8ecae6] transition-colors">Pelatihan & Sertifikasi Guru</a></li>
+                        <li><a href="#contact" class="hover:text-[#8ecae6] transition-colors">Permintaan Penawaran (RFP)</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 4: Hubungi Kami -->
                 <div>
                     <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Hubungi Kami</h4>
-                    <div class="space-y-3 text-sm text-slate-400">
-                        <p class="text-emerald-400 font-bold text-lg">+62 823-1134-1381</p>
+                    <div class="space-y-3 text-sm text-slate-300">
+                        <p class="text-[#ffb703] font-bold text-lg">+62 823-1134-1381</p>
                         <p class="text-xs">Senin – Jumat: 08:30 – 17:00 WIB</p>
-                        <p class="text-xs">Email: <a href="mailto:info@erlass.co.id" class="text-slate-300 hover:underline">info@erlass.co.id</a></p>
+                        <p class="text-xs">Email: <a href="mailto:info@erlass.co.id" class="text-slate-200 hover:underline">info@erlass.co.id</a></p>
                         <div class="pt-2">
-                            <a href="https://wa.me/6282311341381?text=Halo%20Tim%20Erlass%2C%20saya%20ingin%20konsultasi%20program%20sekolah" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-colors shadow">
+                            <a href="https://wa.me/6282311341381?text=Halo%20Tim%20Erlass%2C%20saya%20ingin%20konsultasi%20program%20sekolah" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs transition-colors shadow">
                                 <span>Chat WhatsApp Resmi</span>
                             </a>
                         </div>
@@ -216,11 +216,11 @@
             </div>
 
             <!-- Bottom Copyright & Compliance -->
-            <div class="border-t border-slate-800/80 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+            <div class="border-t border-[#8ecae6]/20 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-300 gap-4">
                 <p>&copy; {{ date('Y') }} PT Erlass Prokreatif Indonesia. Seluruh hak cipta dilindungi undang-undang.</p>
                 <div class="flex items-center gap-6">
-                    <span class="text-slate-400">Kepatuhan UU PDP (Pelindungan Data Pribadi)</span>
-                    <a href="#main-content" class="text-slate-400 hover:text-white">Kembali ke Atas ↑</a>
+                    <span class="text-slate-300">Kepatuhan UU PDP (Pelindungan Data Pribadi)</span>
+                    <a href="#main-content" class="text-slate-300 hover:text-white">Kembali ke Atas ↑</a>
                 </div>
             </div>
         </div>

@@ -202,12 +202,18 @@ Dua versi terakhir Chrome, Safari, Edge, Firefox; Android 9+ dan iOS 14+. Rentan
 ### 4.1 Tujuan dan Kesan Merek
 Website harus terasa **modern, hangat, tepercaya, dan edukatif**. Tujuannya memberi keyakinan pada kepala sekolah sekaligus menarik minat guru dan siswa. Hindari tampilan terlalu korporat yang kaku atau terlalu kekanak-kanakan.
 
-### 4.2 Arah Visual
-- **Warna:** satu warna utama sesuai logo Erlass (sesuaikan setelah logo difinalisasi), satu warna aksen untuk CTA, latar terang bersih, teks gelap dengan kontras tinggi.
-- **Tipografi:** satu keluarga sans-serif yang ramah dan terbaca (misal Plus Jakarta Sans atau Poppins) untuk judul dan isi; skala ukuran jelas.
-- **Fotografi:** foto nyata siswa Indonesia belajar coding dan robotik, bukan stok generik. Ilustrasi sederhana untuk ikon solusi.
-- **Bentuk:** sudut membulat sedang, kartu dengan bayangan lembut, ruang kosong lega.
-- **Gerak:** animasi halus saat scroll, hormati preferensi "reduce motion".
+### 4.2 Arah Visual & Palet Warna Resmi
+- **Palet Warna Resmi (Coolors):** `["#8ecae6","#219ebc","#023047","#ffb703","#fb8500"]` (Tautan: [https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500](https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500))
+  - `#023047` (**Prussian Navy / Deep Navy**): Warna dasar korporat, latar belakang hero banner, footer, kartu gelap, serta tipografi kontras tinggi (heading).
+  - `#219ebc` (**Blue Green / Cyan Accent**): Warna primer aksen brand, tautan navigasi, ikon solusi, status aktif, dan garis tepi fokus.
+  - `#8ecae6` (**Light Sky Blue**): Warna aksen sekunder untuk garis pembatas halus, pola grid dekoratif latar belakang, pill badge, dan subtle hover glow.
+  - `#ffb703` (**Selective Yellow / Amber**): Warna penanda metrik kuantitatif, rating bintang, label kategori khusus, dan aksen visual hangat.
+  - `#fb8500` (**UT Orange / Vivid Orange**): Warna pemicu konversi utama (CTA Primary buttons seperti "Konsultasi Sekolah", "Ajukan Penawaran", "Kirim Formulir").
+- **Latar Belakang & Netral:** Latar dasar putih bersih (`#ffffff`) dan abu-abu netral sejuk (`#f8fafc` / `#f1f5f9`) dengan garis pemisah slate (`#e2e8f0`).
+- **Tipografi:** Sans-serif modern dan tegas: *Plus Jakarta Sans* untuk seluruh heading, tombol, dan body text untuk keterbacaan tinggi di layar seluler maupun desktop.
+- **Fotografi & Ikon:** Menggunakan foto dokumentasi kegiatan nyata di sekolah mitra Erlass dan ikon vektor monoline inline SVG (menghilangkan emoji berlebihan).
+- **Bentuk & Kedalaman:** Sudut membulat modern (`rounded-xl` / `rounded-2xl`), bayangan lembut berlapis (subtle multi-layer shadows), dan efek glassmorphism profesional.
+- **Gerak & Aksesibilitas:** Transisi halus 200–300ms, infinite marquee social proof yang berhenti saat kursor diarahkan (hover pause), serta kepatuhan penuh terhadap preferensi `prefers-reduced-motion`.
 
 ### 4.3 Struktur Homepage (urutan bagian)
 | # | Bagian | Isi | Catatan desain |
@@ -438,12 +444,18 @@ Implementasi teknis pada website `newgaleribelajar` telah disesuaikan dengan inf
 5. **Command Otomatisasi Sinkronisasi:**
    - Disediakan artisan command `php artisan app:sync-crm-data` untuk memperbarui data sewaktu-waktu tanpa downtime.
 
-### 7.2 Standar Desain B2B Profesional (Anti-AI Slop)
-- **Eliminasi Gaya Kartun (Playful Kids):** Menghapus ornamen kekanak-kanakan (balon udara, tumpukan buku komik, cap tangan anak-anak, warna kuning/pink mencolok).
-- **Arah Visual Baru:** Mengadopsi standar *Modern Professional EdTech Corporate* dengan palet *Deep Corporate Navy* (`#0a192f`), *Erlass Teal/Navy* (`#1d758b`), *Sky Blue* (`#0284c7`), dan latar *Clean Slate* (`#f8fafc`).
+### 7.2 Standar Desain B2B Profesional & Palet Warna Resmi
+- **Palet Warna Resmi (Coolors):** Menerapkan palet resmi `["#8ecae6","#219ebc","#023047","#ffb703","#fb8500"]` (sumber: [https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500](https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500)) secara konsisten pada:
+  - Header & Pengumuman Atas (`#023047`, `#8ecae6`, `#fb8500`)
+  - Hero Section (`#023047`, `#219ebc`, `#ffb703`, `#fb8500`)
+  - Kartu 4 Solusi Edukasi & 5 Pilar Nilai
+  - Social Proof Marquee (407 Sekolah Mitra Terverifikasi)
+  - Formulir Konsultasi B2B & Tombol Konversi
+  - Footer Korporat, Halaman Galeri, Detail Program, dan Halaman Error (404/500)
+- **Eliminasi Gaya Kartun (Playful Kids):** Menghapus ornamen kekanak-kanakan (balon udara, tumpukan buku kartun, cap tangan anak-anak, warna kuning/pink mencolok).
 - **Prinsip Anti-AI Slop:**
   - Menghilangkan kata-kata hiperbolis AI klise (*revolusioner*, *lanskap mutakhir*, *testament to*, *menyelami*, dll).
-  - Menghapus emoji berlebihan pada heading dan kartu layanan.
+  - Menghapus emoji berlebihan pada heading dan kartu layanan; menggantinya dengan ikon inline SVG profesional.
   - Memprioritaskan data faktual (407 sekolah mitra, 1.100+ kontrak SP, alamat kantor fisik riil, nomor kontak resmi).
   - Formulir konsultasi B2B dilengkapi persetujuan eksplisit kepatuhan **UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)**.
 
