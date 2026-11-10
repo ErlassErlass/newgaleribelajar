@@ -1,6 +1,6 @@
 # Dokumentasi Erlass - Mitra Pendidikan K-12
 
-Selamat datang di dokumentasi website **Galeribelajar.com** (Erlass). Website ini adalah landing page B2B untuk PT Erlass Prokreatif Indonesia yang menyediakan program Coding, Robotika, IoT, AI, dan P5 untuk sekolah K-12 di Indonesia.
+Selamat datang di dokumentasi website **Erlass** (`erlass.co.id`). Website ini adalah website corporate dan landing page B2B resmi untuk PT Erlass Prokreatif Indonesia yang menyediakan program Coding, Robotika, Micro:bit, LMS Kaizen, dan Asesmen Siswa untuk sekolah di Indonesia.
 
 ## Tautan Cepat
 

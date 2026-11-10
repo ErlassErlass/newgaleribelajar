@@ -459,6 +459,12 @@ Implementasi teknis pada website `newgaleribelajar` telah disesuaikan dengan inf
   - Memprioritaskan data faktual (407 sekolah mitra, 1.100+ kontrak SP, alamat kantor fisik riil, nomor kontak resmi).
   - Formulir konsultasi B2B dilengkapi persetujuan eksplisit kepatuhan **UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)**.
 
+### 7.3 Finalisasi Domain Resmi (erlass.co.id)
+Sesuai arahan resmi, website korporat difinalkan menggunakan domain resmi **`erlass.co.id`** (menggantikan wacana domain awal galeribelajar.com):
+- **Canonical URL & Metadata:** Seluruh canonical URL, Open Graph metadata, dan JSON-LD Structured Data Schema.org EducationalOrganization diarahkan ke `https://erlass.co.id`.
+- **Sitemap & Robots:** Berkas `public/sitemap.xml` dan `public/robots.txt` disesuaikan untuk mengindeks halaman resmi di domain `https://erlass.co.id`.
+- **Konfigurasi Environment:** Konfigurasi `.env` diperbarui dengan `APP_NAME="Erlass"` dan `APP_URL=https://erlass.co.id`.
+
 ---
 
 ## Langkah Berikutnya yang Disarankan

@@ -1,7 +1,8 @@
-# 📖 Dokumentasi Proyek Galeribelajar.com (Erlass)
+# 📖 Dokumentasi Proyek Website Erlass (erlass.co.id)
 
-> **Versi:** 2.1  
+> **Versi:** 2.2  
 > **Terakhir Diperbarui:** 10 November 2026  
+> **Domain Resmi:** `https://erlass.co.id` (migrasi resmi dari wacana awal galeribelajar.com)  
 > **Stack:** Laravel 12 + Filament 4 Admin + Tailwind CSS 4 + Vite 7 + GSAP + MySQL (Integrasi Erlass CRM)
 
 ---
@@ -12,7 +13,7 @@
 2. [Integrasi Data Erlass CRM](#2-integrasi-data-erlass-crm)
 3. [Struktur Folder](#3-struktur-folder)
 4. [Teknologi & Dependencies](#4-teknologi--dependencies)
-5. [Identitas Visual (Design System)](#5-identitas-visual-design-system)
+5. [Identitas Visual & Palet Warna Resmi](#4-identitas-visual--palet-warna-resmi-coolors)
 6. [Halaman & Routing](#6-halaman--routing)
 7. [Breakdown Section Landing Page](#7-breakdown-section-landing-page)
 8. [Filament Admin Panel](#8-filament-admin-panel)
@@ -23,7 +24,7 @@
 
 ## 1. Gambaran Umum
 
-**Galeribelajar.com** adalah website corporate dan landing page B2B untuk **Erlass** (PT Erlass Prokreatif Indonesia) — mitra pendidikan resmi penyedia program **Coding, Robotika, Micro:bit, LMS Kaizen, dan Asesmen Bakat Siswa** untuk jenjang SD, SMP, dan SMA di Indonesia. Website dirancang dengan gaya *Modern Professional EdTech B2B* (anti-AI slop, tanpa ornamen kekanak-kanakan) yang ditujukan untuk meyakinkan kepala sekolah, ketua yayasan, dan dinas pendidikan. Master data kategori, produk, dan sekolah mitra disinkronkan langsung dari basis data operasional **Erlass CRM** (`erlass_data`).
+**erlass.co.id** adalah website corporate dan landing page B2B resmi untuk **Erlass** (PT Erlass Prokreatif Indonesia) — mitra pendidikan resmi penyedia program **Coding, Robotika, Micro:bit, LMS Kaizen, dan Asesmen Bakat Siswa** untuk jenjang SD, SMP, dan SMA di Indonesia. Website dirancang dengan gaya *Modern Professional EdTech B2B* (anti-AI slop, tanpa ornamen kekanak-kanakan) yang ditujukan untuk meyakinkan kepala sekolah, ketua yayasan, dan dinas pendidikan. Master data kategori, produk, dan sekolah mitra disinkronkan langsung dari basis data operasional **Erlass CRM** (`erlass_data`).
 
 ---
 

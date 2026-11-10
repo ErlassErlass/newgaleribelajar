@@ -34,7 +34,7 @@
       "@@type": "EducationalOrganization",
       "name": "PT Erlass Prokreatif Indonesia",
       "alternateName": "Erlass Institute",
-      "url": "https://galeribelajar.com",
+      "url": "https://erlass.co.id",
       "logo": "{{ asset('img/cp/11.png') }}",
       "description": "Penyedia solusi terintegrasi pembelajaran Coding, Robotika, Micro:bit, LMS, dan Asesmen Bakat Siswa.",
       "address": {
