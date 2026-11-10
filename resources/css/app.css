@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -6,204 +5,186 @@
 
 @theme {
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    /* Professional B2B Brand Palette */
+    --color-brand-primary: #1d758b;
+    --color-brand-navy: #0a192f;
+    --color-brand-dark: #0f172a;
+    --color-brand-blue: #0284c7;
+    --color-brand-accent: #f59e0b;
+    --color-brand-amber: #f59e0b;
+    --color-brand-slate: #f8fafc;
+    --color-brand-light: #f1f5f9;
+    --color-border: #e2e8f0;
+
+    /* Backward compatibility for kids-* utilities mapped to professional tones */
+    --color-kids-navy: #1d758b;
+    --color-kids-yellow: #f59e0b;
+    --color-kids-blue: #0284c7;
+    --color-kids-mint: #0d9488;
+    --color-kids-pink: #e0e7ff;
+    --color-kids-orange: #ea580c;
 }
 
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================
-   NOISE OVERLAY (used in welcome.blade.php)
+   BACKGROUND PATTERNS & EFFECTS
    ============================================ */
 .noise-overlay {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     mix-blend-mode: multiply;
 }
 
-/* Glass card for dark sections (Programs horizontal scroll) */
+.hero-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(29, 117, 139, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(29, 117, 139, 0.05) 1px, transparent 1px);
+}
+
 .glass-pro {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04), 0 8px 10px -6px rgba(15, 23, 42, 0.02);
+}
+
+.glass-dark {
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================
-   PRODUCT CARD MOUSE TRACKING (used in products section)
+   PRODUCT & SOLUTION CARD EFFECTS
    ============================================ */
 .product-card {
     position: relative;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
 .product-card::before {
     content: '';
     position: absolute;
-    inset: -1.5px;
+    inset: -1px;
     z-index: 5;
-    background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(29, 117, 139, 0.15), transparent 40%);
+    background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(29, 117, 139, 0.12), transparent 40%);
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.4s ease;
     border-radius: inherit;
     pointer-events: none;
 }
+
 .product-card:hover::before {
     opacity: 1;
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS & MARQUEES
    ============================================ */
 @keyframes client-marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-100% - 2rem)); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 2rem)); }
 }
 
 @keyframes marquee-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 @keyframes marquee-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
-}
-
-@keyframes scroll-down {
-  0% { transform: translateY(-100%); }
-  50% { transform: translateY(0); }
-  100% { transform: translateY(100%); }
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
 
 @keyframes wa-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+    50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
 }
 
-.animate-client-marquee {
-  animation: client-marquee 30s linear infinite;
+.animate-marquee-left {
+    animation: marquee-left 45s linear infinite;
 }
-.animate-client-marquee:hover {
-  animation-play-state: paused;
-}
-
-/* ============================================
-   CUSTOM FONTS
-   ============================================ */
-@font-face {
-    font-family: 'Scribble Show';
-    src: url('/fonts/Scribble Show.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+.animate-marquee-left:hover {
+    animation-play-state: paused;
 }
 
-@font-face {
-    font-family: 'Quicktext';
-    src: url('/fonts/Quicktext.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+.animate-marquee-right {
+    animation: marquee-right 45s linear infinite;
+}
+.animate-marquee-right:hover {
+    animation-play-state: paused;
 }
 
-/* ============================================
-   THEME TOKENS — Kids Palette (Single Source of Truth)
-   ============================================ */
-@theme {
-    /* Primary sans font */
-    --font-sans: 'Source Sans 3', 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-chat: 'Quicktext', sans-serif;
-    --font-quick: 'Quicktext', sans-serif;
-    --font-popstar: 'Scribble Show', cursive;
-
-    /* Kids Book Palette — THE canonical palette */
-    --color-kids-yellow: #ffd600;
-    --color-kids-blue: #99e1ff;
-    --color-kids-navy: #1d758b;
-    --color-kids-pink: #ffb3c6;
-    --color-kids-mint: #a2e8dd;
-    --color-kids-orange: #ff7f50;
-}
-
-@theme inline {
-    --font-sans: 'Source Sans 3', sans-serif;
-    --font-mono: JetBrains Mono, monospace;
-    --font-serif: 'Playfair Display', serif;
-    --radius: 0.625rem;
-    --spacing: 0.25rem;
+/* WCAG 2.1: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .animate-marquee-left,
+    .animate-marquee-right,
+    [style*="animation"] {
+        animation: none !important;
+    }
 }
 
 /* ============================================
-   CSS VARIABLES — Mapped to Kids Palette
-   Shadcn token names → Kids palette values
+   CSS VARIABLES — Professional Modern EdTech
    ============================================ */
 :root {
-    /* Core */
-    --background: #fffdf5;
-    --foreground: #111111;
+    --background: #ffffff;
+    --foreground: #0f172a;
 
-    /* Card = Footer Navy (dark surface) */
-    --card: #1d758b;
-    --card-foreground: #ffffff;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
 
-    /* Popover */
     --popover: #ffffff;
-    --popover-foreground: #111111;
+    --popover-foreground: #0f172a;
 
-    /* Primary = Kids Navy */
     --primary: #1d758b;
     --primary-foreground: #ffffff;
 
-    /* Secondary = Kids Yellow */
-    --secondary: #ffd600;
-    --secondary-foreground: #111111;
+    --secondary: #0284c7;
+    --secondary-foreground: #ffffff;
 
-    /* Muted */
-    --muted: #f5f0e8;
-    --muted-foreground: #555555;
+    --muted: #f8fafc;
+    --muted-foreground: #64748b;
 
-    /* Accent = Kids Blue */
-    --accent: #99e1ff;
-    --accent-foreground: #111111;
+    --accent: #f59e0b;
+    --accent-foreground: #0f172a;
 
-    /* Destructive */
     --destructive: #ef4444;
     --destructive-foreground: #ffffff;
 
-    /* Border & Input */
-    --border: rgba(29, 117, 139, 0.12);
-    --input: rgba(29, 117, 139, 0.12);
+    --border: #e2e8f0;
+    --input: #cbd5e1;
     --ring: #1d758b;
 
-    /* Radius */
-    --radius: 0.625rem;
+    --radius: 0.75rem;
 
-    /* Fonts */
-    --font-sans: 'Source Sans 3', sans-serif;
-    --font-serif: 'Playfair Display', serif;
-    --font-mono: JetBrains Mono, monospace;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-serif: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-    /* Shadows */
-    --shadow-color: rgba(0, 0, 0, 0.08);
-    --shadow-2xs: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
-    --shadow-xs: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.08);
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.06);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.06);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-
-    /* Spacing & tracking */
-    --spacing: 0.25rem;
-    --tracking-normal: 0em;
-    --letter-spacing: 0em;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
 }
 
 @layer base {
-  body {
-    letter-spacing: var(--tracking-normal);
-    @apply bg-[#fffdf5] text-[#111111];
-  }
-  * {
-    @apply border-border outline-ring/50;
-  }
-  html {
-    @apply font-sans;
-  }
+    body {
+        @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    }
+    * {
+        border-color: #e2e8f0;
+    }
 }

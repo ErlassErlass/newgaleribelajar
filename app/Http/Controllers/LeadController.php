@@ -14,11 +14,15 @@ class LeadController extends Controller
     {
         // Honeypot check — if 'website' field is filled, it's a bot
         if ($request->filled('website')) {
-            return redirect()->back()->with('success', __('content.lead_form.success_msg') ?? 'Your message has been sent successfully!');
+            return redirect()->back()->with('success', 'Terima kasih, formulir konsultasi Anda telah terkirim.');
         }
 
-        Lead::create($request->validated());
+        $validated = $request->validated();
+        $validated['status'] = 'new';
+        $validated['consent_given'] = $request->boolean('consent_given', true);
 
-        return redirect()->back()->with('success', __('content.lead_form.success_msg') ?? 'Pesan Anda berhasil terkirim!');
+        Lead::create($validated);
+
+        return redirect()->back()->with('success', 'Terima kasih! Permintaan konsultasi Anda telah diterima. Tim konsultan pendidikan Erlass akan segera menghubungi Anda dalam 1x24 jam kerja.');
     }
 }

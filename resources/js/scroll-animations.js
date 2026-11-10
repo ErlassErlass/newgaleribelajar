@@ -4,9 +4,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export function initScrollAnimations() {
-    // Catatan: Tidak memblokir animasi untuk reduced-motion karena
-    // animasi di sini hanya fade dan slide sederhana yang tidak mengganggu.
-    // Elemen yang opacity:0 tidak akan muncul sama sekali jika animasi diblokir.
+    // Check for prefers-reduced-motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        gsap.set(".about-image, .about-content > *, .book-card, .blog-card, .section-reveal", {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            scale: 1,
+            rotation: 0
+        });
+        return;
+    }
 
     // 1. HORIZONTAL SCROLL (PROGRAMS SECTION)
     const horizontalSection = document.querySelector("#programs");
@@ -14,20 +22,25 @@ export function initScrollAnimations() {
         const scrollContainer = document.querySelector("#horizontal-scroll-container");
         const panels = gsap.utils.toArray(".h-panel");
 
-        // Set the width of the container dynamically based on number of panels
-        gsap.set(scrollContainer, { width: (panels.length * 100) + "vw" });
+        // Only enable horizontal scroll on desktop (>= 768px)
+        const isDesktop = window.matchMedia("(min-width: 768px)").matches;
 
-        gsap.to(panels, {
-            xPercent: -100 * (panels.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: horizontalSection,
-                pin: true,
-                scrub: 1,
-                // snap: 1 / (panels.length - 1), // Optional: snap to sections
-                end: () => "+=" + scrollContainer.offsetWidth
-            }
-        });
+        if (isDesktop && scrollContainer && panels.length) {
+            // Set the width of the container dynamically based on number of panels
+            gsap.set(scrollContainer, { width: (panels.length * 100) + "vw" });
+
+            gsap.to(panels, {
+                xPercent: -100 * (panels.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: horizontalSection,
+                    pin: true,
+                    scrub: 1,
+                    // snap: 1 / (panels.length - 1), // Optional: snap to sections
+                    end: () => "+=" + scrollContainer.offsetWidth
+                }
+            });
+        }
     }
 
     // About Section

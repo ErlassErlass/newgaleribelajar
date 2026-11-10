@@ -1,32 +1,45 @@
 # 📖 Dokumentasi Proyek Galeribelajar.com (Erlass)
 
-> **Versi:** 2.0  
-> **Terakhir Diperbarui:** 21 Mei 2026  
-> **Stack:** Laravel 12 + Tailwind CSS 4 + Vite 7 + GSAP + Lenis + Three.js
+> **Versi:** 2.1  
+> **Terakhir Diperbarui:** 10 November 2026  
+> **Stack:** Laravel 12 + Filament 4 Admin + Tailwind CSS 4 + Vite 7 + GSAP + MySQL (Integrasi Erlass CRM)
 
 ---
 
 ## Daftar Isi
 
 1. [Gambaran Umum](#1-gambaran-umum)
-2. [Struktur Folder](#2-struktur-folder)
-3. [Teknologi & Dependencies](#3-teknologi--dependencies)
-4. [Identitas Visual (Design System)](#4-identitas-visual-design-system)
-5. [Halaman & Routing](#5-halaman--routing)
-6. [Breakdown Section Landing Page](#6-breakdown-section-landing-page)
-7. [JavaScript Modules](#7-javascript-modules)
-8. [CSS Architecture](#8-css-architecture)
-9. [Internasionalisasi (i18n)](#9-internasionalisasi-i18n)
-10. [Cara Menjalankan Lokal](#10-cara-menjalankan-lokal)
-11. [Troubleshooting](#11-troubleshooting)
+2. [Integrasi Data Erlass CRM](#2-integrasi-data-erlass-crm)
+3. [Struktur Folder](#3-struktur-folder)
+4. [Teknologi & Dependencies](#4-teknologi--dependencies)
+5. [Identitas Visual (Design System)](#5-identitas-visual-design-system)
+6. [Halaman & Routing](#6-halaman--routing)
+7. [Breakdown Section Landing Page](#7-breakdown-section-landing-page)
+8. [Filament Admin Panel](#8-filament-admin-panel)
+9. [Cara Menjalankan & Sinkronisasi](#9-cara-menjalankan--sinkronisasi)
+10. [Troubleshooting](#10-troubleshooting)
 
 ---
 
 ## 1. Gambaran Umum
 
-**Galeribelajar.com** adalah website landing page B2B untuk **Erlass** (PT Erlass Prokreatif Indonesia) — mitra pendidikan yang menyediakan program **Coding, Robotika, IoT, AI, dan P5** untuk sekolah K-12 di Indonesia. Website ini dibangun menggunakan framework Laravel dengan pendekatan Blade Components, dan menyertakan animasi interaktif menggunakan GSAP + Lenis + Three.js. Tema visual menggunakan *kids storybook aesthetic* yang playful dan profesional.
+**Galeribelajar.com** adalah website corporate dan landing page B2B untuk **Erlass** (PT Erlass Prokreatif Indonesia) — mitra pendidikan resmi penyedia program **Coding, Robotika, Micro:bit, LMS Kaizen, dan Asesmen Bakat Siswa** untuk jenjang SD, SMP, dan SMA di Indonesia. Website dirancang dengan gaya *Modern Professional EdTech B2B* (anti-AI slop, tanpa ornamen kekanak-kanakan) yang ditujukan untuk meyakinkan kepala sekolah, ketua yayasan, dan dinas pendidikan. Master data kategori, produk, dan sekolah mitra disinkronkan langsung dari basis data operasional **Erlass CRM** (`erlass_data`).
 
 ---
+
+## 2. Integrasi Data Erlass CRM
+
+Aplikasi terhubung langsung ke database MySQL Erlass CRM (`erlass_data`) melalui koneksi `crm` pada `config/database.php`.
+
+Tersedia command Artisan otomatis untuk sinkronisasi data:
+```bash
+php artisan app:sync-crm-data
+```
+
+Hasil sinkronisasi:
+- **Categories:** 7 kategori resmi (Coding & Informatika, Micro:bit & IoT, Robotika Edukasi, Asesmen Bakat, LMS Erlass Academy, Modul Cetak & LKPD, Modul Digital PDF).
+- **Products:** 130 produk terdata dengan perhitungan jumlah deal SP dari `spdata_spdetail`.
+- **Partners:** 407 sekolah mitra riil terverifikasi dengan status `Deal` pada jenjang TK/SD/SMP/SMA/SMK.
 
 ## 2. Struktur Folder
 

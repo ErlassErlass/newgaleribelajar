@@ -1,350 +1,691 @@
 @extends('layouts.app')
 
-@section('title', 'Erlass - Mitra Pelatihan, Ekskul & P5 di Sekolah')
+@section('title', 'Erlass - Solusi Pembelajaran Coding, Robotik, LMS & Asesmen Sekolah')
 
 @section('content')
 
-<!-- Page Preloader -->
-<div id="page-preloader" class="fixed inset-0 z-[100] bg-kids-yellow flex flex-col items-center justify-center">
-    <div class="overflow-hidden mb-4">
-        <h1 id="preloader-text" class="font-serif font-extrabold text-6xl md:text-8xl text-kids-navy translate-y-[110%]">ERLASS</h1>
-    </div>
-    <div class="w-48 h-1 bg-white/30 rounded-full overflow-hidden">
-        <div id="preloader-bar" class="h-full bg-kids-navy w-0 rounded-full"></div>
-    </div>
-</div>
-
-<!-- Noise Overlay -->
-<div class="noise-overlay pointer-events-none fixed inset-0 z-[100] opacity-[0.03]"></div>
-
-<!-- 3D Background Canvas -->
-<canvas id="hero-canvas" class="fixed top-0 left-0 w-full h-full -z-10 opacity-30 pointer-events-none"></canvas>
-
-<!-- Hero Section -->
-<x-hero />
-
-<!-- About Erlass Section -->
-<section id="about" class="py-32 bg-white relative overflow-hidden section-reveal">
+<!-- ============================================
+     HERO SECTION — Professional EdTech Corporate
+     ============================================ -->
+<section class="relative bg-gradient-to-b from-slate-900 via-[#0a192f] to-[#0d213f] text-white pt-24 pb-20 overflow-hidden">
+    <!-- Subtle Background Grid & Glow -->
+    <div class="absolute inset-0 hero-grid-pattern opacity-40 pointer-events-none"></div>
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#1d758b]/25 blur-[120px] rounded-full pointer-events-none"></div>
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-5xl mx-auto items-center text-center">
+        <div class="text-center max-w-4xl mx-auto space-y-6">
+            
+            <!-- Category Tag Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-cyan-300 text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Mitra Resmi Transformasi Digital Sekolah di Indonesia</span>
+            </div>
 
-            <!-- Text Content -->
-            <div class="space-y-8 about-content relative z-20 flex flex-col items-center">
-                <div class="inline-block bg-kids-pink text-kids-navy px-5 py-1.5 font-sans font-bold text-sm tracking-wide shadow-sm">
-                    🏫 {{ __('content.about.badge') }}
+            <!-- Main Headline -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                Mempersiapkan Generasi Masa Depan Melalui <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-sky-400">Teknologi dan Inovasi</span>
+            </h1>
+
+            <!-- Tagline / Subtitle -->
+            <p class="text-base sm:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal">
+                Solusi pembelajaran terintegrasi: <strong class="text-white font-semibold">Coding, Robotik, Informatika, Kecerdasan Artifisial, Asesmen Bakat, dan LMS</strong> berstandar Kurikulum Merdeka untuk jenjang SD, SMP, hingga SMA.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#solutions" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#1d758b] to-[#0284c7] hover:from-[#155a6e] hover:to-[#0369a1] text-white font-bold text-base shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2">
+                    <span>Jelajahi Solusi Pendidikan</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-100 hover:text-white font-semibold text-base border border-slate-700 transition-all duration-200 flex items-center justify-center gap-2">
+                    <span>Konsultasi Sekolah</span>
+                    <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <!-- Verified Key Proof Strip -->
+            <div class="pt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 border-t border-slate-800/80 text-left">
+                <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-800">
+                    <p class="text-2xl sm:text-3xl font-black text-cyan-400">{{ $totalSchools }}+</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium">Sekolah Mitra Terverifikasi</p>
                 </div>
-                
-                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#111111] leading-tight">
-                    {{ __('content.about.heading_1') }} <br/>{{ __('content.about.heading_2') }}
-                </h2>
-                
-                <p class="font-sans text-lg text-gray-700 leading-relaxed max-w-xl">
-                    {{ __('content.about.description') }}
-                </p>
+                <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-800">
+                    <p class="text-2xl sm:text-3xl font-black text-emerald-400">{{ number_format($totalDeals, 0, ',', '.') }}+</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium">Kontrak SP Terlaksana</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-800">
+                    <p class="text-2xl sm:text-3xl font-black text-amber-400">{{ count($categories) }} Pilar</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium">Solusi Edukasi Digital</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-800/40 border border-slate-800">
+                    <p class="text-2xl sm:text-3xl font-black text-purple-400">100%</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium">Kurikulum Merdeka & P5</p>
+                </div>
+            </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 text-left">
-                    @foreach(__('content.stats') as $stat)
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 flex items-center justify-center text-4xl flex-shrink-0">{{ $stat['icon'] ?? '🎯' }}</div>
-                        <span class="font-bold text-[#111111] font-sans">{{ $stat['value'] }} {{ $stat['label'] }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SOCIAL PROOF MARQUEE — 400+ Sekolah Mitra SP Deals
+     ============================================ -->
+<section id="partners" class="py-12 bg-white border-y border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">
+            Telah Dipercaya oleh {{ $totalSchools }}+ Sekolah Unggulan di Seluruh Indonesia
+        </p>
+    </div>
+
+    <!-- Infinite Marquee Row 1 -->
+    <div class="flex whitespace-nowrap overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div class="flex gap-4 animate-marquee-left">
+            @foreach($partners->take(20) as $school)
+            <div class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200/80 shadow-xs hover:border-[#1d758b]/50 hover:bg-cyan-50/30 transition-all shrink-0">
+                <div class="w-8 h-8 rounded-lg bg-[#1d758b]/10 text-[#1d758b] flex items-center justify-center font-bold text-xs shrink-0">
+                    {{ $school->level ?? 'SCH' }}
+                </div>
+                <div class="text-left">
+                    <p class="text-xs font-bold text-slate-800 leading-tight">{{ $school->name }}</p>
+                    <p class="text-[10px] text-slate-500">{{ $school->city ?? 'Indonesia' }} · {{ $school->total_deals }} Program</p>
+                </div>
+            </div>
+            @endforeach
+            {{-- Duplicated for seamless loop --}}
+            @foreach($partners->take(20) as $school)
+            <div class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200/80 shadow-xs hover:border-[#1d758b]/50 hover:bg-cyan-50/30 transition-all shrink-0" aria-hidden="true">
+                <div class="w-8 h-8 rounded-lg bg-[#1d758b]/10 text-[#1d758b] flex items-center justify-center font-bold text-xs shrink-0">
+                    {{ $school->level ?? 'SCH' }}
+                </div>
+                <div class="text-left">
+                    <p class="text-xs font-bold text-slate-800 leading-tight">{{ $school->name }}</p>
+                    <p class="text-[10px] text-slate-500">{{ $school->city ?? 'Indonesia' }} · {{ $school->total_deals }} Program</p>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+
+    <!-- Infinite Marquee Row 2 (Reverse direction) -->
+    <div class="flex whitespace-nowrap overflow-hidden mt-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div class="flex gap-4 animate-marquee-right">
+            @foreach($partners->skip(20)->take(20) as $school)
+            <div class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200/80 shadow-xs hover:border-[#1d758b]/50 hover:bg-cyan-50/30 transition-all shrink-0">
+                <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0">
+                    {{ $school->level ?? 'SCH' }}
+                </div>
+                <div class="text-left">
+                    <p class="text-xs font-bold text-slate-800 leading-tight">{{ $school->name }}</p>
+                    <p class="text-[10px] text-slate-500">{{ $school->city ?? 'Indonesia' }} · {{ $school->total_deals }} Program</p>
+                </div>
+            </div>
+            @endforeach
+            {{-- Duplicated for seamless loop --}}
+            @foreach($partners->skip(20)->take(20) as $school)
+            <div class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200/80 shadow-xs hover:border-[#1d758b]/50 hover:bg-cyan-50/30 transition-all shrink-0" aria-hidden="true">
+                <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0">
+                    {{ $school->level ?? 'SCH' }}
+                </div>
+                <div class="text-left">
+                    <p class="text-xs font-bold text-slate-800 leading-tight">{{ $school->name }}</p>
+                    <p class="text-[10px] text-slate-500">{{ $school->city ?? 'Indonesia' }} · {{ $school->total_deals }} Program</p>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 1: OUR EDUCATION SOLUTIONS (4 Solusi Utama)
+     ============================================ -->
+<section id="solutions" class="py-24 bg-slate-50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#1d758b]/10 text-[#1d758b] text-xs font-bold tracking-wider uppercase">
+                Our Education Solutions
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0a192f] tracking-tight">
+                Solusi Pendidikan Terintegrasi untuk Sekolah Anda
+            </h2>
+            <p class="text-slate-600 text-base leading-relaxed">
+                Dirancang spesifik untuk mendukung peningkatan mutu akademik, literasi teknologi, dan pemetaan potensi siswa secara menyeluruh.
+            </p>
+        </div>
+
+        <!-- 4 Core Solution Cards (Bento Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Solution 1: Coding & Informatika -->
+            <div class="product-card bg-white rounded-2xl p-7 border border-slate-200/80 flex flex-col justify-between shadow-xs">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                     </div>
-                    @endforeach
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Solusi 01</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Coding & Informatika</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Kurikulum koding visual Scratch, Python tingkat lanjut, dan buku kerja informatika berjenjang dari kelas 1 SD hingga SMA.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Ekskul Coding Scratch & Python
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Modul Belajar LKPD TIK Jilid 1–6
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Projek Portofolio & Game Coding
+                        </li>
+                    </ul>
                 </div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#1d758b] hover:text-[#0284c7] pt-4 border-t border-slate-100">
+                    <span>Minta Penawaran Program</span>
+                    <span class="text-sm">→</span>
+                </a>
+            </div>
 
-                <div class="pt-6">
-                    <a href="#programs" class="group relative inline-flex items-center justify-center px-10 py-4 bg-kids-yellow text-kids-navy font-bold rounded-full transition-all duration-300 hover:scale-105 shadow-[0_8px_0_rgba(153,225,255,1)] hover:shadow-[0_10px_0_rgba(153,225,255,1)]">
-                        <span class="font-sans text-lg tracking-wide">{{ __('content.about.cta') }}</span>
+            <!-- Solution 2: Robotic & Micro:bit -->
+            <div class="product-card bg-white rounded-2xl p-7 border border-slate-200/80 flex flex-col justify-between shadow-xs">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Solusi 02</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Robotic & Micro:bit</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Eksplorasi rekayasa robotika praktis dengan Micro:bit Learning Kit, Erboblox, Jimu Robot, dan mikrokontroler sensor IoT.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Paket Kit Micro:bit & Aksesoris
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Robotik Explorer & Erboblox
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Praktik Sensor & Mekatronika
+                        </li>
+                    </ul>
+                </div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#1d758b] hover:text-[#0284c7] pt-4 border-t border-slate-100">
+                    <span>Minta Penawaran Program</span>
+                    <span class="text-sm">→</span>
+                </a>
+            </div>
+
+            <!-- Solution 3: Erlass Academy LMS -->
+            <div class="product-card bg-white rounded-2xl p-7 border border-slate-200/80 flex flex-col justify-between shadow-xs">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Solusi 03</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Erlass Academy LMS</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Platform manajemen pembelajaran modern untuk monitoring kemajuan belajar siswa, tugas, bank soal digital, dan rapor berkala.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Manajemen Kelas & Materi Digital
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Bank Soal & Ujian CBT Sekolah
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Dashboard Analitik Kepala Sekolah
+                        </li>
+                    </ul>
+                </div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#1d758b] hover:text-[#0284c7] pt-4 border-t border-slate-100">
+                    <span>Minta Penawaran Program</span>
+                    <span class="text-sm">→</span>
+                </a>
+            </div>
+
+            <!-- Solution 4: Student Assessment -->
+            <div class="product-card bg-white rounded-2xl p-7 border border-slate-200/80 flex flex-col justify-between shadow-xs">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Solusi 04</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Student Assessment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Asesmen Potensi, Minat, dan Bakat (PMB) siswa dari kelas 1 hingga 12 untuk panduan penjurusan akademik dan karier masa depan.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Pemetaan Psikometrik Ilmiah
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Laporan Individual per Siswa
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-emerald-500 font-bold">✓</span> Rekomendasi Konseling & Penjurusan
+                        </li>
+                    </ul>
+                </div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-bold text-[#1d758b] hover:text-[#0284c7] pt-4 border-t border-slate-100">
+                    <span>Minta Penawaran Program</span>
+                    <span class="text-sm">→</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 2: WHY ERLASS? 5 PILAR SOLUSI PENDIDIKAN
+     ============================================ -->
+<section id="why-erlass" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-500/10 text-amber-700 text-xs font-bold tracking-wider uppercase">
+                    Why Erlass?
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0a192f] tracking-tight leading-tight">
+                    Bukan Sekadar Produk, Tetapi Solusi Pendidikan
+                </h2>
+                <p class="text-slate-600 text-base leading-relaxed">
+                    Erlass memadukan kurikulum berstandar Kurikulum Merdeka, perangkat praktikum teruji, dan pendampingan instruktur berpengalaman agar program teknologi di sekolah Anda berjalan konsisten dan terukur.
+                </p>
+                <div class="pt-2">
+                    <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0a192f] hover:bg-[#155a6e] text-white font-bold text-sm shadow-md transition-all">
+                        <span>Jadwalkan Konsultasi Sekolah</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
 
-        </div>
-    </div>
-
-    <!-- Handprints Decorative Right -->
-    <div class="absolute top-0 right-0 w-24 h-full pointer-events-none hidden lg:flex flex-col justify-between items-end opacity-80 z-0 py-8" aria-hidden="true">
-        <svg data-speed="1.1" class="hero-float w-16 h-16 text-[#1d758b] transform -translate-x-4 rotate-12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5,10.8L19,10.2l1.6-4.5c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6L17,9.5l-0.7-3.6C16.2,5.3,15.7,5,15.2,5.1 c-0.5,0.1-0.9,0.6-0.8,1.2L15,10l-2.4-2.8c-0.4-0.4-1-0.5-1.4-0.1s-0.5,1-0.1,1.4l3.1,3.7c-0.7,0.7-1.4,1.6-1.6,2.7 c-0.2,1.3,0.2,2.7,1.1,3.7c0.8,1,1.9,1.5,3.2,1.5c0.4,0,0.8-0.1,1.2-0.2c2.1-0.7,3.3-2.9,2.8-5C20.6,13.6,19.9,12.5,19,11.8L21.5,10.8z"/></svg>
-        <svg data-speed="1.3" class="hero-float w-20 h-20 text-[#99e1ff] transform translate-x-2 -rotate-12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5,10.8L19,10.2l1.6-4.5c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6L17,9.5l-0.7-3.6C16.2,5.3,15.7,5,15.2,5.1 c-0.5,0.1-0.9,0.6-0.8,1.2L15,10l-2.4-2.8c-0.4-0.4-1-0.5-1.4-0.1s-0.5,1-0.1,1.4l3.1,3.7c-0.7,0.7-1.4,1.6-1.6,2.7 c-0.2,1.3,0.2,2.7,1.1,3.7c0.8,1,1.9,1.5,3.2,1.5c0.4,0,0.8-0.1,1.2-0.2c2.1-0.7,3.3-2.9,2.8-5C20.6,13.6,19.9,12.5,19,11.8L21.5,10.8z"/></svg>
-        <svg data-speed="0.9" class="hero-float w-16 h-16 text-[#ffb3c6] transform -translate-x-6 rotate-45" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5,10.8L19,10.2l1.6-4.5c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6L17,9.5l-0.7-3.6C16.2,5.3,15.7,5,15.2,5.1 c-0.5,0.1-0.9,0.6-0.8,1.2L15,10l-2.4-2.8c-0.4-0.4-1-0.5-1.4-0.1s-0.5,1-0.1,1.4l3.1,3.7c-0.7,0.7-1.4,1.6-1.6,2.7 c-0.2,1.3,0.2,2.7,1.1,3.7c0.8,1,1.9,1.5,3.2,1.5c0.4,0,0.8-0.1,1.2-0.2c2.1-0.7,3.3-2.9,2.8-5C20.6,13.6,19.9,12.5,19,11.8L21.5,10.8z"/></svg>
-        <svg data-speed="1.2" class="hero-float w-24 h-24 text-[#ff7f50] transform translate-x-4 -rotate-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5,10.8L19,10.2l1.6-4.5c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6L17,9.5l-0.7-3.6C16.2,5.3,15.7,5,15.2,5.1 c-0.5,0.1-0.9,0.6-0.8,1.2L15,10l-2.4-2.8c-0.4-0.4-1-0.5-1.4-0.1s-0.5,1-0.1,1.4l3.1,3.7c-0.7,0.7-1.4,1.6-1.6,2.7 c-0.2,1.3,0.2,2.7,1.1,3.7c0.8,1,1.9,1.5,3.2,1.5c0.4,0,0.8-0.1,1.2-0.2c2.1-0.7,3.3-2.9,2.8-5C20.6,13.6,19.9,12.5,19,11.8L21.5,10.8z"/></svg>
-        <svg data-speed="0.8" class="hero-float w-16 h-16 text-[#99e1ff] transform -translate-x-2 rotate-12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5,10.8L19,10.2l1.6-4.5c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6L17,9.5l-0.7-3.6C16.2,5.3,15.7,5,15.2,5.1 c-0.5,0.1-0.9,0.6-0.8,1.2L15,10l-2.4-2.8c-0.4-0.4-1-0.5-1.4-0.1s-0.5,1-0.1,1.4l3.1,3.7c-0.7,0.7-1.4,1.6-1.6,2.7 c-0.2,1.3,0.2,2.7,1.1,3.7c0.8,1,1.9,1.5,3.2,1.5c0.4,0,0.8-0.1,1.2-0.2c2.1-0.7,3.3-2.9,2.8-5C20.6,13.6,19.9,12.5,19,11.8L21.5,10.8z"/></svg>
-</section>
-
-<!-- Why Choose Us Section -->
-@include('sections.why-choose-us')
-
-<!-- Programs Section (Horizontal Scroll) -->
-<section id="programs" class="relative bg-kids-navy text-white overflow-hidden">
-    <div id="horizontal-scroll-container" class="w-full flex h-screen">
-        
-        <!-- Panel 1: Intro -->
-        <div tabindex="0" class="h-panel w-screen h-screen flex-shrink-0 flex items-center justify-center relative p-8 md:p-24 border-r border-white/10 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-inset focus-visible:ring-kids-yellow">
-            <div class="absolute top-12 left-12 inline-block bg-kids-pink text-[#111111] px-5 py-2 font-bold text-sm tracking-wide rounded-full z-20">
-                🎯 {{ __('content.programs.badge') }}
-            </div>
-            
-            <div class="max-w-7xl w-full text-center z-10">
-                <div class="space-y-8">
-                    <h2 class="font-serif text-5xl md:text-7xl font-bold leading-tight">
-                        {{ __('content.programs.heading') }}
-                    </h2>
-                    <p class="font-sans text-xl text-white/70 max-w-2xl mx-auto">
-                        {{ __('content.programs.subheading') }}
+            <!-- 5 Pillars Grid -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                
+                <!-- Pilar 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-[#1d758b]/10 text-[#1d758b] flex items-center justify-center font-bold mb-4">
+                        1
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Kurikulum Adaptif</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Terstruktur dari dasar logika hingga implementasi nyata, selaras dengan capaian pembelajaran Kurikulum Merdeka dan P5.
                     </p>
                 </div>
+
+                <!-- Pilar 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-[#1d758b]/10 text-[#1d758b] flex items-center justify-center font-bold mb-4">
+                        2
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Platform Digital Terintegrasi</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Dilengkapi LMS Erlass Academy untuk memantau kehadiran, progres materi, submission tugas, dan asesmen secara real-time.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-[#1d758b]/10 text-[#1d758b] flex items-center justify-center font-bold mb-4">
+                        3
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Perangkat Pembelajaran Lengkap</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Penyediaan learning kit Micro:bit, robotik Erboblox/Jimu, serta modul cetak dan panduan praktikum resmi tanpa membebani sekolah.
+                    </p>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:bg-white hover:shadow-md transition-all">
+                    <div class="w-10 h-10 rounded-lg bg-[#1d758b]/10 text-[#1d758b] flex items-center justify-center font-bold mb-4">
+                        4
+                    </div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Pendampingan & Pembinaan Guru</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Instruktur berpengalaman mengajar langsung ke sekolah didampingi sertifikasi dan pelatihan ToT (Training of Trainer) berkala bagi guru.
+                    </p>
+                </div>
+
+                <!-- Pilar 5 (Spans 2 columns) -->
+                <div class="sm:col-span-2 p-6 rounded-2xl bg-gradient-to-r from-slate-900 to-[#1d758b] text-white shadow-md">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 text-cyan-300 flex items-center justify-center font-bold mb-4">
+                        5
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">Ekosistem Belajar Berkelanjutan</h3>
+                    <p class="text-slate-200 text-xs leading-relaxed">
+                        Menghubungkan sekolah dengan kompetisi koding & robotika nasional, pameran karya siswa, seminar edukasi, dan jejaring komunitas sekolah se-Indonesia.
+                    </p>
+                </div>
+
             </div>
+
         </div>
-
-        @php
-            $colors = ['kids-yellow', 'kids-blue', 'kids-mint', 'kids-pink'];
-        @endphp
-
-        @foreach($programs as $index => $program)
-            @php
-                $color = $colors[$index % count($colors)];
-                $imagePlaceholderColor = match($color) {
-                    'kids-yellow' => 'fce03a',
-                    'kids-blue' => '99e1ff',
-                    'kids-mint' => 'a2e8dd',
-                    'kids-pink' => 'ffb3c6',
-                    default => 'ffffff',
-                };
-            @endphp
-            <!-- Panel: {{ $program->name }} -->
-            <div tabindex="0" class="h-panel w-screen h-screen flex-shrink-0 flex items-center justify-center relative p-8 md:p-24 border-r border-white/10 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-inset focus-visible:ring-{{ $color }}">
-                <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
-                    
-                    @if($index % 2 != 0)
-                    <!-- Image Placeholder Left -->
-                    <div class="hidden lg:flex justify-center">
-                        @if($program->thumbnail_image)
-                        <img src="{{ asset('storage/' . $program->thumbnail_image) }}" alt="{{ $program->name }}" class="w-full max-w-md rounded-3xl shadow-2xl rotate-[-3deg] hover:rotate-0 transition-transform duration-500 border-8 border-white/10 object-cover aspect-square">
-                        @else
-                        <img src="https://placehold.co/600x600/{{ $imagePlaceholderColor }}/111111?text={{ urlencode($program->name) }}" alt="{{ $program->name }}" class="w-full max-w-md rounded-3xl shadow-2xl rotate-[-3deg] hover:rotate-0 transition-transform duration-500 border-8 border-white/10">
-                        @endif
-                    </div>
-                    @endif
-
-                    <div class="glass-pro rounded-3xl p-10 shadow-2xl relative overflow-hidden group border-{{ $color }}/30">
-                        <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-{{ $color }} blur-[60px] opacity-30 group-hover:opacity-60 transition-opacity"></div>
-                        <h3 class="font-sans text-4xl font-black mb-4">{{ $program->name }}</h3>
-                        <p class="text-white/80 text-lg leading-relaxed mb-8">{{ $program->short_description }}</p>
-                        <a href="{{ route('programs.show', $program->slug) }}" class="inline-flex items-center gap-2 font-bold hover:text-{{ $color }} transition-colors">
-                            {{ __('content.programs.see_curriculum') }} <span class="text-xl">→</span>
-                        </a>
-                    </div>
-
-                    @if($index % 2 == 0)
-                    <!-- Image Placeholder Right -->
-                    <div class="hidden lg:flex justify-center order-first lg:order-last">
-                        @if($program->thumbnail_image)
-                        <img src="{{ asset('storage/' . $program->thumbnail_image) }}" alt="{{ $program->name }}" class="w-full max-w-md rounded-3xl shadow-2xl rotate-[3deg] hover:rotate-0 transition-transform duration-500 border-8 border-white/10 object-cover aspect-square">
-                        @else
-                        <img src="https://placehold.co/600x600/{{ $imagePlaceholderColor }}/111111?text={{ urlencode($program->name) }}" alt="{{ $program->name }}" class="w-full max-w-md rounded-3xl shadow-2xl rotate-[3deg] hover:rotate-0 transition-transform duration-500 border-8 border-white/10">
-                        @endif
-                    </div>
-                    @endif
-                </div>
-                 <!-- Decorative Large Text Background -->
-                <div class="absolute {{ $index % 2 == 0 ? 'right-0' : 'left-0' }} top-1/2 -translate-y-1/2 font-serif text-[15rem] font-black text-white/5 whitespace-nowrap pointer-events-none select-none uppercase">
-                    {{ Str::words($program->name, 1, '') }}.
-                </div>
-            </div>
-        @endforeach
-
     </div>
 </section>
 
-<!-- Clients Marquee -->
-@include('sections.clients')
-
-<!-- Video Section -->
-@include('sections.videos')
-
-<!-- How It Works Section -->
-<section id="how-it-works" class="py-24 bg-[#fafafa] relative section-reveal">
+<!-- ============================================
+     SECTION 3: FEATURED PRODUCTS FROM ERLASS CRM
+     ============================================ -->
+<section id="products" class="py-24 bg-slate-50 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 space-y-6">
-            <div class="inline-block bg-kids-mint text-kids-navy px-5 py-1.5 font-sans font-bold text-sm tracking-wide shadow-sm">
-                {{ __('content.how_it_works.badge') }}
-            </div>
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-[#111111]">
-                {{ __('content.how_it_works.heading') }}
-            </h2>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
-            <!-- Connecting Line -->
-            <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-1 bg-gray-200 -z-10 transform -translate-y-1/2"></div>
-            
-            @foreach(__('content.how_it_works.steps') as $index => $step)
-            <div class="relative flex flex-col items-center text-center group">
-                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center text-4xl shadow-xl border-4 border-white z-10 group-hover:scale-110 transition-transform duration-300">
-                    {{ $step['icon'] }}
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#1d758b]/10 text-[#1d758b] text-xs font-bold tracking-wider uppercase mb-3">
+                    Katalog Unggulan
                 </div>
-                <div class="mt-8 space-y-4">
-                    <div class="inline-block bg-kids-yellow text-kids-navy font-black text-sm px-3 py-1 rounded-full">LANGKAH {{ $index + 1 }}</div>
-                    <h3 class="font-sans font-bold text-2xl text-[#111111]">{{ $step['title'] }}</h3>
-                    <p class="font-sans text-[#111111]/70 leading-relaxed">{{ $step['desc'] }}</p>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- Testimoni Section -->
-<section id="testimoni" class="py-32 bg-white relative section-reveal">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16 space-y-6">
-            <div class="inline-block bg-kids-pink text-kids-navy px-5 py-1.5 font-sans font-bold text-sm tracking-wide shadow-sm">
-                💬 {{ __('content.testimoni.badge') }}
-            </div>
-            <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#111111]">
-                {{ __('content.testimoni.heading') }}
-            </h2>
-            <p class="font-sans text-lg text-[#111111]/80 max-w-2xl mx-auto font-medium">
-                {{ __('content.testimoni.subheading') }}
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            @foreach(__('content.testimoni.items') as $item)
-            <div class="bg-[#fafafa] border border-gray-100 rounded-3xl p-8 relative hover:shadow-[0_8px_0_rgba(153,225,255,0.5)] hover:-translate-y-1 transition-all duration-300">
-                <div class="text-kids-yellow text-3xl mb-4">★★★★★</div>
-                <p class="font-sans text-[#111111]/80 leading-relaxed mb-6 italic">"{{ $item['quote'] }}"</p>
-                <div class="flex items-center gap-4">
-                    <img src="{{ asset($item['image']) }}" alt="{{ $item['name'] }}" loading="lazy" class="w-14 h-14 rounded-full object-cover border-2 border-kids-yellow">
-                    <div>
-                        <p class="font-bold text-[#111111]">{{ $item['name'] }}</p>
-                        <p class="text-sm text-[#111111]/60">{{ $item['role'] }}</p>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section id="faq" class="py-20 bg-white relative section-reveal">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 space-y-4">
-            <div class="inline-block bg-kids-mint text-kids-navy px-5 py-1.5 font-sans font-bold text-sm tracking-wide shadow-sm">
-                ❓ {{ __('content.faq.badge') }}
-            </div>
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#111111]">
-                {{ __('content.faq.heading') }}
-            </h2>
-        </div>
-        
-        <div class="space-y-4">
-            @foreach(__('content.faq.items') as $faq)
-            <details class="group bg-[#fafafa] border border-gray-100 rounded-2xl p-6 open:bg-white open:shadow-lg open:border-kids-mint transition-all duration-300">
-                <summary class="font-sans font-bold text-lg text-[#111111] cursor-pointer flex justify-between items-center list-none">
-                    {{ $faq['q'] }}
-                    <span class="text-kids-navy group-open:rotate-180 transition-transform duration-300">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
-                    </span>
-                </summary>
-                <p class="font-sans text-[#111111]/80 mt-4 leading-relaxed pr-8">
-                    {{ $faq['a'] }}
+                <h2 class="text-3xl font-extrabold text-[#0a192f] tracking-tight">
+                    Program & Perangkat Paling Banyak Diminati Sekolah
+                </h2>
+                <p class="text-slate-600 text-sm mt-2">
+                    Data riil terverifikasi berdasarkan ratusan implementasi SP deal aktif di sekolah mitra Erlass.
                 </p>
-            </details>
+            </div>
+            <div>
+                <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-800 hover:border-[#1d758b] text-xs font-bold shadow-xs transition-all">
+                    <span>Unduh Brosur & Katalog PDF</span>
+                    <svg class="w-4 h-4 text-[#1d758b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            @foreach($featuredProducts as $prod)
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-block px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-[11px] font-bold">
+                            {{ $prod->sku }}
+                        </span>
+                        <span class="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">
+                            {{ $prod->deal_count }}+ Sekolah Deal
+                        </span>
+                    </div>
+
+                    <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">
+                        {{ $prod->name }}
+                    </h3>
+
+                    <p class="text-slate-500 text-xs leading-relaxed mb-4 line-clamp-3">
+                        {{ $prod->summary ?? $prod->description }}
+                    </p>
+
+                    <div class="flex flex-wrap gap-1 mb-4">
+                        @if(is_array($prod->education_levels))
+                            @foreach($prod->education_levels as $lvl)
+                            <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-semibold">
+                                {{ $lvl }}
+                            </span>
+                            @endforeach
+                        @endif
+                        <span class="px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 text-[10px] font-semibold">
+                            {{ $prod->product_type ?? 'Jasa' }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100 mt-auto">
+                    <a href="#contact" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-slate-100 hover:bg-[#1d758b] text-slate-700 hover:text-white font-bold text-xs transition-colors">
+                        <span>Pilih Program Ini</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
             @endforeach
         </div>
     </div>
 </section>
 
-<!-- Contact / Lead Form Section -->
-<section id="contact" class="py-32 bg-kids-yellow relative overflow-hidden section-reveal">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-12 space-y-4">
-            <div class="inline-block bg-white text-kids-navy px-5 py-1.5 font-sans font-bold text-sm tracking-wide shadow-sm">
-                {{ __('content.lead_form.title') }}
+<!-- ============================================
+     SECTION 4: LET'S COLLABORATE (Mitra & Institusi)
+     ============================================ -->
+<section id="collaborate" class="py-24 bg-[#0a192f] text-white relative overflow-hidden">
+    <div class="absolute inset-0 hero-grid-pattern opacity-20 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-cyan-300 text-xs font-bold tracking-wider uppercase">
+                Let's Collaborate
             </div>
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-[#111111]">
-                {{ __('content.contact.heading') }}
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Mari Wujudkan Transformasi Pendidikan Bersama Erlass
             </h2>
-            <p class="font-sans text-lg text-[#111111]/80 max-w-2xl mx-auto">
-                {{ __('content.lead_form.subtitle') }}
+            <p class="text-slate-300 text-base leading-relaxed">
+                Kami siap berkolaborasi merancang skema kerja sama yang fleksibel, akuntabel, dan berdampak nyata bagi ekosistem pendidikan Anda.
             </p>
         </div>
 
-        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Box 1: Sekolah -->
+            <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Sekolah & Madrasah</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                        Penyelenggaraan ekstrakurikuler koding & robotik, pengadaan modul TIK, dan workshop teknologi terjadwal.
+                    </p>
+                </div>
+                <a href="#contact" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
+                    <span>Ajukan Kerja Sama Sekolah →</span>
+                </a>
+            </div>
+
+            <!-- Box 2: Yayasan -->
+            <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Yayasan Pendidikan</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                        Standardisasi kurikulum digital multi-cabang sekolah, pemetaan potensi siswa massal, dan LMS terpusat.
+                    </p>
+                </div>
+                <a href="#contact" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">
+                    <span>Konsultasi Skala Yayasan →</span>
+                </a>
+            </div>
+
+            <!-- Box 3: Dinas Pendidikan -->
+            <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Dinas Pendidikan</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                        Program literasi komputasi wilayah, pelatihan kompetensi guru TIK, dan kompetisi inovasi teknologi daerah.
+                    </p>
+                </div>
+                <a href="#contact" class="text-xs font-bold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                    <span>Program Kemitraan Dinas →</span>
+                </a>
+            </div>
+
+            <!-- Box 4: Mitra Bisnis -->
+            <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Mitra Bisnis & CSR</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                        Penyaluran CSR edukasi teknologi, distributor perangkat belajar, dan kolaborasi strategis industri EdTech.
+                    </p>
+                </div>
+                <a href="#contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                    <span>Hubungi Kemitraan Bisnis →</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 5: LEAD FORM (Konsultasi & Permintaan Penawaran)
+     ============================================ -->
+<section id="contact" class="py-24 bg-slate-100 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#1d758b]/10 text-[#1d758b] text-xs font-bold tracking-wider uppercase">
+                Konsultasi & Penawaran
+            </div>
+            <h2 class="text-3xl font-extrabold text-[#0a192f] tracking-tight">
+                Mulai Kolaborasi Bersama Tim Ahli Erlass
+            </h2>
+            <p class="text-slate-600 text-sm max-w-xl mx-auto">
+                Isi formulir di bawah ini. Tim konsultan pendidikan kami akan menghubungi Anda untuk memberikan penjelasan kurikulum, demonstrasi sistem, dan proposal penawaran resmi.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200/80 shadow-md">
+            
             @if(session('success'))
-                <div class="mb-6 p-4 rounded-xl bg-green-50 text-green-800 border border-green-200 flex items-start gap-3" role="alert">
-                    <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="mb-8 p-4 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 flex items-start gap-3" role="alert">
+                    <svg class="w-5 h-5 mt-0.5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     <div>
-                        <h3 class="font-bold font-sans">Sukses!</h3>
-                        <p class="font-sans text-sm mt-1">{{ session('success') }}</p>
+                        <h3 class="font-bold text-sm">Formulir Terkirim Berhasil</h3>
+                        <p class="text-xs mt-1 text-emerald-700">{{ session('success') }}</p>
                     </div>
                 </div>
             @endif
 
             <form action="{{ route('leads.store') }}" method="POST" class="space-y-6">
                 @csrf
-                <input type="hidden" name="type" value="b2b">
+                <input type="hidden" name="type" value="consultation">
+                <input type="hidden" name="source" value="homepage_corporate">
                 
                 <!-- Honeypot -->
                 <div class="hidden" aria-hidden="true">
                     <label for="website">Website</label>
                     <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Row 1: Sender Type & Full Name -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label for="name" class="block font-sans font-bold text-sm text-[#111111] mb-2">{{ __('content.lead_form.fields.name') }} <span class="text-red-500">*</span></label>
-                        <input type="text" id="name" name="name" value="{{ old('name') }}" required aria-required="true" @error('name') aria-invalid="true" aria-describedby="name-error" @enderror class="w-full px-4 py-3 rounded-xl border-2 {{ $errors->has('name') ? 'border-red-500' : 'border-gray-200' }} focus:border-kids-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-kids-navy focus-visible:ring-offset-2 transition-colors font-sans">
+                        <label for="sender_type" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Tipe Pengirim / Institusi <span class="text-red-500">*</span>
+                        </label>
+                        <select id="sender_type" name="sender_type" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b] bg-white">
+                            <option value="school" {{ old('sender_type') == 'school' ? 'selected' : '' }}>Sekolah (Kepala Sekolah / Guru / TIK)</option>
+                            <option value="institution" {{ old('sender_type') == 'institution' ? 'selected' : '' }}>Yayasan Pendidikan</option>
+                            <option value="education_office" {{ old('sender_type') == 'education_office' ? 'selected' : '' }}>Dinas Pendidikan</option>
+                            <option value="business_partner" {{ old('sender_type') == 'business_partner' ? 'selected' : '' }}>Mitra Bisnis / Vendor</option>
+                            <option value="parent" {{ old('sender_type') == 'parent' ? 'selected' : '' }}>Orang Tua Siswa</option>
+                            <option value="other" {{ old('sender_type') == 'other' ? 'selected' : '' }}>Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Nama Lengkap Kontak <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" id="name" name="name" value="{{ old('name') }}" required placeholder="Contoh: Budi Santoso, S.Pd." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b]">
                         @error('name')
-                            <p id="name-error" class="mt-1 text-sm text-red-500 font-sans" role="alert">{{ $message }}</p>
+                            <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
+                </div>
+
+                <!-- Row 2: Phone & Email -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label for="phone" class="block font-sans font-bold text-sm text-[#111111] mb-2">{{ __('content.lead_form.fields.phone') }} <span class="text-red-500">*</span></label>
-                        <input type="tel" id="phone" name="phone" value="{{ old('phone') }}" required aria-required="true" @error('phone') aria-invalid="true" aria-describedby="phone-error" @enderror class="w-full px-4 py-3 rounded-xl border-2 {{ $errors->has('phone') ? 'border-red-500' : 'border-gray-200' }} focus:border-kids-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-kids-navy focus-visible:ring-offset-2 transition-colors font-sans">
+                        <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Nomor WhatsApp / Telepon <span class="text-red-500">*</span>
+                        </label>
+                        <input type="tel" id="phone" name="phone" value="{{ old('phone') }}" required placeholder="Contoh: 081234567890" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b]">
                         @error('phone')
-                            <p id="phone-error" class="mt-1 text-sm text-red-500 font-sans" role="alert">{{ $message }}</p>
+                            <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
                     <div>
-                        <label for="email" class="block font-sans font-bold text-sm text-[#111111] mb-2">{{ __('content.lead_form.fields.email') }}</label>
-                        <input type="email" id="email" name="email" value="{{ old('email') }}" @error('email') aria-invalid="true" aria-describedby="email-error" @enderror class="w-full px-4 py-3 rounded-xl border-2 {{ $errors->has('email') ? 'border-red-500' : 'border-gray-200' }} focus:border-kids-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-kids-navy focus-visible:ring-offset-2 transition-colors font-sans">
-                        @error('email')
-                            <p id="email-error" class="mt-1 text-sm text-red-500 font-sans" role="alert">{{ $message }}</p>
-                        @enderror
-                    </div>
-                    <div>
-                        <label for="school_name" class="block font-sans font-bold text-sm text-[#111111] mb-2">{{ __('content.lead_form.fields.school_name') }}</label>
-                        <input type="text" id="school_name" name="school_name" value="{{ old('school_name') }}" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-kids-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-kids-navy focus-visible:ring-offset-2 transition-colors font-sans">
+                        <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Alamat Email Resmi
+                        </label>
+                        <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Contoh: sekolah@yayasan.sch.id" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b]">
                     </div>
                 </div>
+
+                <!-- Row 3: School Name, City & Student Count -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div>
+                        <label for="school_name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Nama Sekolah / Instansi <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" id="school_name" name="school_name" value="{{ old('school_name') }}" required placeholder="Contoh: SDI Teladan Suci" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b]">
+                    </div>
+
+                    <div>
+                        <label for="city" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Kota / Kabupaten
+                        </label>
+                        <input type="text" id="city" name="city" value="{{ old('city') }}" placeholder="Contoh: Jakarta Timur" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b]">
+                    </div>
+
+                    <div>
+                        <label for="student_count" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Perkiraan Siswa
+                        </label>
+                        <input type="number" id="student_count" name="student_count" value="{{ old('student_count') }}" placeholder="Contoh: 150" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b]">
+                    </div>
+                </div>
+
+                <!-- Row 4: Program of Interest -->
                 <div>
-                    <label for="program" class="block font-sans font-bold text-sm text-[#111111] mb-2">{{ __('content.lead_form.fields.program') }}</label>
-                    <select id="program" name="program" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-kids-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-kids-navy focus-visible:ring-offset-2 transition-colors font-sans bg-white">
-                        <option value="">-- {{ __('content.lead_form.fields.program') }} --</option>
-                        @foreach($programs as $program)
-                        <option value="{{ $program->slug }}" {{ old('program') == $program->slug ? 'selected' : '' }}>{{ $program->name }}</option>
-                        @endforeach
+                    <label for="program" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                        Solusi Program yang Diminati
+                    </label>
+                    <select id="program" name="program" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b] bg-white">
+                        <option value="">-- Pilih Solusi / Kategori --</option>
+                        <option value="coding-informatika">Coding & Informatika (Scratch / Python / LKPD)</option>
+                        <option value="microbit-robotik">Robotic & Micro:bit Learning Kit</option>
+                        <option value="erlass-academy-lms">Erlass Academy LMS (Platform Digital Sekolah)</option>
+                        <option value="student-assessment">Student Assessment (Asesmen Bakat & Potensi Siswa)</option>
+                        <option value="teacher-training">Pelatihan & Pendampingan Guru (ToT)</option>
+                        <option value="all-solutions">Paket Solusi Terintegrasi Lengkap</option>
                     </select>
                 </div>
+
+                <!-- Row 5: Message / Specific Needs -->
                 <div>
-                    <label for="message" class="block font-sans font-bold text-sm text-[#111111] mb-2">{{ __('content.lead_form.fields.message') }}</label>
-                    <textarea id="message" name="message" rows="3" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-kids-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-kids-navy focus-visible:ring-offset-2 transition-colors font-sans resize-none">{{ old('message') }}</textarea>
+                    <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                        Rincian Kebutuhan & Catatan Khusus
+                    </label>
+                    <textarea id="message" name="message" rows="3" placeholder="Jelaskan kebutuhan sekolah Anda, jadwal yang diinginkan, atau pertanyaan spesifik mengenai kurikulum..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-slate-800 text-sm focus:border-[#1d758b] focus:ring-1 focus:ring-[#1d758b] resize-none">{{ old('message') }}</textarea>
                 </div>
-                <button type="submit" class="w-full py-4 bg-kids-navy text-white font-bold rounded-full text-lg hover:bg-[#155a6e] transition-colors shadow-[0_8px_0_rgba(153,225,255,1)] hover:shadow-[0_10px_0_rgba(153,225,255,1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
-                    {{ __('content.lead_form.cta') }}
-                </button>
-                <div class="text-center mt-3">
-                    <span class="font-sans text-xs font-bold text-[#111111]/50">{{ __('content.lead_form.risk_reducer') }}</span>
+
+                <!-- Consent UU PDP -->
+                <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                    <input type="checkbox" id="consent_given" name="consent_given" value="1" checked required class="mt-0.5 rounded text-[#1d758b] focus:ring-[#1d758b]">
+                    <label for="consent_given" class="text-xs text-slate-600 leading-relaxed">
+                        Saya menyetujui pemrosesan data kontak di atas oleh PT Erlass Prokreatif Indonesia semata-mata untuk keperluan komunikasi penawaran dan konsultasi pendidikan, sesuai ketentuan <strong class="text-slate-800">UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)</strong>.
+                    </label>
                 </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-[#1d758b] to-[#155a6e] hover:from-[#155a6e] hover:to-[#0f4453] text-white font-bold text-base shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2">
+                        <span>Kirim Permintaan Konsultasi & Penawaran</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                    <p class="text-center text-xs text-slate-500 mt-3 font-medium">
+                        Tim konsultan pendidikan kami akan menghubungi via WhatsApp atau email dalam 1x24 jam kerja.
+                    </p>
+                </div>
+
             </form>
+
         </div>
 
-        <p class="text-center mt-8 font-sans text-[#111111]/70">
-            {{ __('content.lead_form.or_call') }} <a href="https://wa.me/6282311341381" class="font-bold text-[#111111] underline hover:no-underline">{{ __('content.contact.phone') }}</a>
-        </p>
     </div>
 </section>
 
