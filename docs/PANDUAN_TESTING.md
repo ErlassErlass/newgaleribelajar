@@ -1,99 +1,44 @@
-# Panduan Pengujian Manual (Manual Testing)
+# Panduan Pengujian
 
-Berikut adalah langkah-langkah untuk melakukan tes manual guna memastikan website berjalan dengan baik secara visual dan fungsional.
+## 1. Pengujian Otomatis
 
-## 1. Persiapan Lingkungan Test
+```bash
+php artisan test
+```
 
-Pastikan server development berjalan:
-1.  Jalankan `npm run build` (atau `npm run dev` untuk hot-reload).
-2.  Buka Browser (Chrome/Edge/Firefox) dan akses `http://galeribelajar.test` atau `http://127.0.0.1:8000`.
+Uji berjalan di **database SQLite di memori** (diatur di `phpunit.xml`), sehingga aman dijalankan kapan saja tanpa menyentuh database MySQL. Setiap uji membuat ulang tabel dan menjalankan seeder.
 
-## 2. Checklist Pengujian Visual — Landing Page
+| File | Yang diuji |
+|---|---|
+| `tests/Feature/PublicSiteTest.php` | Semua halaman publik & filter, halaman 404, isi beranda, JSON-LD & sitemap valid, pengalihan rombel, views sekali per sesi, moderasi komentar & Kontak Promosi, newsletter, form konsultasi, header keamanan |
+| `tests/Feature/AdminPanelTest.php` | Semua halaman admin terbuka, hak akses tiap role, simpan ulang form data yang ada, form tambah data (produk, galeri + upload, kolom LMS, kategori, FAQ, pengguna, kontak), kolom LMS (tambah/keluarkan/urutkan produk), alur artikel Writer → Admin, moderasi komentar, ekspor CSV, Pengaturan Situs & Beranda, Riwayat Perubahan, filter tabel produk |
+| `tests/Feature/LeadTest.php` | Form konsultasi |
 
-### Navbar
-- [ ] Logo "ERLASS" terlihat di kiri atas.
-- [ ] Menu desktop: Home, Tentang Kami, Program, Galeri, Gabung Sekarang.
-- [ ] Language switcher ID/EN berfungsi.
-- [ ] **Mobile**: Hamburger button muncul → klik → drawer slide dari kanan → klik link → drawer menutup.
+Menjalankan sebagian uji:
 
-### Hero Section
-- [ ] Background kuning (`kids-yellow`) terlihat.
-- [ ] Heading animasi muncul (text split word-by-word).
-- [ ] CTA: "Lihat Program" (mint) + "Tentang Kami" (putih).
-- [ ] Background 3D: partikel titik-titik muncul di belakang.
+```bash
+php artisan test --filter=AdminPanelTest
+php artisan test --filter=test_article_review_workflow
+```
 
-### About Erlass
-- [ ] Background section berwarna putih (bersih).
-- [ ] Badge "Erlass Mitra Pendidikan" (pink).
-- [ ] Stats: 150+ Sekolah, 2.000+ Siswa, 140.000+ Guru, 70+ Instruktur.
-- [ ] CTA "Lihat Program Kami" scroll ke section Programs.
+**Aturan:** setiap menambah fitur atau tombol admin, tambahkan ujinya. Pengujian lama yang hanya membuka halaman tidak menangkap error yang baru muncul saat tombol diklik, sehingga uji harus memanggil aksinya (`callAction`, `callTableAction`, `call('save')`).
 
-### Why Choose Us
-- [ ] Background section berwarna abu-abu terang (`#fafafa`) sebagai jeda visual.
-- [ ] 3 kartu: Modul PBL, P5, Support Promosi.
-- [ ] Hover: shadow muncul + kartu naik.
+> Peringatan: jangan pernah mengubah `DB_CONNECTION` di `phpunit.xml` ke MySQL. Uji memakai `RefreshDatabase` yang mengosongkan database.
 
-### Programs
-- [ ] Background section kembali berwarna putih.
-- [ ] 3 kartu program: Coding 💻, Robotika 🤖, P5 🎓.
-- [ ] Klik "Koding Scratch & Python" → navigasi ke `/programs/coding`.
-- [ ] Klik "Robotika & IoT" → navigasi ke `/programs/robotics`.
+## 2. Pengujian Manual (sebelum rilis)
 
-### Clients Marquee
-- [ ] 3 baris logo sekolah mitra bergerak otomatis (2 baris ke kiri, 1 baris ke kanan).
-- [ ] Hover: animasi pause, gambar dari grayscale → full color.
+### Situs publik
+- [ ] Beranda: slider hero, kolom Produk LMS, carousel Katalog Unggulan (panah & titik), tab video di *Why Erlass?*, artikel terbaru, form konsultasi
+- [ ] Katalog: filter, pencarian, urutan, halaman berikutnya; detail produk (tombol WhatsApp/Shopee/LMS, FAQ, jumlah dilihat)
+- [ ] Artikel: kategori, hashtag, pencarian, artikel disematkan di atas, navigasi halaman; kirim komentar dan balasan
+- [ ] Galeri: putar video, pilih video lain dari panel rekomendasi, filter kategori & sub-kategori foto
+- [ ] Footer: jam layanan, media sosial, Shopee, newsletter
+- [ ] Tampilan HP (lebar ±390 px): menu, carousel, tabel tidak meluber
 
-### Testimoni
-- [ ] 3 kartu testimonial terlihat (⭐⭐⭐⭐⭐).
-- [ ] Avatar initial letter (S, R, A) dengan warna berbeda.
-
-### Contact Form
-- [ ] Background kuning, form putih di tengah.
-- [ ] Fields: Nama, Telepon, Email, Nama Sekolah, Program (dropdown), Pesan.
-- [ ] Tombol "Kirim Permintaan Konsultasi" bisa diklik.
-- [ ] Link WhatsApp di bawah form mengarah ke `wa.me/6282311341381`.
-
-### WhatsApp Floating Button
-- [ ] Tombol hijau bulat di pojok kanan bawah, selalu terlihat.
-- [ ] Animasi pulse hijau berdenyut.
-- [ ] Klik → buka WhatsApp ke nomor CS Alya.
-
-### Footer
-- [ ] 3 kolom: ERLASS + alamat, Programs, Contact + Social.
-- [ ] Social icons: Instagram, YouTube, TikTok, Facebook.
-
-## 3. Checklist Responsivitas
-
-- [ ] Tekan `F12` → klik icon Mobile (Ctrl+Shift+M).
-- [ ] Cek tampilan di "iPhone SE" / "Samsung Galaxy S8".
-- [ ] Teks tidak terpotong.
-- [ ] Kartu program tersusun ke bawah (stacking).
-- [ ] Hamburger menu muncul dan berfungsi.
-- [ ] WhatsApp button tidak overlap dengan konten.
-
-## 4. Checklist Halaman Internal
-
-### `/programs/coding`
-- [ ] Hero "Future Skills" + heading "Coding & AI".
-- [ ] 3 level learning path (Scratch → Python → AI).
-- [ ] Tools section (Scratch, Python, HTML5, CSS3, JS, VS Code).
-
-### `/programs/robotics`
-- [ ] Hero + deskripsi kit robotika.
-- [ ] CTA bawah berfungsi.
-
-### `/gallery`
-- [ ] Video thumbnail dengan play button.
-- [ ] Instagram marquee bergerak.
-- [ ] Photo grid masonry layout.
-
-## Troubleshooting
-
-- **Background hitam polos?**
-  Cek console browser (`F12` → `Console`). Jika ada error Three.js, pastikan `npm run build` sudah jalan.
-
-- **Style berantakan?**
-  Hapus `public/hot` lalu jalankan `npm run build`, kemudian refresh.
-
-- **Form tidak submit?**
-  Pastikan route POST `/leads` ada di `routes/web.php` dan `LeadController` ter-setup.
+### Panel admin
+- [ ] Login dengan tiap role, pastikan menu yang tampil sesuai
+- [ ] Writer: buat artikel → Ajukan Persetujuan; Admin: Minta Revisi → Setujui & Terbitkan → Sematkan
+- [ ] Ubah link Shopee di Pengaturan Situs, lalu cek tombol Shopee di katalog
+- [ ] Ubah judul hero di Pengaturan Beranda, lalu cek beranda, lalu **Kembalikan ke Bawaan**
+- [ ] Kolom Produk LMS: tambah produk, urutkan, keluarkan
+- [ ] Riwayat Perubahan mencatat semua langkah di atas

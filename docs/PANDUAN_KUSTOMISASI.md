@@ -1,67 +1,51 @@
 # Panduan Kustomisasi
 
-## Mengubah Konten
+Sebagian besar isi website kini diubah lewat **panel admin**, tanpa menyentuh kode. Lihat [PANDUAN_ADMIN.md](PANDUAN_ADMIN.md).
 
-### Teks & Lokalisasi
-Konten teks tersentralisasi di file bahasa:
-- **Indonesia**: `resources/lang/id/content.php`
-- **English**: `resources/lang/en/content.php`
+## Diubah dari Admin (tanpa developer)
 
-Semua teks *hard-coded* di landing page (Hero, About, Why Us, Programs, Clients, Testimoni, Contact form, hingga Footer) kini sudah terhubung penuh ke *translation keys* `__()`. Untuk mengganti konten apapun, cukup edit *key-value* di dalam file-file tersebut. Switcher bahasa (ID/EN) di Navbar akan langsung mengaplikasikan perubahan secara otomatis.
+| Ingin mengubah | Menu admin |
+|---|---|
+| Link Shopee, WhatsApp, telepon, email, jam layanan, alamat, media sosial | Sistem › Pengaturan Situs |
+| Video YouTube (tab *Why Erlass?* & galeri) | Sistem › Pengaturan Situs › Video |
+| Kata terlarang di komentar | Sistem › Pengaturan Situs › Moderasi Komentar |
+| Teks hero, foto slider, judul tiap bagian beranda, tampil/sembunyi bagian | Sistem › Pengaturan Beranda |
+| Produk, foto produk, link Shopee per produk | Katalog › Produk |
+| Kolom produk LMS di beranda | Katalog › Kolom Produk LMS |
+| FAQ katalog & template FAQ produk | Katalog › Pertanyaan (FAQ) |
+| Kategori artikel | Konten › Kategori Artikel |
+| Foto galeri | Konten › Galeri Foto |
 
-### Gambar
-Gambar company profile (logo sekolah mitra) berada di `public/img/cp/`.
-- Ganti file `1.png` s/d `31.png` dengan logo baru yang berukuran sama. Komponen client-marquee akan memuat semua 31 logo ke dalam 3 baris secara otomatis.
-- Pastikan format PNG dengan background transparan untuk hasil terbaik.
+## Diubah oleh Developer
 
-### Testimoni
-Testimoni kini juga diatur lewat fungsi lokalisasi. Edit *array* `testimoni.items` di dalam file `resources/lang/id/content.php` untuk menambahkan atau mengubah nama, jabatan, dan kutipan sesuai data sekolah mitra.
+### Nilai bawaan
+- `config/erlass.php`: kontak, link, dan video bawaan (dipakai bila belum diatur di admin; juga bisa lewat `.env`, lihat `.env.example`)
+- `config/homepage.php`: teks bawaan beranda dan daftar bagiannya
+- `config/gallery.php`: kategori & sub-kategori galeri foto
+- `config/moderation.php`: daftar kata terlarang bawaan
 
-## Memodifikasi Background 3D
+### Foto produk tanpa admin
+Taruh file di `public/img/products/` dengan nama kode produk (`msj01.jpg`) atau nama produk (`microbit-learning-kit.webp`). Format: webp, jpg, jpeg, png.
 
-Logika 3D terdapat di file `resources/js/hero-3d.js`.
+### Tampilan sampul otomatis
+`app/Support/ProductCover.php`: tema warna & ilustrasi ditentukan dari kata di nama produk (`NAME_THEMES`) atau kategori (`CATEGORY_THEMES`), warna di `PALETTES`.
 
-### Mengubah Warna Partikel
-Cari definisi `particlesMaterial`:
-```javascript
-const particlesMaterial = new THREE.PointsMaterial({
-    color: 0x4f46e5, // Ganti kode Hex ini (contoh: 0xffd700 untuk Emas)
-    ...
-});
+### Warna & font
+- Palet merek di `resources/css/app.css` (`@theme`) dan langsung di kelas Tailwind (`#023047`, `#219ebc`, `#8ecae6`, `#ffb703`, `#fb8500`).
+- Font Plus Jakarta Sans dimuat dari Google Fonts di `resources/views/layouts/app.blade.php`.
+
+### Latar 3D hero
+`resources/js/hero-3d.js`: warna partikel (`particlesMaterial`) dan jumlah partikel (`particlesCount`).
+
+### Menambah halaman atau bagian beranda
+1. Tambah markup di `resources/views/welcome.blade.php` dengan `<section id="nama">`.
+2. Tambah entri `nama` di `config/homepage.php` (`label`, `visible`, `badge`, `title`, `subtitle`) dan pakai `{{ $hp['sections']['nama']['title'] }}` di view; bungkus dengan `@if($hp['sections']['nama']['visible'] ?? true)`.
+3. Form Pengaturan Beranda otomatis menampilkan bagian baru.
+
+## Setelah Mengubah Kode
+
+```bash
+npm run build              # bila mengubah CSS/JS atau menambah kelas Tailwind
+php artisan optimize:clear # bila mengubah file config
+php artisan test           # pastikan tidak ada yang rusak
 ```
-
-### Mengubah Jumlah / Kepadatan Partikel
-Sesuaikan variabel `particlesCount`:
-```javascript
-const particlesCount = 700; // Naikkan untuk lebih padat, turunkan untuk performa lebih ringan
-```
-
-## Styling (CSS)
-
-### Warna Tema
-Edit palet warna di `resources/css/app.css`:
-```css
-@theme {
-    --color-kids-yellow: #ffd600;    /* Hero background, CTA utama */
-    --color-kids-blue: #99e1ff;      /* Shadow tombol */
-    --color-kids-navy: #1d758b;      /* Teks heading */
-    --color-kids-pink: #ffb3c6;      /* Badge */
-    --color-kids-mint: #a2e8dd;      /* CTA sekunder */
-    --color-kids-orange: #ff7f50;    /* Aksen */
-}
-```
-
-### Font
-Font utama dikonfigurasi di `resources/css/app.css`:
-- `font-sans`: Source Sans 3 (teks paragraf)
-- `font-serif`: Playfair Display (heading)
-- `font-popstar`: Scribble Show (dekoratif)
-
-Untuk mengganti, update `@theme` dan `<link>` di `layouts/app.blade.php`.
-
-### WhatsApp Nomor
-Ubah nomor di `layouts/app.blade.php` — cari `wa.me/6282311341381` dan ganti ke nomor baru.
-
-## Setelah Perubahan
-
-Selalu jalankan `npm run build` setelah mengubah file CSS atau JS agar perubahan ter-compile ke production.

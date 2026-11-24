@@ -1,68 +1,63 @@
-# Panduan Instalasi & Setup
-
-Ikuti langkah-langkah berikut untuk menjalankan website Erlass di komputer lokal Anda.
+# Panduan Instalasi Lokal
 
 ## Prasyarat
 
-- **PHP**: Versi 8.4 atau lebih baru.
-- **Composer**: Dependency manager untuk PHP.
-- **Node.js**: Versi 20+ (untuk build aset frontend).
-- **Laragon**: Lingkungan server lokal (disarankan untuk Windows, otomatis membuat virtual host).
+- **PHP 8.2+** dengan ekstensi `pdo_mysql`, `pdo_sqlite` (untuk uji otomatis), `gd`, `intl`, `mbstring`
+- **Composer 2**
+- **Node.js 20+**
+- **MySQL** (mis. lewat Laragon atau XAMPP di Windows)
 
-## Langkah Instalasi
+## Langkah
 
-1.  **Clone/Copy Project**
-    Pastikan file project berada di direktori web server Anda (contoh: `c:/laragon/www/galeribelajar`).
+```bash
+git clone https://github.com/ErlassErlass/newgaleribelajar.git
+cd newgaleribelajar
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+```
 
-2.  **Install Backend Dependencies**
-    ```bash
-    composer install
-    ```
+Isi koneksi database di `.env`:
 
-3.  **Install Frontend Dependencies**
-    ```bash
-    npm install
-    ```
-    Perintah ini akan menginstall Tailwind CSS v4, Vite 7, Three.js, GSAP, dan Lenis.
+```ini
+APP_URL=http://127.0.0.1:8000
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=newgaleribelajar_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-4.  **Konfigurasi Environment**
-    Copy file contoh environment:
-    ```bash
-    cp .env.example .env
-    ```
-    Generate application key:
-    ```bash
-    php artisan key:generate
-    ```
+Buat database `newgaleribelajar_db`, lalu:
 
-5.  **Build Aset**
-    Untuk production build (siap pakai tanpa dev server):
-    ```bash
-    npm run build
-    ```
-    Untuk development (hot reload - perubahan langsung terlihat):
-    ```bash
-    npm run dev
-    ```
-    > **Catatan**: Jika menggunakan `npm run dev`, file `public/hot` akan dibuat. Ketika selesai dev, stop server dan hapus `public/hot` agar Laravel kembali menggunakan built assets.
+```bash
+php artisan migrate --seed
+npm run dev          # terminal 1: aset dengan hot reload
+php artisan serve    # terminal 2: http://127.0.0.1:8000
+```
 
-6.  **Jalankan Server**
-    Jika menggunakan Laragon dengan fitur *auto virtual host*, buka `http://galeribelajar.test`.
-    Atau gunakan built-in server Laravel:
-    ```bash
-    php artisan serve
-    ```
-    Lalu buka `http://127.0.0.1:8000` di browser.
+Panel admin: `http://127.0.0.1:8000/admin`, akun `admin@erlass.co.id` (Super Admin, kata sandi ada di `DatabaseSeeder`).
 
-## URL Lokal
+## Isi Data Awal (Seeder)
 
-| Metode | URL |
-|--------|-----|
-| Laragon Virtual Host | `http://galeribelajar.test` |
-| PHP Artisan Serve | `http://localhost:8000` |
+| Seeder | Isi |
+|---|---|
+| `CrmDataSeeder` | 7 kategori, 130 produk, 407 sekolah mitra dari `database/seeders/data/*.json` |
+| `LmsCatalogSeeder` | Produk LMS (Informatika, Koding KA, Course LMS, Asesmen, Pusat Sumber Daya Guru) dan penanda Shopee |
+| `ArticleSeeder` | Contoh artikel |
+| `GallerySeeder` | Foto galeri awal |
+| `FaqSeeder` | FAQ katalog & template FAQ produk (hanya bila tabel kosong) |
 
-## Troubleshooting Umum
+Kolom LMS beranda (`lms_groups`) dan kategori artikel dibuat oleh migrasi.
 
-- **Style berantakan / HTML polos?** → Hapus `public/hot` lalu jalankan `npm run build`.
-- **Warning `proc_open` di Version.php?** → Git tidak ada di PATH. Aman diabaikan (sudah di-suppress).
-- **Font warning saat build?** → Normal. Font custom di-load runtime dari `/public/fonts/`.
+## Masalah yang Sering Muncul
+
+| Gejala | Penyebab & solusi |
+|---|---|
+| Setelah `migrate:fresh --seed` menu admin hanya berisi Artikel | Akun belum Super Admin. Seeder terbaru sudah mengaturnya; jalankan `php artisan db:seed` lagi |
+| Tampilan tanpa gaya (CSS tidak termuat) | Ada file `public/hot` tapi `npm run dev` tidak jalan. Jalankan `npm run dev`, atau hapus `public/hot` dan jalankan `npm run build` |
+| Kelas Tailwind baru tidak berpengaruh | Jalankan `npm run build` (atau biarkan `npm run dev` berjalan) |
+| Angka views video YouTube tidak muncul | PHP lokal belum punya sertifikat CA (cURL error 60). Atur `curl.cainfo` di `php.ini`. Tidak memengaruhi fitur lain |
+| Perubahan config tidak terlihat | `php artisan optimize:clear` |
