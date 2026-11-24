@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreLeadRequest;
+use App\Models\Contact;
 use App\Models\Lead;
 
 class LeadController extends Controller
@@ -22,6 +23,12 @@ class LeadController extends Controller
         $validated['consent_given'] = $request->boolean('consent_given', true);
 
         Lead::create($validated);
+
+        Contact::record($validated['email'] ?? null, 'konsultasi', [
+            'name' => $validated['name'] ?? null,
+            'phone' => $validated['phone'] ?? null,
+            'consent' => $validated['consent_given'],
+        ]);
 
         return redirect()->back()->with('success', 'Terima kasih! Permintaan konsultasi Anda telah diterima. Tim konsultan pendidikan Erlass akan segera menghubungi Anda dalam 1x24 jam kerja.');
     }
