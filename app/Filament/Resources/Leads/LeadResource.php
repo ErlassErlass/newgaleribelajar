@@ -22,7 +22,13 @@ class LeadResource extends Resource
 
     protected static ?string $pluralModelLabel = 'Data Pendaftar';
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedUserPlus;
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Pemasaran';
+
+    protected static ?int $navigationSort = 0;
+
+    protected static ?string $navigationLabel = 'Lead Konsultasi';
 
     protected static ?string $recordTitleAttribute = 'name';
 

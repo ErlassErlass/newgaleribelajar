@@ -22,7 +22,13 @@ class ProgramResource extends Resource
 
     protected static ?string $pluralModelLabel = 'Daftar Program';
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedAcademicCap;
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Konten';
+
+    protected static ?int $navigationSort = 4;
+
+    protected static ?string $navigationLabel = 'Program';
 
     protected static ?string $recordTitleAttribute = 'name';
 

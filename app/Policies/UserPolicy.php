@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Policies;
+
+use App\Models\User;
+
+/** Only the Super Admin manages accounts and roles. */
+class UserPolicy
+{
+    public function viewAny(User $user): bool
+    {
+        return $user->isSuperAdmin();
+    }
+
+    public function view(User $user, User $model): bool
+    {
+        return $user->isSuperAdmin();
+    }
+
+    public function create(User $user): bool
+    {
+        return $user->isSuperAdmin();
+    }
+
+    public function update(User $user, User $model): bool
+    {
+        return $user->isSuperAdmin();
+    }
+
+    public function delete(User $user, User $model): bool
+    {
+        // Never lock yourself out
+        return $user->isSuperAdmin() && $user->id !== $model->id;
+    }
+
+    public function deleteAny(User $user): bool
+    {
+        return $user->isSuperAdmin();
+    }
+}

@@ -2,12 +2,15 @@
 
 namespace App\Filament\Resources\Galleries\Tables;
 
+use App\Models\Gallery;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ToggleColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
 class GalleriesTable
@@ -15,36 +18,23 @@ class GalleriesTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->defaultSort('sort_order')
+            ->reorderable('sort_order')
             ->columns([
-                TextColumn::make('title')
-                    ->searchable(),
-                ImageColumn::make('image_path'),
-                TextColumn::make('category')
-                    ->searchable(),
-                IconColumn::make('is_active')
-                    ->boolean(),
-                TextColumn::make('sort_order')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                ImageColumn::make('image_path')->label('Foto')->disk('uploads')->imageHeight(64),
+                TextColumn::make('title')->label('Judul')->searchable()->wrap(),
+                TextColumn::make('category')->label('Kategori')->badge()
+                    ->formatStateUsing(fn ($state) => config("gallery.categories.$state.label", $state)),
+                TextColumn::make('subcategory')->label('Sub-kategori')
+                    ->state(fn (Gallery $record) => $record->subcategory_label)->placeholder('-'),
+                ToggleColumn::make('is_active')->label('Tampil'),
+                TextColumn::make('taken_at')->label('Tanggal')->date('d M Y')->sortable()->toggleable(),
             ])
             ->filters([
-                //
+                SelectFilter::make('category')->label('Kategori')
+                    ->options(collect(config('gallery.categories'))->map(fn ($c) => $c['label'])),
             ])
-            ->recordActions([
-                EditAction::make(),
-            ])
-            ->toolbarActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
-            ]);
+            ->recordActions([EditAction::make(), DeleteAction::make()])
+            ->toolbarActions([BulkActionGroup::make([DeleteBulkAction::make()])]);
     }
 }

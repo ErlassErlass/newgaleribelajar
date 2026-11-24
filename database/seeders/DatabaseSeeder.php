@@ -16,8 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // Admin User for local development / testing
-        User::firstOrCreate(
+        // Admin User for local development / testing. Must be a Super Admin: the role column
+        // defaults to "writer", which only sees Artikel in the admin panel.
+        // Change the password right after the first login.
+        $admin = User::firstOrCreate(
             ['email' => 'admin@erlass.co.id'],
             [
                 'name' => 'Admin Erlass',
@@ -25,10 +27,15 @@ class DatabaseSeeder extends Seeder
                 'email_verified_at' => now(),
             ]
         );
+        $admin->forceFill(['role' => User::ROLE_SUPER_ADMIN, 'is_active' => true])->save();
 
         // Seed Categories, Products, and Partner Schools synced from CRM
         $this->call([
             CrmDataSeeder::class,
+            LmsCatalogSeeder::class,
+            ArticleSeeder::class,
+            GallerySeeder::class,
+            FaqSeeder::class,
         ]);
     }
 }

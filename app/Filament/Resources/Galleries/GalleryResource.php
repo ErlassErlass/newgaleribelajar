@@ -22,7 +22,13 @@ class GalleryResource extends Resource
 
     protected static ?string $pluralModelLabel = 'Daftar Galeri';
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedPhoto;
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Konten';
+
+    protected static ?int $navigationSort = 3;
+
+    protected static ?string $navigationLabel = 'Galeri Foto';
 
     protected static ?string $recordTitleAttribute = 'title';
 

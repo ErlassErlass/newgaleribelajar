@@ -30,6 +30,16 @@ return [
 
     'disks' => [
 
+        // Admin uploads written straight into public/ so stored paths (uploads/...) work with asset()
+        // without needing `php artisan storage:link`.
+        'uploads' => [
+            'driver' => 'local',
+            'root' => public_path(),
+            'url' => rtrim(env('APP_URL', 'http://localhost'), '/'),
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),
