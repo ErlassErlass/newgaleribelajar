@@ -16,14 +16,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // Admin User for local development / testing. Must be a Super Admin: the role column
-        // defaults to "writer", which only sees Artikel in the admin panel.
-        // Change the password right after the first login.
-        $admin = User::firstOrCreate(
+        // Admin User. Must be a Super Admin: the role column defaults to "writer",
+        // which only sees Artikel in the admin panel.
+        // Note: updateOrCreate resets this account's password every time the seeder runs.
+        $admin = User::updateOrCreate(
             ['email' => 'admin@erlass.co.id'],
             [
                 'name' => 'Admin Erlass',
-                'password' => Hash::make('password'),
+                'password' => Hash::make('Erlass101'),
                 'email_verified_at' => now(),
             ]
         );

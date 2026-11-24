@@ -133,7 +133,7 @@ php artisan serve
 Akses website melalui peramban di: **`http://127.0.0.1:8000`**  
 Panel Admin Filament: **`http://127.0.0.1:8000/admin`**  
 - **Email:** `admin@erlass.co.id`
-- **Password:** `password`
+- **Password:** `Erlass101`
 
 ---
 
