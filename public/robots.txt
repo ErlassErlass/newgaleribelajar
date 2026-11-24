@@ -1,4 +1,37 @@
+# Search engines
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /lang/
+Disallow: /*?*q=
+Disallow: /*?*urut=
+
+# Generative AI / answer engines (GEO): allowed so Erlass can be cited and recommended
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: https://erlass.co.id/sitemap.xml
+# AI-readable site summary: https://erlass.co.id/llms.txt

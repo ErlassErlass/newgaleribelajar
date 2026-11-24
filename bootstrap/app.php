@@ -13,7 +13,14 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web(append: [
             \App\Http\Middleware\SetLocale::class,
+            \App\Http\Middleware\SecurityHeaders::class,
         ]);
+
+        // Only when the site sits behind a load balancer / Cloudflare: set TRUSTED_PROXIES in .env
+        // (e.g. "*" or a list of IPs). Left empty, client IPs can't be spoofed via X-Forwarded-For.
+        if ($proxies = env('TRUSTED_PROXIES')) {
+            $middleware->trustProxies(at: $proxies === '*' ? '*' : array_map('trim', explode(',', $proxies)));
+        }
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
