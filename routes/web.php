@@ -2,12 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\ProgramController;
-use App\Models\Category;
-use App\Models\Product;
-use App\Models\Partner;
-use App\Models\Program;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ArticleCommentController;
+use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\LlmsController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\HomeController;
 
 Route::get('/lang/{locale}', function ($locale) {
     if (in_array($locale, ['id', 'en'])) {
@@ -16,45 +20,7 @@ Route::get('/lang/{locale}', function ($locale) {
     return redirect()->back();
 })->name('lang.switch');
 
-Route::get('/', function () {
-    $categories = Category::where('is_active', true)
-        ->orderBy('sort_order')
-        ->with(['products' => function ($q) {
-            $q->where('status', 'published')->orderBy('sort_order');
-        }])
-        ->get();
-
-    $featuredProducts = Product::with('category')
-        ->where('is_featured', true)
-        ->where('status', 'published')
-        ->orderBy('sort_order')
-        ->take(8)
-        ->get();
-
-    $partners = Partner::where('is_featured', true)
-        ->orderBy('sort_order')
-        ->get();
-
-    $allPartnerSchools = Partner::where('type', 'school')
-        ->orderByDesc('total_deals')
-        ->take(40)
-        ->get();
-
-    $totalSchools = Partner::count();
-    $totalDeals = Partner::sum('total_deals');
-
-    $programs = Program::where('is_active', true)->get();
-
-    return view('welcome', compact(
-        'categories',
-        'featuredProducts',
-        'partners',
-        'allPartnerSchools',
-        'totalSchools',
-        'totalDeals',
-        'programs'
-    ));
-})->name('home');
+Route::get('/', HomeController::class)->name('home');
 
 Route::post('/leads', [LeadController::class, 'store'])
     ->middleware('throttle:10,1')
@@ -62,6 +28,28 @@ Route::post('/leads', [LeadController::class, 'store'])
 
 Route::get('/programs/{slug}', [ProgramController::class, 'show'])->name('programs.show');
 
-Route::get('/gallery', function () {
-    return view('gallery');
-})->name('gallery');
+Route::get('/gallery', GalleryController::class)->name('gallery');
+
+Route::view('/kebijakan-privasi', 'legal.privacy')->name('privacy');
+Route::view('/syarat-ketentuan', 'legal.terms')->name('terms');
+
+Route::get('/artikel', [ArticleController::class, 'index'])->name('articles.index');
+Route::get('/artikel/{slug}', [ArticleController::class, 'show'])->name('articles.show');
+Route::post('/artikel/{slug}/komentar', [ArticleCommentController::class, 'store'])
+    ->middleware('throttle:5,1')
+    ->name('articles.comments.store');
+
+Route::post('/berlangganan', [SubscriberController::class, 'store'])
+    ->middleware('throttle:5,1')
+    ->name('subscribe.store');
+
+// Product catalog
+Route::get('/katalog', [ProductController::class, 'index'])->name('products.index');
+Route::get('/katalog/cover/{sku}.svg', [ProductController::class, 'cover'])
+    ->where('sku', '[A-Za-z0-9\-]+')
+    ->name('products.cover');
+Route::get('/katalog/{slug}', [ProductController::class, 'show'])->name('products.show');
+
+Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
+// GEO: plain-text site summary for AI assistants (llmstxt.org)
+Route::get('/llms.txt', LlmsController::class)->name('llms');

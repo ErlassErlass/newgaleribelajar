@@ -9,6 +9,10 @@ use Illuminate\Support\Str;
 
 class Category extends Model
 {
+    use \App\Support\LogsActivity;
+
+    use \App\Support\FlushesSiteCache;
+
     use HasFactory;
 
     protected $fillable = [

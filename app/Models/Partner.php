@@ -8,6 +8,8 @@ use Illuminate\Support\Str;
 
 class Partner extends Model
 {
+    use \App\Support\FlushesSiteCache;
+
     use HasFactory;
 
     protected $fillable = [
