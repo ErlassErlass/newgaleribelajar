@@ -1,0 +1,3456 @@
+[
+    {
+        "id": 1,
+        "category_id": 5,
+        "sku": "ALK01",
+        "name": "Arduino Learning Kit",
+        "slug": "arduino-learning-kit-alk01",
+        "summary": "Program edukasi teknologi Arduino Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Arduino Learning Kit (Kode: ALK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 2,
+        "category_id": 5,
+        "sku": "ECR01",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr01",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 426,
+        "sort_order": 574,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 3,
+        "category_id": 5,
+        "sku": "ECR01-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr01-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR01-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 84,
+        "sort_order": 916,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 4,
+        "category_id": 5,
+        "sku": "ECR02",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr02",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 142,
+        "sort_order": 858,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 5,
+        "category_id": 5,
+        "sku": "ECR02-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr02-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR02-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 32,
+        "sort_order": 968,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 6,
+        "category_id": 5,
+        "sku": "ECR03",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr03",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR03) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 43,
+        "sort_order": 957,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 7,
+        "category_id": 5,
+        "sku": "ECR03-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr03-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR03-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 10,
+        "sort_order": 990,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 8,
+        "category_id": 5,
+        "sku": "ECR04",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr04",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR04) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 18,
+        "sort_order": 982,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 9,
+        "category_id": 5,
+        "sku": "ECR04-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr04-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR04-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 6,
+        "sort_order": 994,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 10,
+        "category_id": 5,
+        "sku": "ECR05",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr05",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR05) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 8,
+        "sort_order": 992,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 11,
+        "category_id": 5,
+        "sku": "ECR05-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr05-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR05-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 12,
+        "category_id": 5,
+        "sku": "ECR06",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr06",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR06) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 13,
+        "category_id": 5,
+        "sku": "ECR06-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr06-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR06-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 14,
+        "category_id": 5,
+        "sku": "ECR07",
+        "name": "Ekskul Coding Scratch",
+        "slug": "ekskul-coding-scratch-ecr07",
+        "summary": "Program edukasi teknologi Ekskul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding Scratch (Kode: ECR07) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 15,
+        "category_id": 5,
+        "sku": "ECR07-MS",
+        "name": "Ekskul Coding + Modul",
+        "slug": "ekskul-coding-modul-ecr07-ms",
+        "summary": "Program edukasi teknologi Ekskul Coding + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Coding + Modul (Kode: ECR07-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 16,
+        "category_id": 5,
+        "sku": "EER01",
+        "name": "Ekskul English Course",
+        "slug": "ekskul-english-course-eer01",
+        "summary": "Program edukasi teknologi Ekskul English Course untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul English Course (Kode: EER01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 20,
+        "sort_order": 980,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 17,
+        "category_id": 5,
+        "sku": "EER02",
+        "name": "Ekskul English Course",
+        "slug": "ekskul-english-course-eer02",
+        "summary": "Program edukasi teknologi Ekskul English Course untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul English Course (Kode: EER02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 6,
+        "sort_order": 994,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 18,
+        "category_id": 5,
+        "sku": "EER03",
+        "name": "Ekskul English Course",
+        "slug": "ekskul-english-course-eer03",
+        "summary": "Program edukasi teknologi Ekskul English Course untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul English Course (Kode: EER03) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 4,
+        "sort_order": 996,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 19,
+        "category_id": 5,
+        "sku": "EER04",
+        "name": "Ekskul English Course",
+        "slug": "ekskul-english-course-eer04",
+        "summary": "Program edukasi teknologi Ekskul English Course untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul English Course (Kode: EER04) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 20,
+        "category_id": 5,
+        "sku": "EPR01",
+        "name": "Ekskul Pictoblox AI",
+        "slug": "ekskul-pictoblox-ai-epr01",
+        "summary": "Program edukasi teknologi Ekskul Pictoblox AI untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Pictoblox AI (Kode: EPR01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 12,
+        "sort_order": 988,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 21,
+        "category_id": 5,
+        "sku": "EPR02",
+        "name": "Ekskul Pictoblox AI",
+        "slug": "ekskul-pictoblox-ai-epr02",
+        "summary": "Program edukasi teknologi Ekskul Pictoblox AI untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Pictoblox AI (Kode: EPR02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 22,
+        "category_id": 5,
+        "sku": "EPR04-MS",
+        "name": "Ekskul Pictoblox AI + Modul",
+        "slug": "ekskul-pictoblox-ai-modul-epr04-ms",
+        "summary": "Program edukasi teknologi Ekskul Pictoblox AI + Modul untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Pictoblox AI + Modul (Kode: EPR04-MS) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 23,
+        "category_id": 2,
+        "sku": "ERR01-MB01",
+        "name": "Ekskul Microbit Beginner",
+        "slug": "ekskul-microbit-beginner-err01-mb01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Beginner untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Beginner (Kode: ERR01-MB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 8,
+        "sort_order": 992,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 24,
+        "category_id": 2,
+        "sku": "ERR01-MLK01",
+        "name": "Ekskul Microbit Learning Kit",
+        "slug": "ekskul-microbit-learning-kit-err01-mlk01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Learning Kit (Kode: ERR01-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 206,
+        "sort_order": 794,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 25,
+        "category_id": 2,
+        "sku": "ERR01-RB01",
+        "name": "Ekskul Robotik Erboblox",
+        "slug": "ekskul-robotik-erboblox-err01-rb01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Erboblox untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Erboblox (Kode: ERR01-RB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 8,
+        "sort_order": 992,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 26,
+        "category_id": 2,
+        "sku": "ERR01-RE01",
+        "name": "Ekskul Robotik Explorer",
+        "slug": "ekskul-robotik-explorer-err01-re01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Explorer untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Explorer (Kode: ERR01-RE01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 11,
+        "sort_order": 989,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 27,
+        "category_id": 2,
+        "sku": "ERR01-RJ01",
+        "name": "Ekskul Robotik Jimu",
+        "slug": "ekskul-robotik-jimu-err01-rj01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Jimu untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Jimu (Kode: ERR01-RJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 9,
+        "sort_order": 991,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 28,
+        "category_id": 2,
+        "sku": "ERR02-MLK01",
+        "name": "Ekskul Microbit Learning Kit",
+        "slug": "ekskul-microbit-learning-kit-err02-mlk01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Learning Kit (Kode: ERR02-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 56,
+        "sort_order": 944,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 29,
+        "category_id": 2,
+        "sku": "ERR02-RB01",
+        "name": "Ekskul Robotik Erboblox",
+        "slug": "ekskul-robotik-erboblox-err02-rb01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Erboblox untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Erboblox (Kode: ERR02-RB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 30,
+        "category_id": 2,
+        "sku": "ERR02-RE01",
+        "name": "Ekskul Robotik Explorer",
+        "slug": "ekskul-robotik-explorer-err02-re01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Explorer untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Explorer (Kode: ERR02-RE01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 31,
+        "category_id": 2,
+        "sku": "ERR02-RJ01",
+        "name": "Ekskul Robotik Jimu",
+        "slug": "ekskul-robotik-jimu-err02-rj01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Jimu untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Jimu (Kode: ERR02-RJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 32,
+        "category_id": 2,
+        "sku": "ERR03-MLK01",
+        "name": "Ekskul Microbit Learning Kit",
+        "slug": "ekskul-microbit-learning-kit-err03-mlk01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Learning Kit (Kode: ERR03-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 15,
+        "sort_order": 985,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 33,
+        "category_id": 2,
+        "sku": "ERR03-RB01",
+        "name": "Ekskul Robotik Erboblox",
+        "slug": "ekskul-robotik-erboblox-err03-rb01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Erboblox untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Erboblox (Kode: ERR03-RB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 34,
+        "category_id": 2,
+        "sku": "ERR03-RJ01",
+        "name": "Ekskul Robotik Jimu",
+        "slug": "ekskul-robotik-jimu-err03-rj01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Jimu untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Jimu (Kode: ERR03-RJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 35,
+        "category_id": 2,
+        "sku": "ERR03-SMLK01",
+        "name": "Ekskul Robotik Sewa Microbit Learning Kit",
+        "slug": "ekskul-robotik-sewa-microbit-learning-kit-err03-smlk01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Sewa Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Sewa Microbit Learning Kit (Kode: ERR03-SMLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 36,
+        "category_id": 2,
+        "sku": "ERR04-MLK01",
+        "name": "Ekskul Microbit Learning Kit",
+        "slug": "ekskul-microbit-learning-kit-err04-mlk01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Learning Kit (Kode: ERR04-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 7,
+        "sort_order": 993,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 37,
+        "category_id": 2,
+        "sku": "ERR04-RB01",
+        "name": "Ekskul Robotik Erboblox",
+        "slug": "ekskul-robotik-erboblox-err04-rb01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Erboblox untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Erboblox (Kode: ERR04-RB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 38,
+        "category_id": 2,
+        "sku": "ERR04-RJ01",
+        "name": "Ekskul Robotik Jimu",
+        "slug": "ekskul-robotik-jimu-err04-rj01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Jimu untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Jimu (Kode: ERR04-RJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 39,
+        "category_id": 2,
+        "sku": "ERR04-SMLK01",
+        "name": "Ekskul Robotik Sewa Microbit Learning Kit",
+        "slug": "ekskul-robotik-sewa-microbit-learning-kit-err04-smlk01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Sewa Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Sewa Microbit Learning Kit (Kode: ERR04-SMLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 40,
+        "category_id": 2,
+        "sku": "ERR05-MLK01",
+        "name": "Ekskul Microbit Learning Kit",
+        "slug": "ekskul-microbit-learning-kit-err05-mlk01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Learning Kit (Kode: ERR05-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 41,
+        "category_id": 2,
+        "sku": "ERR05-RB01",
+        "name": "Ekskul Robotik Erboblox",
+        "slug": "ekskul-robotik-erboblox-err05-rb01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Erboblox untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Erboblox (Kode: ERR05-RB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 42,
+        "category_id": 2,
+        "sku": "ERR05-RJ01",
+        "name": "Ekskul Robotik Jimu",
+        "slug": "ekskul-robotik-jimu-err05-rj01",
+        "summary": "Program edukasi teknologi Ekskul Robotik Jimu untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Robotik Jimu (Kode: ERR05-RJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 43,
+        "category_id": 2,
+        "sku": "ERR06-MLK01",
+        "name": "Ekskul Microbit Learning Kit",
+        "slug": "ekskul-microbit-learning-kit-err06-mlk01",
+        "summary": "Program edukasi teknologi Ekskul Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Ekskul Microbit Learning Kit (Kode: ERR06-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 4,
+        "sort_order": 996,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 44,
+        "category_id": 5,
+        "sku": "ICR01",
+        "name": "Inkul Coding Scratch",
+        "slug": "inkul-coding-scratch-icr01",
+        "summary": "Program edukasi teknologi Inkul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Coding Scratch (Kode: ICR01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 45,
+        "category_id": 5,
+        "sku": "ICR02",
+        "name": "Inkul Coding Scratch",
+        "slug": "inkul-coding-scratch-icr02",
+        "summary": "Program edukasi teknologi Inkul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Coding Scratch (Kode: ICR02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 46,
+        "category_id": 5,
+        "sku": "ICR03",
+        "name": "Inkul Coding Scratch",
+        "slug": "inkul-coding-scratch-icr03",
+        "summary": "Program edukasi teknologi Inkul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Coding Scratch (Kode: ICR03) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 47,
+        "category_id": 5,
+        "sku": "ICR04",
+        "name": "Inkul Coding Scratch",
+        "slug": "inkul-coding-scratch-icr04",
+        "summary": "Program edukasi teknologi Inkul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Coding Scratch (Kode: ICR04) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 48,
+        "category_id": 5,
+        "sku": "ICR05",
+        "name": "Inkul Coding Scratch",
+        "slug": "inkul-coding-scratch-icr05",
+        "summary": "Program edukasi teknologi Inkul Coding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Coding Scratch (Kode: ICR05) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 49,
+        "category_id": 5,
+        "sku": "ILMS-CK01A",
+        "name": "Inkul Koding KA + Informatika Kelas 1",
+        "slug": "inkul-koding-ka-informatika-kelas-1-ilms-ck01a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 1 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 1 (Kode: ILMS-CK01A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 50,
+        "category_id": 5,
+        "sku": "ILMS-CK01B",
+        "name": "Inkul Koding KA + Informatika Kelas 1",
+        "slug": "inkul-koding-ka-informatika-kelas-1-ilms-ck01b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 1 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 1 (Kode: ILMS-CK01B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 51,
+        "category_id": 5,
+        "sku": "ILMS-CK02A",
+        "name": "Inkul Koding KA + Informatika Kelas 2",
+        "slug": "inkul-koding-ka-informatika-kelas-2-ilms-ck02a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 2 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 2 (Kode: ILMS-CK02A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 52,
+        "category_id": 5,
+        "sku": "ILMS-CK02B",
+        "name": "Inkul Koding KA + Informatika Kelas 2",
+        "slug": "inkul-koding-ka-informatika-kelas-2-ilms-ck02b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 2 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 2 (Kode: ILMS-CK02B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 53,
+        "category_id": 5,
+        "sku": "ILMS-CK03A",
+        "name": "Inkul Koding KA + Informatika Kelas 3",
+        "slug": "inkul-koding-ka-informatika-kelas-3-ilms-ck03a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 3 (Kode: ILMS-CK03A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 5,
+        "sort_order": 995,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 54,
+        "category_id": 5,
+        "sku": "ILMS-CK03B",
+        "name": "Inkul Koding KA + Informatika Kelas 3",
+        "slug": "inkul-koding-ka-informatika-kelas-3-ilms-ck03b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 3 (Kode: ILMS-CK03B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 55,
+        "category_id": 5,
+        "sku": "ILMS-CK04A",
+        "name": "Inkul Koding KA + Informatika Kelas 4",
+        "slug": "inkul-koding-ka-informatika-kelas-4-ilms-ck04a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 4 (Kode: ILMS-CK04A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 5,
+        "sort_order": 995,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 56,
+        "category_id": 5,
+        "sku": "ILMS-CK04B",
+        "name": "Inkul Koding KA + Informatika Kelas 4",
+        "slug": "inkul-koding-ka-informatika-kelas-4-ilms-ck04b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 4 (Kode: ILMS-CK04B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 57,
+        "category_id": 5,
+        "sku": "ILMS-CK04C",
+        "name": "Inkul Koding KA + Informatika Kelas 4",
+        "slug": "inkul-koding-ka-informatika-kelas-4-ilms-ck04c",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 4 (Kode: ILMS-CK04C) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 58,
+        "category_id": 5,
+        "sku": "ILMS-CK04D",
+        "name": "Inkul Koding KA + Informatika Kelas 4",
+        "slug": "inkul-koding-ka-informatika-kelas-4-ilms-ck04d",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 4 (Kode: ILMS-CK04D) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 59,
+        "category_id": 5,
+        "sku": "ILMS-CK04E",
+        "name": "Inkul Koding KA + Informatika Kelas 4",
+        "slug": "inkul-koding-ka-informatika-kelas-4-ilms-ck04e",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 4 (Kode: ILMS-CK04E) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 60,
+        "category_id": 5,
+        "sku": "ILMS-CK05A",
+        "name": "Inkul Koding KA + Informatika Kelas 5",
+        "slug": "inkul-koding-ka-informatika-kelas-5-ilms-ck05a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 5 (Kode: ILMS-CK05A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 5,
+        "sort_order": 995,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 61,
+        "category_id": 5,
+        "sku": "ILMS-CK05B",
+        "name": "Inkul Koding KA + Informatika Kelas 5",
+        "slug": "inkul-koding-ka-informatika-kelas-5-ilms-ck05b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 5 (Kode: ILMS-CK05B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 62,
+        "category_id": 5,
+        "sku": "ILMS-CK05C",
+        "name": "Inkul Koding KA + Informatika Kelas 5",
+        "slug": "inkul-koding-ka-informatika-kelas-5-ilms-ck05c",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 5 (Kode: ILMS-CK05C) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 63,
+        "category_id": 5,
+        "sku": "ILMS-CK05D",
+        "name": "Inkul Koding KA + Informatika Kelas 5",
+        "slug": "inkul-koding-ka-informatika-kelas-5-ilms-ck05d",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 5 (Kode: ILMS-CK05D) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 64,
+        "category_id": 5,
+        "sku": "ILMS-CK06A",
+        "name": "Inkul Koding KA + Informatika Kelas 6",
+        "slug": "inkul-koding-ka-informatika-kelas-6-ilms-ck06a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 6 (Kode: ILMS-CK06A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 5,
+        "sort_order": 995,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 65,
+        "category_id": 5,
+        "sku": "ILMS-CK06B",
+        "name": "Inkul Koding KA + Informatika Kelas 6",
+        "slug": "inkul-koding-ka-informatika-kelas-6-ilms-ck06b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 6 (Kode: ILMS-CK06B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 66,
+        "category_id": 5,
+        "sku": "ILMS-CK06C",
+        "name": "Inkul Koding KA + Informatika Kelas 6",
+        "slug": "inkul-koding-ka-informatika-kelas-6-ilms-ck06c",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 6 (Kode: ILMS-CK06C) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 67,
+        "category_id": 5,
+        "sku": "ILMS-CK06D",
+        "name": "Inkul Koding KA + Informatika Kelas 6",
+        "slug": "inkul-koding-ka-informatika-kelas-6-ilms-ck06d",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 6 (Kode: ILMS-CK06D) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 68,
+        "category_id": 5,
+        "sku": "ILMS-CK07A",
+        "name": "Inkul Koding KA + Informatika Kelas 7",
+        "slug": "inkul-koding-ka-informatika-kelas-7-ilms-ck07a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 7 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 7 (Kode: ILMS-CK07A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 69,
+        "category_id": 5,
+        "sku": "ILMS-CK07B",
+        "name": "Inkul Koding KA + Informatika Kelas 7",
+        "slug": "inkul-koding-ka-informatika-kelas-7-ilms-ck07b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 7 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 7 (Kode: ILMS-CK07B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 70,
+        "category_id": 5,
+        "sku": "ILMS-CK08A",
+        "name": "Inkul Koding KA + Informatika Kelas 8",
+        "slug": "inkul-koding-ka-informatika-kelas-8-ilms-ck08a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 8 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 8 (Kode: ILMS-CK08A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 71,
+        "category_id": 5,
+        "sku": "ILMS-CK08B",
+        "name": "Inkul Koding KA + Informatika Kelas 8",
+        "slug": "inkul-koding-ka-informatika-kelas-8-ilms-ck08b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 8 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 8 (Kode: ILMS-CK08B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 72,
+        "category_id": 5,
+        "sku": "ILMS-CK09A",
+        "name": "Inkul Koding KA + Informatika Kelas 9",
+        "slug": "inkul-koding-ka-informatika-kelas-9-ilms-ck09a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 9 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 9 (Kode: ILMS-CK09A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 73,
+        "category_id": 5,
+        "sku": "ILMS-CK09B",
+        "name": "Inkul Koding KA + Informatika Kelas 9",
+        "slug": "inkul-koding-ka-informatika-kelas-9-ilms-ck09b",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 9 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 9 (Kode: ILMS-CK09B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 74,
+        "category_id": 5,
+        "sku": "ILMS-CK10A",
+        "name": "Inkul Koding KA + Informatika Kelas 10",
+        "slug": "inkul-koding-ka-informatika-kelas-10-ilms-ck10a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 10 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 10 (Kode: ILMS-CK10A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMA\/SMK"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 75,
+        "category_id": 5,
+        "sku": "ILMS-CK11A",
+        "name": "Inkul Koding KA + Informatika Kelas 11",
+        "slug": "inkul-koding-ka-informatika-kelas-11-ilms-ck11a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 11 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 11 (Kode: ILMS-CK11A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMA\/SMK"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 76,
+        "category_id": 5,
+        "sku": "ILMS-CK12A",
+        "name": "Inkul Koding KA + Informatika Kelas 12",
+        "slug": "inkul-koding-ka-informatika-kelas-12-ilms-ck12a",
+        "summary": "Program edukasi teknologi Inkul Koding KA + Informatika Kelas 12 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Koding KA + Informatika Kelas 12 (Kode: ILMS-CK12A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMA\/SMK"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 77,
+        "category_id": 5,
+        "sku": "ILMS-IKA01A",
+        "name": "Inkul Informatika + Koding KA Kelas 1",
+        "slug": "inkul-informatika-koding-ka-kelas-1-ilms-ika01a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 1 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 1 (Kode: ILMS-IKA01A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 78,
+        "category_id": 5,
+        "sku": "ILMS-IKA01B",
+        "name": "Inkul Informatika + Koding KA Kelas 1",
+        "slug": "inkul-informatika-koding-ka-kelas-1-ilms-ika01b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 1 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 1 (Kode: ILMS-IKA01B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 79,
+        "category_id": 5,
+        "sku": "ILMS-IKA02A",
+        "name": "Inkul Informatika + Koding KA Kelas 2",
+        "slug": "inkul-informatika-koding-ka-kelas-2-ilms-ika02a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 2 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 2 (Kode: ILMS-IKA02A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 80,
+        "category_id": 5,
+        "sku": "ILMS-IKA02B",
+        "name": "Inkul Informatika + Koding KA Kelas 2",
+        "slug": "inkul-informatika-koding-ka-kelas-2-ilms-ika02b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 2 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 2 (Kode: ILMS-IKA02B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 81,
+        "category_id": 5,
+        "sku": "ILMS-IKA03A",
+        "name": "Inkul Informatika + Koding KA Kelas 3",
+        "slug": "inkul-informatika-koding-ka-kelas-3-ilms-ika03a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 3 (Kode: ILMS-IKA03A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 82,
+        "category_id": 5,
+        "sku": "ILMS-IKA03B",
+        "name": "Inkul Informatika + Koding KA Kelas 3",
+        "slug": "inkul-informatika-koding-ka-kelas-3-ilms-ika03b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 3 (Kode: ILMS-IKA03B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 83,
+        "category_id": 5,
+        "sku": "ILMS-IKA04A",
+        "name": "Inkul Informatika + Koding KA Kelas 4",
+        "slug": "inkul-informatika-koding-ka-kelas-4-ilms-ika04a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 4 (Kode: ILMS-IKA04A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 84,
+        "category_id": 5,
+        "sku": "ILMS-IKA04B",
+        "name": "Inkul Informatika + Koding KA Kelas 4",
+        "slug": "inkul-informatika-koding-ka-kelas-4-ilms-ika04b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 4 (Kode: ILMS-IKA04B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 85,
+        "category_id": 5,
+        "sku": "ILMS-IKA05A",
+        "name": "Inkul Informatika + Koding KA Kelas 5",
+        "slug": "inkul-informatika-koding-ka-kelas-5-ilms-ika05a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 5 (Kode: ILMS-IKA05A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 86,
+        "category_id": 5,
+        "sku": "ILMS-IKA05B",
+        "name": "Inkul Informatika + Koding KA Kelas 5",
+        "slug": "inkul-informatika-koding-ka-kelas-5-ilms-ika05b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 5 (Kode: ILMS-IKA05B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 87,
+        "category_id": 5,
+        "sku": "ILMS-IKA05C",
+        "name": "Inkul Informatika + Koding KA Kelas 5",
+        "slug": "inkul-informatika-koding-ka-kelas-5-ilms-ika05c",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 5 (Kode: ILMS-IKA05C) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 88,
+        "category_id": 5,
+        "sku": "ILMS-IKA06A",
+        "name": "Inkul Informatika + Koding KA Kelas 6",
+        "slug": "inkul-informatika-koding-ka-kelas-6-ilms-ika06a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 6 (Kode: ILMS-IKA06A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 89,
+        "category_id": 5,
+        "sku": "ILMS-IKA06B",
+        "name": "Inkul Informatika + Koding KA Kelas 6",
+        "slug": "inkul-informatika-koding-ka-kelas-6-ilms-ika06b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 6 (Kode: ILMS-IKA06B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 90,
+        "category_id": 5,
+        "sku": "ILMS-IKA07A",
+        "name": "Inkul Informatika + Koding KA Kelas 7",
+        "slug": "inkul-informatika-koding-ka-kelas-7-ilms-ika07a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 7 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 7 (Kode: ILMS-IKA07A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 91,
+        "category_id": 5,
+        "sku": "ILMS-IKA07B",
+        "name": "Inkul Informatika + Koding KA Kelas 7",
+        "slug": "inkul-informatika-koding-ka-kelas-7-ilms-ika07b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 7 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 7 (Kode: ILMS-IKA07B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 92,
+        "category_id": 5,
+        "sku": "ILMS-IKA08A",
+        "name": "Inkul Informatika + Koding KA Kelas 8",
+        "slug": "inkul-informatika-koding-ka-kelas-8-ilms-ika08a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 8 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 8 (Kode: ILMS-IKA08A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 93,
+        "category_id": 5,
+        "sku": "ILMS-IKA08B",
+        "name": "Inkul Informatika + Koding KA Kelas 8",
+        "slug": "inkul-informatika-koding-ka-kelas-8-ilms-ika08b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 8 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 8 (Kode: ILMS-IKA08B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 94,
+        "category_id": 5,
+        "sku": "ILMS-IKA09A",
+        "name": "Inkul Informatika + Koding KA Kelas 9",
+        "slug": "inkul-informatika-koding-ka-kelas-9-ilms-ika09a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 9 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 9 (Kode: ILMS-IKA09A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 95,
+        "category_id": 5,
+        "sku": "ILMS-IKA09B",
+        "name": "Inkul Informatika + Koding KA Kelas 9",
+        "slug": "inkul-informatika-koding-ka-kelas-9-ilms-ika09b",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 9 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 9 (Kode: ILMS-IKA09B) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 96,
+        "category_id": 5,
+        "sku": "ILMS-IKA10A",
+        "name": "Inkul Informatika + Koding KA Kelas 10",
+        "slug": "inkul-informatika-koding-ka-kelas-10-ilms-ika10a",
+        "summary": "Program edukasi teknologi Inkul Informatika + Koding KA Kelas 10 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Inkul Informatika + Koding KA Kelas 10 (Kode: ILMS-IKA10A) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMA\/SMK"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 97,
+        "category_id": 5,
+        "sku": "KLMS-CS01",
+        "name": "Kursus LMS Koding Scratch",
+        "slug": "kursus-lms-koding-scratch-klms-cs01",
+        "summary": "Program edukasi teknologi Kursus LMS Koding Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Kursus LMS Koding Scratch (Kode: KLMS-CS01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 3,
+        "sort_order": 997,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 98,
+        "category_id": 6,
+        "sku": "KLMS-MLK01",
+        "name": "Kursus LMS Micro:bit Learning Kit",
+        "slug": "kursus-lms-microbit-learning-kit-klms-mlk01",
+        "summary": "Program edukasi teknologi Kursus LMS Micro:bit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Kursus LMS Micro:bit Learning Kit (Kode: KLMS-MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 99,
+        "category_id": 1,
+        "sku": "LMS-PMB01",
+        "name": "Asesmen Potensi, Minat dan Bakat 1-3",
+        "slug": "asesmen-potensi-minat-dan-bakat-1-3-lms-pmb01",
+        "summary": "Program edukasi teknologi Asesmen Potensi, Minat dan Bakat 1-3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Asesmen Potensi, Minat dan Bakat 1-3 (Kode: LMS-PMB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 100,
+        "category_id": 1,
+        "sku": "LMS-PMB02",
+        "name": "Asesmen Potensi, Minat dan Bakat 4-6",
+        "slug": "asesmen-potensi-minat-dan-bakat-4-6-lms-pmb02",
+        "summary": "Program edukasi teknologi Asesmen Potensi, Minat dan Bakat 4-6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Asesmen Potensi, Minat dan Bakat 4-6 (Kode: LMS-PMB02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 101,
+        "category_id": 1,
+        "sku": "LMS-PMB03",
+        "name": "Asesmen Potensi, Minat dan Bakat 7-9",
+        "slug": "asesmen-potensi-minat-dan-bakat-7-9-lms-pmb03",
+        "summary": "Program edukasi teknologi Asesmen Potensi, Minat dan Bakat 7-9 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Asesmen Potensi, Minat dan Bakat 7-9 (Kode: LMS-PMB03) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 102,
+        "category_id": 1,
+        "sku": "LMS-PMB04",
+        "name": "Asesmen Potensi, Minat dan Bakat 10-12",
+        "slug": "asesmen-potensi-minat-dan-bakat-10-12-lms-pmb04",
+        "summary": "Program edukasi teknologi Asesmen Potensi, Minat dan Bakat 10-12 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Asesmen Potensi, Minat dan Bakat 10-12 (Kode: LMS-PMB04) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 103,
+        "category_id": 2,
+        "sku": "MB01",
+        "name": "Microbit Beginner",
+        "slug": "microbit-beginner-mb01",
+        "summary": "Program edukasi teknologi Microbit Beginner untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Microbit Beginner (Kode: MB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 13,
+        "sort_order": 987,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 104,
+        "category_id": 3,
+        "sku": "MLJ01",
+        "name": "Modul LKPD TIK Jilid 1",
+        "slug": "modul-lkpd-tik-jilid-1-mlj01",
+        "summary": "Program edukasi teknologi Modul LKPD TIK Jilid 1 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul LKPD TIK Jilid 1 (Kode: MLJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 105,
+        "category_id": 3,
+        "sku": "MLJ02",
+        "name": "Modul LKPD TIK Jilid 2",
+        "slug": "modul-lkpd-tik-jilid-2-mlj02",
+        "summary": "Program edukasi teknologi Modul LKPD TIK Jilid 2 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul LKPD TIK Jilid 2 (Kode: MLJ02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 106,
+        "category_id": 3,
+        "sku": "MLJ03",
+        "name": "Modul LKPD TIK Jilid 3",
+        "slug": "modul-lkpd-tik-jilid-3-mlj03",
+        "summary": "Program edukasi teknologi Modul LKPD TIK Jilid 3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul LKPD TIK Jilid 3 (Kode: MLJ03) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 107,
+        "category_id": 3,
+        "sku": "MLJ04",
+        "name": "Modul LKPD TIK Jilid 4",
+        "slug": "modul-lkpd-tik-jilid-4-mlj04",
+        "summary": "Program edukasi teknologi Modul LKPD TIK Jilid 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul LKPD TIK Jilid 4 (Kode: MLJ04) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 108,
+        "category_id": 3,
+        "sku": "MLJ05",
+        "name": "Modul LKPD TIK Jilid 5",
+        "slug": "modul-lkpd-tik-jilid-5-mlj05",
+        "summary": "Program edukasi teknologi Modul LKPD TIK Jilid 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul LKPD TIK Jilid 5 (Kode: MLJ05) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 109,
+        "category_id": 3,
+        "sku": "MLJ06",
+        "name": "Modul LKPD TIK Jilid 6",
+        "slug": "modul-lkpd-tik-jilid-6-mlj06",
+        "summary": "Program edukasi teknologi Modul LKPD TIK Jilid 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul LKPD TIK Jilid 6 (Kode: MLJ06) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 110,
+        "category_id": 2,
+        "sku": "MLK01",
+        "name": "Microbit Learning Kit",
+        "slug": "microbit-learning-kit-mlk01",
+        "summary": "Program edukasi teknologi Microbit Learning Kit untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Microbit Learning Kit (Kode: MLK01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 260,
+        "sort_order": 740,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 111,
+        "category_id": 5,
+        "sku": "MSJ01",
+        "name": "Modul Scratch Jilid 1",
+        "slug": "modul-scratch-jilid-1-msj01",
+        "summary": "Program edukasi teknologi Modul Scratch Jilid 1 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Scratch Jilid 1 (Kode: MSJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 312,
+        "sort_order": 688,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 112,
+        "category_id": 5,
+        "sku": "MSJ02",
+        "name": "Modul Scratch Jilid 2",
+        "slug": "modul-scratch-jilid-2-msj02",
+        "summary": "Program edukasi teknologi Modul Scratch Jilid 2 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Scratch Jilid 2 (Kode: MSJ02) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 303,
+        "sort_order": 697,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 113,
+        "category_id": 5,
+        "sku": "MSJ03",
+        "name": "Modul Scratch Jilid 3",
+        "slug": "modul-scratch-jilid-3-msj03",
+        "summary": "Program edukasi teknologi Modul Scratch Jilid 3 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Scratch Jilid 3 (Kode: MSJ03) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 302,
+        "sort_order": 698,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 114,
+        "category_id": 5,
+        "sku": "MSJ04",
+        "name": "Modul Scratch Jilid 4",
+        "slug": "modul-scratch-jilid-4-msj04",
+        "summary": "Program edukasi teknologi Modul Scratch Jilid 4 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Scratch Jilid 4 (Kode: MSJ04) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 249,
+        "sort_order": 751,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 115,
+        "category_id": 5,
+        "sku": "MSJ05",
+        "name": "Modul Scratch Jilid 5",
+        "slug": "modul-scratch-jilid-5-msj05",
+        "summary": "Program edukasi teknologi Modul Scratch Jilid 5 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Scratch Jilid 5 (Kode: MSJ05) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 245,
+        "sort_order": 755,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 116,
+        "category_id": 5,
+        "sku": "MSJ06",
+        "name": "Modul Scratch Jilid 6",
+        "slug": "modul-scratch-jilid-6-msj06",
+        "summary": "Program edukasi teknologi Modul Scratch Jilid 6 untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Scratch Jilid 6 (Kode: MSJ06) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 246,
+        "sort_order": 754,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 117,
+        "category_id": 5,
+        "sku": "MSJ07",
+        "name": "Modul Project Scratch",
+        "slug": "modul-project-scratch-msj07",
+        "summary": "Program edukasi teknologi Modul Project Scratch untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Project Scratch (Kode: MSJ07) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 16,
+        "sort_order": 984,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 118,
+        "category_id": 3,
+        "sku": "MSJ08",
+        "name": "Modul Project Pictoblox AI",
+        "slug": "modul-project-pictoblox-ai-msj08",
+        "summary": "Program edukasi teknologi Modul Project Pictoblox AI untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Project Pictoblox AI (Kode: MSJ08) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 31,
+        "sort_order": 969,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 119,
+        "category_id": 5,
+        "sku": "MSJ09",
+        "name": "Modul Python",
+        "slug": "modul-python-msj09",
+        "summary": "Program edukasi teknologi Modul Python untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Modul Python (Kode: MSJ09) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 120,
+        "category_id": 5,
+        "sku": "PC01",
+        "name": "Paket A",
+        "slug": "paket-a-pc01",
+        "summary": "Program edukasi teknologi Paket A untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Paket A (Kode: PC01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 0,
+        "sort_order": 500,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 121,
+        "category_id": 5,
+        "sku": "PIOT",
+        "name": "Projek IOT",
+        "slug": "projek-iot-piot",
+        "summary": "Program edukasi teknologi Projek IOT untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Projek IOT (Kode: PIOT) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 2,
+        "sort_order": 998,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 122,
+        "category_id": 5,
+        "sku": "PTMERL",
+        "name": "PTM HRD Erlangga",
+        "slug": "ptm-hrd-erlangga-ptmerl",
+        "summary": "Program edukasi teknologi PTM HRD Erlangga untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran PTM HRD Erlangga (Kode: PTMERL) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 14,
+        "sort_order": 986,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 123,
+        "category_id": 5,
+        "sku": "PTMGAP",
+        "name": "PTM HRD GAP",
+        "slug": "ptm-hrd-gap-ptmgap",
+        "summary": "Program edukasi teknologi PTM HRD GAP untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran PTM HRD GAP (Kode: PTMGAP) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 6,
+        "sort_order": 994,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 124,
+        "category_id": 5,
+        "sku": "PTMI",
+        "name": "PTMIOT",
+        "slug": "ptmiot-ptmi",
+        "summary": "Program edukasi teknologi PTMIOT untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran PTMIOT (Kode: PTMI) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 125,
+        "category_id": 5,
+        "sku": "PTMKOM",
+        "name": "PTM Komersil",
+        "slug": "ptm-komersil-ptmkom",
+        "summary": "Program edukasi teknologi PTM Komersil untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran PTM Komersil (Kode: PTMKOM) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 7,
+        "sort_order": 993,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 126,
+        "category_id": 5,
+        "sku": "PTMR",
+        "name": "PTM Robotik",
+        "slug": "ptm-robotik-ptmr",
+        "summary": "Program edukasi teknologi PTM Robotik untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran PTM Robotik (Kode: PTMR) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 127,
+        "category_id": 5,
+        "sku": "PTMY",
+        "name": "PTM Python",
+        "slug": "ptm-python-ptmy",
+        "summary": "Program edukasi teknologi PTM Python untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran PTM Python (Kode: PTMY) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Jasa",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": false,
+        "deal_count": 1,
+        "sort_order": 999,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 128,
+        "category_id": 7,
+        "sku": "RB01",
+        "name": "Robotik Erboblox",
+        "slug": "robotik-erboblox-rb01",
+        "summary": "Program edukasi teknologi Robotik Erboblox untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Robotik Erboblox (Kode: RB01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 10,
+        "sort_order": 990,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 129,
+        "category_id": 7,
+        "sku": "RE01",
+        "name": "Robotik Explorer",
+        "slug": "robotik-explorer-re01",
+        "summary": "Program edukasi teknologi Robotik Explorer untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Robotik Explorer (Kode: RE01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 89,
+        "sort_order": 911,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    },
+    {
+        "id": 130,
+        "category_id": 7,
+        "sku": "RJ01",
+        "name": "Robotik Jimu",
+        "slug": "robotik-jimu-rj01",
+        "summary": "Program edukasi teknologi Robotik Jimu untuk meningkatkan kompetensi digital generasi muda.",
+        "description": "Paket pembelajaran Robotik Jimu (Kode: RJ01) dirancang terintegrasi dengan perangkat, kurikulum, modul praktikum, dan pendampingan instruktur profesional Erlass.",
+        "product_type": "Fisik",
+        "education_levels": [
+            "SD",
+            "SMP"
+        ],
+        "features": [
+            "Kurikulum adaptif sesuai Kurikulum Merdeka",
+            "Panduan instruktur & modul komprehensif",
+            "Sertifikat pelatihan resmi dari Erlass Institute",
+            "Monitoring perkembangan kemampuan siswa berkala"
+        ],
+        "cover_image": null,
+        "status": "published",
+        "is_featured": true,
+        "deal_count": 10,
+        "sort_order": 990,
+        "created_at": "2026-11-10T04:36:42.000000Z",
+        "updated_at": "2026-11-10T04:36:42.000000Z"
+    }
+]

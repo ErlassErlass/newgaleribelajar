@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "crm_id": 8,
+        "name": "Asesmen Bakat & Potensi Siswa",
+        "slug": "asesmen-potensi-siswa",
+        "description": "Instrumen evaluasi psikometrik dan pemetaan minat bakat siswa terstandarisasi untuk panduan penjurusan dan pengembangan diri.",
+        "icon": "clipboard-check",
+        "sort_order": 4,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 2,
+        "crm_id": 7,
+        "name": "Micro:bit & IoT",
+        "slug": "microbit-iot",
+        "description": "Pembelajaran elektronika cerdas, sensor, dan Internet of Things (IoT) berbasis board BBC micro:bit yang interaktif.",
+        "icon": "cpu",
+        "sort_order": 2,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 3,
+        "crm_id": 10,
+        "name": "Modul Belajar & LKPD Cetak",
+        "slug": "modul-cetak",
+        "description": "Buku kerja siswa dan Lembar Kerja Peserta Didik (LKPD) komprehensif berstandar Kurikulum Merdeka.",
+        "icon": "book-open",
+        "sort_order": 6,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 4,
+        "crm_id": 11,
+        "name": "E-Book & Modul Digital PDF",
+        "slug": "modul-pdf",
+        "description": "Bahan ajar digital interaktif berformat PDF siap pakai untuk guru dan siswa di sekolah.",
+        "icon": "file-text",
+        "sort_order": 7,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 5,
+        "crm_id": 6,
+        "name": "Coding & Informatika",
+        "slug": "coding-informatika",
+        "description": "Program pembelajaran pemrograman visual Scratch, logika komputasi, dan kurikulum informatika terstruktur untuk jenjang SD hingga SMP.",
+        "icon": "code",
+        "sort_order": 1,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 6,
+        "crm_id": 5,
+        "name": "Erlass Academy LMS",
+        "slug": "erlass-academy-lms",
+        "description": "Platform Learning Management System terintegrasi untuk manajemen kelas, materi digital, tugas, dan ujian sekolah.",
+        "icon": "layout",
+        "sort_order": 5,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    },
+    {
+        "id": 7,
+        "crm_id": 9,
+        "name": "Robotika Edukasi",
+        "slug": "robotika-edukasi",
+        "description": "Pengembangan mechanical engineering, algoritma pergerakan, dan perakitan robot menggunakan kit Erboblox, Jimu, dan Explorer.",
+        "icon": "bot",
+        "sort_order": 3,
+        "is_active": true,
+        "created_at": "2026-11-10T04:36:41.000000Z",
+        "updated_at": "2026-11-10T04:36:41.000000Z"
+    }
+]

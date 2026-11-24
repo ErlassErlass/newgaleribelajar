@@ -1,59 +1,113 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏫 Erlass — Solusi Teknologi & Pendidikan B2B (erlass.co.id)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> **Website Resmi PT Erlass Prokreatif Indonesia**  
+> *Mempersiapkan Generasi Masa Depan Melalui Teknologi dan Inovasi.*  
+> **Domain Resmi:** `https://erlass.co.id` | **Staging Environment:** `https://newgaleri.erlass.institute`
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 Ringkasan Proyek
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Repositori ini adalah basis kode untuk website korporat dan landing page B2B **PT Erlass Prokreatif Indonesia**. Website ini dirancang khusus untuk membangun kredibilitas korporat, menyajikan portofolio kurikulum teknologi, serta menangkap prospek (*lead generation*) dari kepala sekolah, ketua yayasan pendidikan, dinas pendidikan, dan mitra bisnis.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Data produk, kategori, dan sekolah mitra disinkronkan secara langsung dari basis data operasional **Erlass CRM** (`erlass_data`).
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🎨 Identitas Visual & Palet Warna Resmi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Menggunakan standar palet resmi dari [Coolors (erlass-palette)](https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500):
 
-## Laravel Sponsors
+| Warna | Hex | Peran Desain |
+|---|---|---|
+| **Prussian Navy** | `#023047` | Latar belakang hero banner, navbar announcement, footer, heading teks utama kontras tinggi |
+| **Blue-Green / Cyan** | `#219ebc` | Aksen brand utama, ikon fitur, tautan hover, status aktif, border fokus |
+| **Light Sky Blue** | `#8ecae6` | Border halus, grid dekoratif latar belakang, pill badges, subtle hover glow |
+| **Selective Yellow** | `#ffb703` | Highlight metrik kuantitatif (400+ sekolah mitra, 1.100+ SP deals), badge kategori |
+| **UT Orange** | `#fb8500` | Tombol aksi konversi tinggi (*Primary CTA*: *Konsultasi Sekolah*, *Ajukan Penawaran*) |
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🚀 4 Solusi Pendidikan Utama (Core Solutions)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. **Coding & Informatika:** Kurikulum koding visual Scratch, Python tingkat lanjut, buku modul LKPD berjenjang kelas 1–6 SD hingga SMA.
+2. **Robotic & Micro:bit:** Eksplorasi robotika terpadu dengan Micro:bit v2, sensor IoT, Erboblox, dan autonomous smart car.
+3. **Erlass Academy LMS:** Platform pembelajaran terintegrasi (manajemen kelas, bank soal CBT, rapor berkala, dashboard analitik).
+4. **Student Assessment:** Asesmen Potensi, Minat, dan Bakat (PMB) siswa kelas 1–12 untuk panduan penjurusan akademik dan karier.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📊 Data Faktual Riil Erlass CRM
 
-## Code of Conduct
+- **Sekolah Mitra Terverifikasi:** **407 sekolah** di seluruh Indonesia dengan status kontrak `Deal` pada jenjang TK/SD/SMP/SMA/SMK.
+- **Total Kontrak SP:** **1.162+ transaksi kontrak program** terlaksana.
+- **Katalog Produk:** **130 produk** terdaftar dengan SKU resmi dan kategori yang disinkronkan dari CRM.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🛠️ Tech Stack
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Backend Framework:** Laravel 12 (PHP 8.3 / 8.4)
+- **Admin Panel:** Filament PHP v4
+- **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`)
+- **Frontend Bundler:** Vite 7
+- **Animasi & Interaktivitas:** GSAP (ScrollTrigger), Lenis Smooth Scroll, Three.js 3D Particles
+- **Database:** MySQL (Database utama `newgaleribelajar_db`, integrasi CRM `erlass_data`)
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 💻 Panduan Instalasi Lokal
+
+### 1. Clone Repositori
+```bash
+git clone git@github.com:ErlassErlass/newgaleribelajar.git
+cd newgaleribelajar
+```
+
+### 2. Install Dependensi PHP & Node.js
+```bash
+composer install
+npm install
+```
+
+### 3. Konfigurasi Environment (.env)
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+Sesuaikan konfigurasi database MySQL di `.env`:
+```ini
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=newgaleribelajar_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Jalankan Migrasi & Database Seeder (Data CRM Otomatis)
+```bash
+php artisan migrate --seed
+```
+*Seeder `CrmDataSeeder` akan otomatis mengisi 7 kategori, 130 produk, dan 407 sekolah mitra secara offline tanpa memerlukan koneksi langsung ke server CRM.*
+
+### 5. Kompilasi Aset Frontend
+```bash
+# Untuk pengembangan lokal:
+npm run dev
+
+# Untuk build produksi:
+npm run build
+```
+
+### 6. Jalankan Server Lokal
+```bash
+php artisan serve
+```
+Akses website melalui peramban di `http://127.0.0.1:8000`.
+
+---
+
+## 🛡️ Standar Kualitas & Kepatuhan
+- **Anti-AI Slop:** Seluruh narasi menggunakan fakta korporat nyata, menghilangkan kata klise hiperbolis, dan menggunakan ikon vektor inline SVG.
+- **Kepatuhan Regulasi:** Formulir penawaran dilengkapi persetujuan eksplisit kepatuhan **UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)**.

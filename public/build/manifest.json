@@ -1,0 +1,29 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D5VLuxiq.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BdfwD51t.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/hero-3d.js"
+    ],
+    "css": [
+      "assets/app-D5VLuxiq.css"
+    ]
+  },
+  "resources/js/hero-3d.js": {
+    "file": "assets/hero-3d-Ckt1AXGw.js",
+    "name": "hero-3d",
+    "src": "resources/js/hero-3d.js",
+    "isDynamicEntry": true
+  }
+}
