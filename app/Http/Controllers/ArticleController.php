@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\ArticleCategory;
+use App\Support\SiteCache;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -25,13 +26,18 @@ class ArticleController extends Controller
         $search = trim(mb_substr((string) $request->query('q'), 0, 100));
 
         $articles = Article::published()
+            ->forCards()
             ->when($category, fn ($q) => $q->where('category', $category))
             ->when($tag, fn ($q) => $q->withTag($tag))
             ->when($search !== '', function ($q) use ($search) {
                 $like = '%'.addcslashes($search, '%_\\').'%';
+                // Both languages, so visitors reading in English also find articles
                 $q->where(fn ($w) => $w->where('title', 'like', $like)
+                    ->orWhere('title_en', 'like', $like)
                     ->orWhere('excerpt', 'like', $like)
+                    ->orWhere('excerpt_en', 'like', $like)
                     ->orWhere('body', 'like', $like)
+                    ->orWhere('body_en', 'like', $like)
                     ->orWhere('tags', 'like', $like));
             })
             ->pinnedFirst()
@@ -71,6 +77,7 @@ class ArticleController extends Controller
 
         // Related: same category first, then latest
         $related = Article::published()
+            ->forCards()
             ->where('id', '!=', $article->id)
             ->orderByRaw('category = ? desc', [$article->category])
             ->take(3)
@@ -89,14 +96,18 @@ class ArticleController extends Controller
     /** @return array<string,int> tag => count, most used first */
     private function popularTags(int $limit = 12): array
     {
-        $counts = [];
-        Article::published()->pluck('tags')->each(function ($tags) use (&$counts) {
-            foreach ((array) $tags as $t) {
-                $counts[$t] = ($counts[$t] ?? 0) + 1;
-            }
-        });
-        arsort($counts);
+        // Reads every article's tags, so cache it: saving an article flushes SiteCache; the TTL picks up
+        // scheduled articles that go live later.
+        return SiteCache::remember('articles.popular-tags.'.$limit, 600, function () use ($limit) {
+            $counts = [];
+            Article::published()->pluck('tags')->each(function ($tags) use (&$counts) {
+                foreach ((array) $tags as $t) {
+                    $counts[$t] = ($counts[$t] ?? 0) + 1;
+                }
+            });
+            arsort($counts);
 
-        return array_slice($counts, 0, $limit, true);
+            return array_slice($counts, 0, $limit, true);
+        });
     }
 }

@@ -15,11 +15,20 @@ class SetLocale
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
+    /** Languages the public site offers (see the ID / EN switcher in the header). */
+    public const LOCALES = ['id', 'en'];
+
+    /** Shown until a visitor picks a language. Indonesian on purpose, independent of APP_LOCALE in .env. */
+    public const DEFAULT = 'id';
+
     public function handle(Request $request, Closure $next): Response
     {
-        if (Session::has('locale')) {
-            App::setLocale(Session::get('locale'));
-        }
+        $locale = Session::get('locale');
+        $locale = in_array($locale, self::LOCALES, true) ? $locale : self::DEFAULT;
+        App::setLocale($locale);
+        // Tells HasEnglishContent models (products, articles) which version of their text to show.
+        // Only public routes run this middleware, so the admin panel keeps editing the Indonesian original.
+        config(['erlass.content_locale' => $locale]);
 
         return $next($request);
     }

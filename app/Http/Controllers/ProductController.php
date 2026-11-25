@@ -58,10 +58,14 @@ class ProductController extends Controller
             ->when($type, fn ($q) => $q->where('product_type', $type === 'fisik' ? 'Fisik' : 'Jasa'))
             ->when($search !== '', function ($q) use ($search) {
                 $like = '%'.addcslashes($search, '%_\\').'%';
+                // Both languages, so visitors reading in English also find products
                 $q->where(fn ($w) => $w->where('name', 'like', $like)
+                    ->orWhere('name_en', 'like', $like)
                     ->orWhere('sku', 'like', $like)
                     ->orWhere('summary', 'like', $like)
-                    ->orWhere('description', 'like', $like));
+                    ->orWhere('summary_en', 'like', $like)
+                    ->orWhere('description', 'like', $like)
+                    ->orWhere('description_en', 'like', $like));
             })
             ->when($sort === 'populer', fn ($q) => $q->orderByDesc('on_shopee')->orderByDesc('group_deals')->orderBy('sort_order'))
             ->when($sort === 'dilihat', fn ($q) => $q->orderByDesc('views')->orderByDesc('group_deals'))
@@ -89,12 +93,12 @@ class ProductController extends Controller
         $product = Product::published()->with('category')->where('slug', $slug)->firstOrFail();
 
         // Rombel rows (ECR01..ECR07 "Ekskul Coding Scratch") share one page: the lowest-id row is canonical
-        $canonical = Product::published()->where('name', $product->name)->orderBy('id')->first();
+        $canonical = Product::published()->where('name', $product->getRawOriginal('name'))->orderBy('id')->first();
         if ($canonical->id !== $product->id) {
             return redirect()->route('products.show', $canonical->slug, 301);
         }
-        $product->group_deals = Product::published()->where('name', $product->name)->sum('deal_count');
-        $hasRombel = Product::published()->where('name', $product->name)->count() > 1;
+        $product->group_deals = Product::published()->where('name', $product->getRawOriginal('name'))->sum('deal_count');
+        $hasRombel = Product::published()->where('name', $product->getRawOriginal('name'))->count() > 1;
 
         // One view per product per visitor session. Query-level increment: no model events, so the
         // page caches are not flushed on every visit.

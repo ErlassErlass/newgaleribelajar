@@ -10,6 +10,11 @@ use Illuminate\Support\Str;
 
 class Article extends Model
 {
+    use \App\Support\HasEnglishContent;
+
+    /** Columns with an English twin (<field>_en) shown on the public site in EN. See HasEnglishContent. */
+    protected array $englishFields = ['title', 'excerpt', 'body'];
+
     use \App\Support\LogsActivity;
 
     protected $guarded = [];
@@ -50,6 +55,17 @@ class Article extends Model
     }
 
     /** Pinned articles first (latest pin on top), then newest. Replaces any earlier ordering. */
+    /** What article cards show: everything except the long bodies, so listings stay light as articles grow. */
+    public const CARD_COLUMNS = [
+        'id', 'title', 'title_en', 'slug', 'category', 'excerpt', 'excerpt_en', 'cover_image', 'tags', 'views',
+        'is_published', 'is_pinned', 'pinned_at', 'published_at', 'created_at', 'updated_at',
+    ];
+
+    public function scopeForCards(Builder $query): Builder
+    {
+        return $query->select(array_map(fn ($c) => $this->getTable().'.'.$c, self::CARD_COLUMNS));
+    }
+
     public function scopePinnedFirst(Builder $query): Builder
     {
         return $query->reorder()
@@ -127,12 +143,17 @@ class Article extends Model
 
     public function getSeoTitleAttribute(): string
     {
-        return $this->meta_title ?: Str::limit($this->title, 60, '');
+        // The meta fields are written in Indonesian: in English, use the translated title instead
+        $meta = static::wantsEnglishContent() && $this->hasEnglish('title') ? null : $this->meta_title;
+
+        return $meta ?: Str::limit($this->title, 60, '');
     }
 
     public function getSeoDescriptionAttribute(): string
     {
-        return $this->meta_description ?: Str::limit($this->excerpt ?: strip_tags($this->body), 160);
+        $meta = static::wantsEnglishContent() && ($this->hasEnglish('excerpt') || $this->hasEnglish('body')) ? null : $this->meta_description;
+
+        return $meta ?: Str::limit($this->excerpt ?: strip_tags($this->body), 160);
     }
 
     public function getReadMinutesAttribute(): int
@@ -144,6 +165,7 @@ class Article extends Model
     public function previousArticle(): ?self
     {
         return static::published()
+            ->forCards()
             ->where('published_at', '<', $this->published_at)
             ->first();
     }
@@ -152,6 +174,7 @@ class Article extends Model
     public function nextArticle(): ?self
     {
         return static::query()
+            ->forCards()
             ->where('is_published', true)
             ->where('published_at', '<=', now())
             ->where('published_at', '>', $this->published_at)

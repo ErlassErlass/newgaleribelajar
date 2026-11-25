@@ -37,5 +37,8 @@ class DatabaseSeeder extends Seeder
             GallerySeeder::class,
             FaqSeeder::class,
         ]);
+
+        // English versions of the seeded products and articles (empty English fields only)
+        \App\Support\EnglishContent::fill();
     }
 }

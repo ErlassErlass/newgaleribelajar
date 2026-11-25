@@ -10,6 +10,11 @@ use Illuminate\Support\Str;
 
 class Product extends Model
 {
+    use \App\Support\HasEnglishContent;
+
+    /** Columns with an English twin (<field>_en) shown on the public site in EN. See HasEnglishContent. */
+    protected array $englishFields = ['name', 'summary', 'description'];
+
     use \App\Support\LogsActivity;
 
     use \App\Support\FlushesSiteCache;
@@ -25,10 +30,13 @@ class Product extends Model
         'category_id',
         'sku',
         'name',
+        'name_en',
         'author',
         'slug',
         'summary',
+        'summary_en',
         'description',
+        'description_en',
         'product_type',
         'education_levels',
         'features',
@@ -190,40 +198,40 @@ class Product extends Model
     {
         if ($this->on_lms) {
             return match ($this->lms_group) {
-                'intrakurikuler' => 'Intrakurikuler LMS',
-                'course' => 'Course LMS',
-                'asesmen' => 'Asesmen LMS',
-                default => 'Platform LMS',
+                'intrakurikuler' => __('Intrakurikuler LMS'),
+                'course' => __('Course LMS'),
+                'asesmen' => __('Asesmen LMS'),
+                default => __('Platform LMS'),
             };
         }
 
-        return $this->is_physical ? 'Produk Fisik' : 'Program / Layanan';
+        return $this->is_physical ? __('Produk Fisik') : __('Program / Layanan');
     }
 
     public function getLevelsLabelAttribute(): string
     {
         $levels = array_filter((array) $this->education_levels);
 
-        return $levels ? implode(', ', $levels) : 'Semua jenjang';
+        return $levels ? implode(', ', $levels) : __('Semua jenjang');
     }
 
     /** Badge shown on the card: [label, tailwind classes] or null. */
     public function getBadgeAttribute(): ?array
     {
         if ($this->is_free) {
-            return ['Gratis', 'bg-emerald-500 text-white'];
+            return [__('Gratis'), 'bg-emerald-500 text-white'];
         }
         if ($this->total_deals >= 100) {
-            return ['Terlaris', 'bg-[#ffb703] text-[#023047]'];
+            return [__('Terlaris'), 'bg-[#ffb703] text-[#023047]'];
         }
         if ($this->on_lms) {
             return ['LMS', 'bg-[#219ebc] text-white'];
         }
         if ($this->is_featured || $this->total_deals >= 10) {
-            return ['Populer', 'bg-[#fb8500] text-white'];
+            return [__('Populer'), 'bg-[#fb8500] text-white'];
         }
         if ($this->created_at && $this->created_at->gt(now()->subDays(60))) {
-            return ['Terbaru', 'bg-[#1d4ed8] text-white'];
+            return [__('Terbaru'), 'bg-[#1d4ed8] text-white'];
         }
 
         return null;
@@ -241,21 +249,21 @@ class Product extends Model
         $features = array_filter((array) $this->features);
         $buy = [];
         if ($this->on_shopee) {
-            $buy[] = "{$this->name} juga dapat dibeli di toko Shopee resmi Erlass ({$this->shop_link}).";
+            $buy[] = __(":name juga dapat dibeli di toko Shopee resmi Erlass (:link).", ["name" => $this->name, "link" => $this->shop_link]);
         }
         if ($this->lms_url) {
-            $buy[] = "Akses langsung di LMS Erlass Academy: {$this->lms_url}";
+            $buy[] = __("Akses langsung di LMS Erlass Academy: :url", ["url" => $this->lms_url]);
         }
 
         return [
             '{produk}' => $this->name,
             '{jenjang}' => $this->levels_label,
-            '{kategori}' => $this->category?->name ?? 'pendidikan teknologi',
+            '{kategori}' => $this->category?->name ? __($this->category->name) : __('pendidikan teknologi'),
             '{jenis}' => mb_strtolower($this->type_label),
-            '{ringkasan}' => (string) $this->summary,
+            '{ringkasan}' => $this->summary ? __($this->summary) : '',
             '{deskripsi}' => (string) ($this->description ?: $this->summary),
-            '{fitur}' => $features ? implode('; ', $features).'.' : (string) ($this->description ?: $this->summary),
-            '{sekolah}' => $this->total_deals > 0 ? $this->total_deals.'+' : 'banyak',
+            '{fitur}' => $features ? implode('; ', array_map(fn ($x) => __($x), $features)).'.' : (string) ($this->description ?: $this->summary),
+            '{sekolah}' => $this->total_deals > 0 ? $this->total_deals.'+' : __('banyak'),
             '{whatsapp}' => (string) config('erlass.phone_display'),
             '{info_pembelian}' => implode(' ', $buy),
             '{shopee}' => (string) config('erlass.shopee'),
@@ -285,7 +293,7 @@ class Product extends Model
         }
 
         return array_values(array_filter(
-            array_map(fn ($f) => [Faq::render($f[0], $vars), Faq::render($f[1], $vars)], $items),
+            array_map(fn ($f) => [Faq::render(__($f[0]), $vars), Faq::render(__($f[1]), $vars)], $items),
             fn ($f) => $f[0] !== '' && $f[1] !== ''
         ));
     }
@@ -297,14 +305,16 @@ class Product extends Model
 
     public function getSeoDescriptionAttribute(): string
     {
-        if ($this->meta_description) {
+        // meta_description is written in Indonesian: in English, build it from the translated summary instead
+        $english = static::wantsEnglishContent() && ($this->hasEnglish('summary') || $this->hasEnglish('description'));
+        if ($this->meta_description && ! $english) {
             return $this->meta_description;
         }
 
-        $text = "{$this->name} dari Erlass Academy untuk jenjang {$this->levels_label}. "
-            .($this->summary ?: $this->description);
+        $text = __(':name dari Erlass Academy untuk jenjang :levels.', ['name' => $this->name, 'levels' => $this->levels_label])
+            .' '.($this->summary ?: $this->description);
         if ($this->total_deals > 0) {
-            $text .= " Digunakan {$this->total_deals}+ sekolah mitra.";
+            $text .= ' '.__('Digunakan :count+ sekolah mitra.', ['count' => $this->total_deals]);
         }
 
         return Str::limit(trim($text), 158);

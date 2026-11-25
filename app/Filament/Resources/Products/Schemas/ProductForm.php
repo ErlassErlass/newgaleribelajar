@@ -96,6 +96,17 @@ class ProductForm
                             ->visible(fn (Get $get) => $get('faq_mode') !== 'template'),
                     ]),
 
+                Section::make('Versi Bahasa Inggris (EN)')
+                    ->description('Tampil saat pengunjung memilih EN English. Kosongkan = halaman memakai teks Indonesia di atas.')
+                    ->columnSpan(2)->collapsed()->schema([
+                        TextInput::make('name_en')->label('Nama produk (English)')->maxLength(255)
+                            ->placeholder('Scratch Module Vol. 1')
+                            ->helperText('Kosongkan bila nama sama di kedua bahasa (mis. nama merek seperti Arduino Learning Kit).'),
+                        Textarea::make('summary_en')->label('Ringkasan (English)')->maxLength(500)->rows(2)
+                            ->placeholder('A Scratch coding workbook for grade 1 elementary students with animation and simple game projects, aligned with the Merdeka Curriculum.'),
+                        Textarea::make('description_en')->label('Deskripsi (English)')->rows(4),
+                    ]),
+
                 Section::make('SEO (opsional)')->description('Teks yang tampil di hasil pencarian Google. Boleh dikosongkan: sistem membuatnya otomatis dari nama dan ringkasan.')->columnSpan(2)->columns(2)->collapsed()->schema([
                     TextInput::make('meta_title')->label('Judul di Google (meta title)')->maxLength(160)->columnSpanFull()
                         ->placeholder('Modul Scratch Jilid 1 untuk SD – Belajar Coding')

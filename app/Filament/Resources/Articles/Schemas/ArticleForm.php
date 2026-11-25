@@ -112,6 +112,18 @@ class ArticleForm
                             ->state(fn (?Article $record) => $record?->author?->name ?? auth()->user()?->name),
                     ]),
 
+                Section::make('Versi Bahasa Inggris (EN)')
+                    ->description('Tampil saat pengunjung memilih EN English. Kosongkan = artikel tampil dalam bahasa Indonesia.')
+                    ->columnSpan(2)
+                    ->collapsed()
+                    ->schema([
+                        TextInput::make('title_en')->label('Judul (English)')->maxLength(255),
+                        Textarea::make('excerpt_en')->label('Ringkasan (English)')->maxLength(500)->rows(3),
+                        Textarea::make('body_en')->label('Isi artikel (English)')
+                            ->helperText('Pisahkan paragraf dengan satu baris kosong, sama seperti versi Indonesia.')
+                            ->rows(16),
+                    ]),
+
                 Section::make('SEO (opsional)')
                     ->description('Teks yang tampil di hasil pencarian Google. Boleh dikosongkan: sistem memakai Judul dan Ringkasan.')
                     ->columnSpan(2)
