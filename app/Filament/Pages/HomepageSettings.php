@@ -84,13 +84,21 @@ class HomepageSettings extends Page
                         Textarea::make('hero.description')->label('Deskripsi')->rows(3)->maxLength(400)->columnSpanFull(),
                         TextInput::make('hero.cta_primary')->label('Tombol 1 (ke Produk)')->required()->maxLength(40),
                         TextInput::make('hero.cta_secondary')->label('Tombol 2 (ke Konsultasi)')->required()->maxLength(40),
-                        Repeater::make('hero.slides')->label('Foto slider')
+                        FileUpload::make('hero.image')->label('Foto slide pertama (bersama judul di atas)')
+                            ->image()->imageEditor()->maxSize(3072)
+                            ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
+                            ->disk('uploads')->directory('uploads/home')
+                            ->helperText('Kosong = memakai foto slide berikutnya.')
+                            ->columnSpanFull(),
+                        Repeater::make('hero.slides')->label('Slide berikutnya (banner geser)')
                             ->schema([
                                 FileUpload::make('image')->label('Foto')->image()->imageEditor()->required()->maxSize(3072)
                                     ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
                                     ->disk('uploads')->directory('uploads/home'),
-                                TextInput::make('tag')->label('Label')->maxLength(40),
-                                TextInput::make('caption')->label('Keterangan')->maxLength(160),
+                                TextInput::make('tag')->label('Label (pil kecil)')->maxLength(40),
+                                TextInput::make('title')->label('Judul besar')->maxLength(80)
+                                    ->helperText('Kosong = memakai Label.'),
+                                TextInput::make('caption')->label('Keterangan')->maxLength(160)->columnSpanFull(),
                             ])
                             ->columns(3)
                             ->minItems(1)->maxItems(6)

@@ -9,11 +9,11 @@
             @if($article->is_pinned)
             @include('articles._pin-badge')
             @endif
-            <span class="px-2.5 py-1 rounded-md bg-[#8ecae6]/20 text-[#023047] uppercase tracking-wider">{{ $article->category_label }}</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#8ecae6]/20 text-[#023047] uppercase tracking-wider">{{ __($article->category_label) }}</span>
             @if($article->published_at)
             <time datetime="{{ $article->published_at->toDateString() }}" class="text-slate-500">{{ $article->published_at->translatedFormat('d M Y') }}</time>
             @endif
-            <span class="text-slate-400" title="Jumlah dilihat">· {{ number_format($article->views, 0, ',', '.') }}× dilihat</span>
+            <span class="text-slate-400" title="{{ __('Jumlah dilihat') }}">· {{ number_format($article->views, 0, ',', '.') }}× {{ __('dilihat') }}</span>
         </div>
         <h3 class="text-lg font-bold text-[#023047] leading-snug mb-2">
             <a href="{{ route('articles.show', $article->slug) }}" class="hover:text-[#219ebc]">{{ $article->title }}</a>
@@ -26,6 +26,6 @@
             @endforeach
         </div>
         @endif
-        <a href="{{ route('articles.show', $article->slug) }}" class="mt-auto text-sm font-bold text-[#219ebc] hover:text-[#023047]">Baca Selengkapnya →</a>
+        <a href="{{ route('articles.show', $article->slug) }}" class="mt-auto text-sm font-bold text-[#219ebc] hover:text-[#023047]">{{ __('Baca Selengkapnya →') }}</a>
     </div>
 </article>

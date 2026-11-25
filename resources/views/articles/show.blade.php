@@ -8,9 +8,9 @@
     $shareUrl = urlencode($articleUrl);
     $shareText = urlencode($article->title);
     $shareLinks = [
-        ['name' => 'facebook', 'label' => 'Bagikan ke Facebook', 'href' => "https://www.facebook.com/sharer/sharer.php?u={$shareUrl}&hashtag=".urlencode('#'.$hashtags[0])],
-        ['name' => 'x',        'label' => 'Bagikan ke X',        'href' => "https://twitter.com/intent/tweet?url={$shareUrl}&text={$shareText}&hashtags=".urlencode(implode(',', array_slice($hashtags, 0, 4)))],
-        ['name' => 'whatsapp', 'label' => 'Bagikan ke WhatsApp', 'href' => 'https://wa.me/?text='.urlencode($article->title."\n".$articleUrl."\n\n".$hashtagLine)],
+        ['name' => 'facebook', 'label' => __('Bagikan ke Facebook'), 'href' => "https://www.facebook.com/sharer/sharer.php?u={$shareUrl}&hashtag=".urlencode('#'.$hashtags[0])],
+        ['name' => 'x',        'label' => __('Bagikan ke X'),        'href' => "https://twitter.com/intent/tweet?url={$shareUrl}&text={$shareText}&hashtags=".urlencode(implode(',', array_slice($hashtags, 0, 4)))],
+        ['name' => 'whatsapp', 'label' => __('Bagikan ke WhatsApp'), 'href' => 'https://wa.me/?text='.urlencode($article->title."\n".$articleUrl."\n\n".$hashtagLine)],
     ];
     // Caption ready to paste into Instagram / TikTok / Facebook
     $caption = $article->title."\n\n".$article->excerpt."\n\nBaca selengkapnya: ".$articleUrl."\n\n".$hashtagLine;
@@ -28,7 +28,7 @@
     <meta property="article:published_time" content="{{ $article->published_at->toAtomString() }}">
     @endif
     <meta property="article:modified_time" content="{{ $article->updated_at->toAtomString() }}">
-    <meta property="article:section" content="{{ $article->category_label }}">
+    <meta property="article:section" content="{{ __($article->category_label) }}">
     @foreach($hashtags as $t)
     <meta property="article:tag" content="{{ $t }}">
     @endforeach
@@ -76,35 +76,35 @@
 </div>
 
 <article itemscope itemtype="https://schema.org/Article">
-    <header class="relative bg-[#023047] text-white pt-10 sm:pt-14 pb-24 overflow-hidden">
+    <header class="relative bg-gradient-to-br from-[#dff2fa] via-white to-[#fff2d4] text-[#023047] border-b border-[#8ecae6]/40 pt-10 sm:pt-14 pb-24 overflow-hidden">
         <div class="absolute inset-0 hero-grid-pattern opacity-40 pointer-events-none"></div>
-        <div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-[#219ebc]/25 blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-[#8ecae6]/30 blur-3xl pointer-events-none"></div>
         <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
             {{-- Breadcrumb --}}
             <nav aria-label="Breadcrumb" class="text-xs sm:text-sm">
-                <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 text-slate-400">
-                    <li><a href="{{ route('home') }}" class="hover:text-white">Beranda</a></li>
+                <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 text-slate-500">
+                    <li><a href="{{ route('home') }}" class="hover:text-[#219ebc]">{{ __('Beranda') }}</a></li>
                     <li aria-hidden="true">/</li>
-                    <li><a href="{{ route('articles.index') }}" class="hover:text-white">Artikel</a></li>
+                    <li><a href="{{ route('articles.index') }}" class="hover:text-[#219ebc]">{{ __('Artikel') }}</a></li>
                     <li aria-hidden="true">/</li>
-                    <li><a href="{{ route('articles.index', ['kategori' => $article->category]) }}" class="text-[#8ecae6] hover:text-white">{{ $article->category_label }}</a></li>
+                    <li><a href="{{ route('articles.index', ['kategori' => $article->category]) }}" class="text-[#219ebc] hover:text-[#219ebc]">{{ __($article->category_label) }}</a></li>
                 </ol>
             </nav>
             <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold">
-                <a href="{{ route('articles.index', ['kategori' => $article->category]) }}" class="px-2.5 py-1 rounded-md bg-[#ffb703] text-[#023047] uppercase tracking-wider">{{ $article->category_label }}</a>
+                <a href="{{ route('articles.index', ['kategori' => $article->category]) }}" class="px-2.5 py-1 rounded-md bg-[#ffb703] text-[#023047] uppercase tracking-wider">{{ __($article->category_label) }}</a>
                 @if($article->published_at)
-                <time itemprop="datePublished" datetime="{{ $article->published_at->toAtomString() }}" class="text-slate-300">{{ $article->published_at->translatedFormat('d F Y') }}</time>
+                <time itemprop="datePublished" datetime="{{ $article->published_at->toAtomString() }}" class="text-slate-600">{{ $article->published_at->translatedFormat('d F Y') }}</time>
                 @endif
-                <span class="text-slate-500" aria-hidden="true">·</span>
-                <span class="text-slate-300">{{ $article->read_minutes }} menit baca</span>
-                <span class="text-slate-500" aria-hidden="true">·</span>
-                <span class="text-slate-300">{{ number_format($article->views, 0, ',', '.') }} kali dilihat</span>
-                <span class="text-slate-500" aria-hidden="true">·</span>
-                <a href="#comments" class="text-slate-300 hover:text-white">{{ $commentCount }} komentar</a>
+                <span class="text-slate-400" aria-hidden="true">·</span>
+                <span class="text-slate-600">{{ __(':count menit baca', ['count' => $article->read_minutes]) }}</span>
+                <span class="text-slate-400" aria-hidden="true">·</span>
+                <span class="text-slate-600">{{ __(':count kali dilihat', ['count' => number_format($article->views, 0, ',', '.')]) }}</span>
+                <span class="text-slate-400" aria-hidden="true">·</span>
+                <a href="#comments" class="text-slate-600 hover:text-[#219ebc]">{{ __(':count komentar', ['count' => $commentCount]) }}</a>
             </div>
             <h1 itemprop="headline" class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight">{{ $article->title }}</h1>
             @if($article->excerpt)
-            <p itemprop="description" class="text-slate-300 text-base sm:text-lg leading-relaxed">{{ $article->excerpt }}</p>
+            <p itemprop="description" class="text-slate-600 text-base sm:text-lg leading-relaxed">{{ $article->excerpt }}</p>
             @endif
         </div>
     </header>
@@ -151,39 +151,39 @@
                 {{-- Share row (all sizes): native share + copy caption are the way into Instagram/TikTok --}}
                 <div class="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 mb-8">
                     <div class="flex flex-wrap items-center gap-3">
-                        <span class="text-xs font-bold tracking-widest text-slate-400 uppercase mr-1">Bagikan</span>
+                        <span class="text-xs font-bold tracking-widest text-slate-400 uppercase mr-1">{{ __('Bagikan') }}</span>
                         @foreach($shareLinks as $s)
-                        <a href="{{ $s['href'] }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $s['label'] }}" title="{{ $s['label'] }}" class="xl:hidden w-11 h-11 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#219ebc] hover:border-[#219ebc] flex items-center justify-center transition-colors">
+                        <a href="{{ $s['href'] }}" target="_blank" rel="noopener noreferrer" aria-label="{{ __($s['label']) }}" title="{{ __($s['label']) }}" class="xl:hidden w-11 h-11 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#219ebc] hover:border-[#219ebc] flex items-center justify-center transition-colors">
                             @include('partials.brand-icon', ['name' => $s['name'], 'class' => 'w-5 h-5'])
                         </a>
                         @endforeach
                         <button type="button" class="js-native-share hidden h-11 px-4 rounded-full bg-[#023047] text-white text-sm font-bold items-center gap-2 hover:bg-[#219ebc] transition-colors"
                                 data-title="{{ $article->title }}" data-text="{{ $article->excerpt }} {{ $hashtagLine }}" data-url="{{ $articleUrl }}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
-                            Bagikan ke Aplikasi
+                            {{ __('Bagikan ke Aplikasi') }}
                         </button>
-                        <button type="button" class="js-copy-link h-11 px-4 rounded-full border border-slate-200 bg-white text-slate-600 text-sm font-semibold hover:border-[#219ebc] hover:text-[#219ebc] inline-flex items-center gap-2 transition-colors" aria-label="Salin tautan">
+                        <button type="button" class="js-copy-link h-11 px-4 rounded-full border border-slate-200 bg-white text-slate-600 text-sm font-semibold hover:border-[#219ebc] hover:text-[#219ebc] inline-flex items-center gap-2 transition-colors" aria-label="{{ __('Salin tautan') }}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
-                            Salin Link
+                            {{ __('Salin Link') }}
                         </button>
                         <button type="button" class="js-copy-caption h-11 px-4 rounded-full border border-slate-200 bg-white text-slate-600 text-sm font-semibold hover:border-[#fb8500] hover:text-[#fb8500] inline-flex items-center gap-2 transition-colors" data-caption="{{ $caption }}">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
-                            Salin Caption + Hashtag
+                            {{ __('Salin Caption + Hashtag') }}
                         </button>
                     </div>
-                    <p class="text-xs text-slate-500 mt-3">Tips: gunakan <strong>Salin Caption + Hashtag</strong> lalu tempel saat memposting ke Instagram, TikTok, atau Facebook.</p>
+                    <p class="text-xs text-slate-500 mt-3">{{ __('Tips: gunakan') }} <strong>{{ __('Salin Caption + Hashtag') }}</strong> {{ __('lalu tempel saat memposting ke Instagram, TikTok, atau Facebook.') }}</p>
                 </div>
 
                 {{-- Previous / Next --}}
                 @if($previous || $next)
-                <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10" aria-label="Navigasi artikel">
+                <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10" aria-label="{{ __('Navigasi artikel') }}">
                     @if($previous)
                     <a href="{{ route('articles.show', $previous->slug) }}" rel="prev" class="group flex items-center gap-4 p-4 rounded-2xl border border-slate-200 bg-white hover:border-[#219ebc] hover:shadow-md transition-all">
                         <span class="shrink-0 w-10 h-10 rounded-full bg-slate-100 group-hover:bg-[#219ebc] group-hover:text-white text-slate-500 flex items-center justify-center transition-colors">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
                         </span>
                         <span class="min-w-0">
-                            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Sebelumnya</span>
+                            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">{{ __('Sebelumnya') }}</span>
                             <span class="block text-sm font-bold text-[#023047] group-hover:text-[#219ebc] line-clamp-2">{{ $previous->title }}</span>
                         </span>
                     </a>
@@ -193,7 +193,7 @@
                     @if($next)
                     <a href="{{ route('articles.show', $next->slug) }}" rel="next" class="group flex items-center justify-end gap-4 p-4 rounded-2xl border border-slate-200 bg-white hover:border-[#219ebc] hover:shadow-md transition-all text-right">
                         <span class="min-w-0">
-                            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Selanjutnya</span>
+                            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">{{ __('Selanjutnya') }}</span>
                             <span class="block text-sm font-bold text-[#023047] group-hover:text-[#219ebc] line-clamp-2">{{ $next->title }}</span>
                         </span>
                         <span class="shrink-0 w-10 h-10 rounded-full bg-slate-100 group-hover:bg-[#219ebc] group-hover:text-white text-slate-500 flex items-center justify-center transition-colors">
@@ -206,10 +206,10 @@
 
                 <div class="mb-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-[#023047] to-[#219ebc] text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div>
-                        <p class="font-bold text-lg">Tertarik menghadirkan program ini di sekolah Anda?</p>
-                        <p class="text-sm text-slate-100">Tim konsultan Erlass siap membantu merancang program yang sesuai.</p>
+                        <p class="font-bold text-lg">{{ __('Tertarik menghadirkan program ini di sekolah Anda?') }}</p>
+                        <p class="text-sm text-slate-100">{{ __('Tim konsultan Erlass siap membantu merancang program yang sesuai.') }}</p>
                     </div>
-                    <a href="{{ route('home') }}#contact" class="shrink-0 px-5 py-3 rounded-xl bg-[#fb8500] hover:bg-[#e07600] text-white font-bold text-sm shadow-md transition-colors">Konsultasi Sekarang</a>
+                    <a href="{{ route('home') }}#contact" class="shrink-0 px-5 py-3 rounded-xl bg-[#fb8500] hover:bg-[#e07600] text-white font-bold text-sm shadow-md transition-colors">{{ __('Konsultasi Sekarang') }}</a>
                 </div>
 
                 @include('articles._comments')
@@ -220,14 +220,14 @@
                 <div class="sticky top-40 flex flex-col items-center gap-4 pt-32">
                     <span class="text-xs font-bold tracking-[0.3em] text-slate-300 [writing-mode:vertical-rl]">SHARE</span>
                     @foreach($shareLinks as $s)
-                    <a href="{{ $s['href'] }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $s['label'] }}" title="{{ $s['label'] }}" class="w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#219ebc] hover:border-[#219ebc] hover:-translate-y-0.5 shadow-sm flex items-center justify-center transition-all">
+                    <a href="{{ $s['href'] }}" target="_blank" rel="noopener noreferrer" aria-label="{{ __($s['label']) }}" title="{{ __($s['label']) }}" class="w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#219ebc] hover:border-[#219ebc] hover:-translate-y-0.5 shadow-sm flex items-center justify-center transition-all">
                         @include('partials.brand-icon', ['name' => $s['name'], 'class' => 'w-5 h-5'])
                     </a>
                     @endforeach
-                    <button type="button" class="js-copy-link w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#219ebc] hover:border-[#219ebc] hover:-translate-y-0.5 shadow-sm flex items-center justify-center transition-all" aria-label="Salin tautan" title="Salin tautan">
+                    <button type="button" class="js-copy-link w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#219ebc] hover:border-[#219ebc] hover:-translate-y-0.5 shadow-sm flex items-center justify-center transition-all" aria-label="{{ __('Salin tautan') }}" title="{{ __('Salin tautan') }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
                     </button>
-                    <a href="#comments" class="w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#fb8500] hover:border-[#fb8500] hover:-translate-y-0.5 shadow-sm flex flex-col items-center justify-center transition-all" aria-label="Lihat komentar" title="Komentar">
+                    <a href="#comments" class="w-12 h-12 rounded-full border border-slate-200 bg-white text-slate-500 hover:text-white hover:bg-[#fb8500] hover:border-[#fb8500] hover:-translate-y-0.5 shadow-sm flex flex-col items-center justify-center transition-all" aria-label="{{ __('Lihat komentar') }}" title="{{ __('Komentar') }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
                     </a>
                     <span class="text-xs font-bold text-slate-400 -mt-2">{{ $commentCount }}</span>
@@ -238,14 +238,14 @@
 </article>
 
 {{-- Toast for copy actions --}}
-<div id="copy-toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[70] px-4 py-2 rounded-xl bg-[#023047] text-white text-sm font-semibold shadow-lg opacity-0 pointer-events-none transition-opacity" role="status" aria-live="polite">Tautan disalin</div>
+<div id="copy-toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[70] px-4 py-2 rounded-xl bg-[#023047] text-white text-sm font-semibold shadow-lg opacity-0 pointer-events-none transition-opacity" role="status" aria-live="polite">{{ __('Tautan disalin') }}</div>
 
 @if($related->isNotEmpty())
 <section class="py-16 bg-slate-50 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between gap-4 mb-6">
-            <h2 class="text-2xl font-bold text-[#023047]">Artikel Terkait</h2>
-            <a href="{{ route('articles.index') }}" class="text-sm font-bold text-[#219ebc] hover:text-[#023047] shrink-0">Semua Artikel →</a>
+            <h2 class="text-2xl font-bold text-[#023047]">{{ __('Artikel Terkait') }}</h2>
+            <a href="{{ route('articles.index') }}" class="text-sm font-bold text-[#219ebc] hover:text-[#023047] shrink-0">{{ __('Semua Artikel →') }}</a>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($related as $item)
@@ -290,16 +290,16 @@
         function copy(text, msg) {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(text).then(function () { showToast(msg); })
-                    .catch(function () { window.prompt('Salin teks berikut:', text); });
+                    .catch(function () { window.prompt(@json(__('Salin teks berikut:')), text); });
             } else {
-                window.prompt('Salin teks berikut:', text);
+                window.prompt(@json(__('Salin teks berikut:')), text);
             }
         }
         document.querySelectorAll('.js-copy-link').forEach(function (btn) {
-            btn.addEventListener('click', function () { copy(window.location.href.split('#')[0], 'Tautan disalin'); });
+            btn.addEventListener('click', function () { copy(window.location.href.split('#')[0], @json(__('Tautan disalin'))); });
         });
         document.querySelectorAll('.js-copy-caption').forEach(function (btn) {
-            btn.addEventListener('click', function () { copy(btn.dataset.caption, 'Caption + hashtag disalin'); });
+            btn.addEventListener('click', function () { copy(btn.dataset.caption, @json(__('Caption + hashtag disalin'))); });
         });
 
         // Native share sheet (mobile): reaches Instagram, TikTok, Telegram, etc.

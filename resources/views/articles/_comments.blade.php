@@ -3,10 +3,10 @@
 <section id="comments" class="mb-16 scroll-mt-28" aria-labelledby="comments-title">
     <div class="flex items-center justify-between gap-4 mb-6">
         <h2 id="comments-title" class="text-xl sm:text-2xl font-extrabold text-[#023047]">
-            Komentar <span class="text-slate-400 font-bold">({{ $commentCount }})</span>
+            {{ __('Komentar') }} <span class="text-slate-400 font-bold">({{ $commentCount }})</span>
         </h2>
         @if($commentCount > 0)
-        <a href="#comment-form" class="text-sm font-bold text-[#219ebc] hover:text-[#023047]">Tulis komentar ↓</a>
+        <a href="#comment-form" class="text-sm font-bold text-[#219ebc] hover:text-[#023047]">{{ __('Tulis komentar ↓') }}</a>
         @endif
     </div>
 
@@ -20,8 +20,8 @@
     {{-- List --}}
     @if($comments->isEmpty())
         <div class="mb-8 rounded-2xl border border-dashed border-slate-300 bg-white/60 px-6 py-8 text-center">
-            <p class="text-slate-600 font-semibold">Belum ada komentar.</p>
-            <p class="text-sm text-slate-500 mt-1">Jadilah yang pertama berbagi pendapat atau pertanyaan.</p>
+            <p class="text-slate-600 font-semibold">{{ __('Belum ada komentar.') }}</p>
+            <p class="text-sm text-slate-500 mt-1">{{ __('Jadilah yang pertama berbagi pendapat atau pertanyaan.') }}</p>
         </div>
     @else
         <ol class="space-y-5 mb-10">
@@ -37,7 +37,7 @@
                             </div>
                             <p class="mt-1.5 text-slate-700 text-sm sm:text-base leading-relaxed whitespace-pre-line break-words">{{ $comment->body }}</p>
                         </div>
-                        <button type="button" class="js-reply mt-1.5 ml-2 text-xs font-bold text-slate-500 hover:text-[#219ebc]" data-id="{{ $comment->id }}" data-name="{{ $comment->name }}">Balas</button>
+                        <button type="button" class="js-reply mt-1.5 ml-2 text-xs font-bold text-slate-500 hover:text-[#219ebc]" data-id="{{ $comment->id }}" data-name="{{ $comment->name }}">{{ __('Balas') }}</button>
 
                         @if($comment->replies->isNotEmpty())
                         <ol class="mt-3 space-y-3 pl-2 sm:pl-4 border-l-2 border-[#8ecae6]/40">
@@ -69,10 +69,10 @@
         <div class="hidden" aria-hidden="true"><input type="text" name="website" tabindex="-1" autocomplete="off"></div>
 
         <div class="flex items-center justify-between gap-3">
-            <h3 class="font-bold text-[#023047]">Tulis Komentar</h3>
+            <h3 class="font-bold text-[#023047]">{{ __('Tulis Komentar') }}</h3>
             <div id="reply-indicator" class="hidden items-center gap-2 text-xs font-semibold text-[#219ebc] bg-[#8ecae6]/20 rounded-full pl-3 pr-1 py-1">
-                <span>Membalas <span id="reply-name"></span></span>
-                <button type="button" id="reply-cancel" class="w-5 h-5 rounded-full hover:bg-white flex items-center justify-center" aria-label="Batal membalas">✕</button>
+                <span>{{ __('Membalas') }} <span id="reply-name"></span></span>
+                <button type="button" id="reply-cancel" class="w-5 h-5 rounded-full hover:bg-white flex items-center justify-center" aria-label="{{ __('Batal membalas') }}">✕</button>
             </div>
         </div>
 
@@ -86,27 +86,27 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-                <label for="comment-name" class="block text-xs font-bold text-[#023047] uppercase tracking-wider mb-1.5">Nama <span class="text-red-500">*</span></label>
+                <label for="comment-name" class="block text-xs font-bold text-[#023047] uppercase tracking-wider mb-1.5">{{ __('Nama') }} <span class="text-red-500">*</span></label>
                 <input id="comment-name" name="name" type="text" required maxlength="100" autocomplete="name" value="{{ $cErr->any() ? old('name') : '' }}" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-[#219ebc] focus:ring-1 focus:ring-[#219ebc] outline-none">
             </div>
             <div>
                 <label for="comment-email" class="block text-xs font-bold text-[#023047] uppercase tracking-wider mb-1.5">Email <span class="text-red-500">*</span></label>
                 <input id="comment-email" name="email" type="email" required autocomplete="email" value="{{ $cErr->any() ? old('email') : '' }}" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-[#219ebc] focus:ring-1 focus:ring-[#219ebc] outline-none">
-                <p class="text-[11px] text-slate-500 mt-1">Tidak akan ditampilkan.</p>
+                <p class="text-[11px] text-slate-500 mt-1">{{ __('Tidak akan ditampilkan.') }}</p>
             </div>
         </div>
         <div>
-            <label for="comment-body" class="block text-xs font-bold text-[#023047] uppercase tracking-wider mb-1.5">Komentar <span class="text-red-500">*</span></label>
-            <textarea id="comment-body" name="body" rows="4" required maxlength="2000" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-[#219ebc] focus:ring-1 focus:ring-[#219ebc] outline-none resize-y" placeholder="Tulis pendapat, pertanyaan, atau pengalaman Anda...">{{ $cErr->any() ? old('body') : '' }}</textarea>
+            <label for="comment-body" class="block text-xs font-bold text-[#023047] uppercase tracking-wider mb-1.5">{{ __('Komentar') }} <span class="text-red-500">*</span></label>
+            <textarea id="comment-body" name="body" rows="4" required maxlength="2000" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-[#219ebc] focus:ring-1 focus:ring-[#219ebc] outline-none resize-y" placeholder="{{ __('Tulis pendapat, pertanyaan, atau pengalaman Anda...') }}">{{ $cErr->any() ? old('body') : '' }}</textarea>
             <div class="flex justify-end"><span class="js-count text-[11px] text-slate-400 tabular-nums">0/2000</span></div>
         </div>
         <label class="flex items-start gap-2.5 text-xs text-slate-600 cursor-pointer">
             <input type="checkbox" name="marketing_consent" value="1" @checked($cErr->any() && old('marketing_consent')) class="mt-0.5 w-4 h-4 rounded border-slate-300 text-[#219ebc] focus:ring-[#219ebc]">
-            <span>Saya bersedia menerima info program, promo, dan kegiatan Erlass Academy melalui email. <span class="text-slate-400">(opsional, bisa berhenti kapan saja)</span></span>
+            <span>{{ __('Saya bersedia menerima info program, promo, dan kegiatan Erlass Academy melalui email.') }} <span class="text-slate-400">{{ __('(opsional, bisa berhenti kapan saja)') }}</span></span>
         </label>
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <p class="text-xs text-slate-500">Mohon berkomentar dengan sopan. Komentar yang mengandung spam atau SARA akan dihapus.</p>
-            <button type="submit" class="shrink-0 px-6 py-3 rounded-xl bg-[#fb8500] hover:bg-[#e07600] text-white font-bold text-sm shadow-md transition-colors">Kirim Komentar</button>
+            <p class="text-xs text-slate-500">{{ __('Mohon berkomentar dengan sopan. Komentar yang mengandung spam atau SARA akan dihapus.') }}</p>
+            <button type="submit" class="shrink-0 px-6 py-3 rounded-xl bg-[#fb8500] hover:bg-[#e07600] text-white font-bold text-sm shadow-md transition-colors">{{ __('Kirim Komentar') }}</button>
         </div>
     </form>
 </section>

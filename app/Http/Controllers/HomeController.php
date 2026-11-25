@@ -40,12 +40,12 @@ class HomeController extends Controller
                 ->values(),
             'resourceHub' => Product::published()->where('lms_group', LmsGroup::BANNER)->orderBy('lms_order')->first(),
 
-            'partners' => Partner::where('is_featured', true)->orderBy('sort_order')->get(),
-            'allPartnerSchools' => Partner::where('type', 'school')->orderByDesc('total_deals')->take(40)->get(),
+            'partners' => Partner::where('is_featured', true)->orderBy('sort_order')->orderBy('id')->take(40)
+                ->get(['id', 'name', 'city', 'level', 'logo_url', 'total_deals']),
             'totalSchools' => Partner::count(),
             'totalDeals' => (int) Partner::sum('total_deals'),
             'programs' => Program::where('is_active', true)->get(),
-            'latestArticles' => Article::published()->pinnedFirst()->take(4)->get(),
+            'latestArticles' => Article::published()->forCards()->pinnedFirst()->take(4)->get(),
             'announcements' => Announcement::where('is_active', true)->latest()->take(4)->get(),
         ]);
 

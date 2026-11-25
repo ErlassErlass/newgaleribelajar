@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $program->name . ' - Solusi Pendidikan Erlass')
-@section('description', $program->short_description ?? 'Program solusi pendidikan unggulan PT Erlass Prokreatif Indonesia.')
+@section('title', __(':name - Solusi Pendidikan Erlass', ['name' => $program->name]))
+@section('description', $program->short_description ?? __('Program solusi pendidikan unggulan PT Erlass Prokreatif Indonesia.'))
 
 @section('content')
 <!-- Back to home floating action -->
@@ -15,16 +15,17 @@
 
 <main class="pt-20 bg-slate-50 min-h-screen">
     <!-- Header Banner -->
-    <section class="relative bg-[#023047] text-white pt-24 pb-32 overflow-hidden hero-grid-pattern">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-[#219ebc]/20 rounded-full blur-[120px] pointer-events-none"></div>
+    <section class="relative bg-gradient-to-br from-[#dff2fa] via-white to-[#fff2d4] text-[#023047] border-b border-[#8ecae6]/40 pt-24 pb-32 overflow-hidden">
+        <div class="absolute inset-0 hero-grid-pattern opacity-40 pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#8ecae6]/30 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-[#8ecae6]/30 text-[#8ecae6] text-xs font-bold tracking-wider uppercase mb-6">
-                <span>Solusi Pendidikan Terintegrasi</span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#8ecae6] text-[#219ebc] text-xs font-bold tracking-wider uppercase mb-6">
+                <span>{{ __('Solusi Pendidikan Terintegrasi') }}</span>
             </div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#023047] tracking-tight leading-tight mb-4">
                 {{ $program->name }}
             </h1>
-            <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
                 {{ $program->short_description }}
             </p>
         </div>
@@ -45,7 +46,7 @@
                         {!! $program->content !!}
                     @else
                         <div class="text-center py-12 text-slate-400">
-                            <p>Informasi kurikulum dan silabus lengkap sedang diperbarui oleh tim akademik Erlass.</p>
+                            <p>{{ __('Informasi kurikulum dan silabus lengkap sedang diperbarui oleh tim akademik Erlass.') }}</p>
                         </div>
                     @endif
                 </div>
@@ -54,12 +55,12 @@
             <!-- Lead Consultation CTA -->
             <div class="mt-12 bg-white rounded-2xl p-8 sm:p-10 border border-[#8ecae6]/50 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div class="text-center sm:text-left">
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#219ebc]">Konsultasi Kurikulum</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-[#219ebc]">{{ __('Konsultasi Kurikulum') }}</span>
                     <h3 class="text-xl font-extrabold text-[#023047] mt-1">Implementasikan {{ $program->name }} di Sekolah Anda</h3>
-                    <p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-md">Diskusikan kebutuhan pelatihan guru, pengadaan perangkat, serta silabus terintegrasi bersama tim kami.</p>
+                    <p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-md">{{ __('Diskusikan kebutuhan pelatihan guru, pengadaan perangkat, serta silabus terintegrasi bersama tim kami.') }}</p>
                 </div>
                 <a href="{{ route('home') }}#contact" class="px-6 py-3 rounded-xl bg-[#fb8500] hover:bg-[#e07600] text-white font-bold text-sm shadow hover:shadow-orange-500/25 shrink-0 transition-all duration-200">
-                    Ajukan Penawaran
+                    {{ __('Ajukan Penawaran') }}
                 </a>
             </div>
         </div>

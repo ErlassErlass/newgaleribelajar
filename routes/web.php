@@ -14,7 +14,7 @@ use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\HomeController;
 
 Route::get('/lang/{locale}', function ($locale) {
-    if (in_array($locale, ['id', 'en'])) {
+    if (in_array($locale, \App\Http\Middleware\SetLocale::LOCALES, true)) {
         Session::put('locale', $locale);
     }
     return redirect()->back();
@@ -29,6 +29,8 @@ Route::post('/leads', [LeadController::class, 'store'])
 Route::get('/programs/{slug}', [ProgramController::class, 'show'])->name('programs.show');
 
 Route::get('/gallery', GalleryController::class)->name('gallery');
+
+Route::get('/lms', \App\Http\Controllers\LmsController::class)->name('lms.index');
 
 Route::view('/kebijakan-privasi', 'legal.privacy')->name('privacy');
 Route::view('/syarat-ketentuan', 'legal.terms')->name('terms');

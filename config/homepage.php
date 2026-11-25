@@ -16,10 +16,12 @@ return [
         'description' => 'Erlass Academy menghadirkan pembelajaran Coding, Robotika, Micro:bit, Python, dan Web Development yang terstruktur dan menyenangkan — lengkap dengan instruktur profesional, LMS, dan pendampingan program untuk sekolah jenjang SD, SMP, hingga SMA.',
         'cta_primary' => 'Jelajahi Produk',
         'cta_secondary' => 'Konsultasi Sekarang',
+        // Photo on the first banner slide (the one with the main title above)
+        'image' => 'img/gallery/teamwork.webp',
         'slides' => [
-            ['image' => 'img/gallery/coding-class.webp', 'tag' => 'Coding & Programming', 'caption' => 'Siswa SD belajar logika pemrograman visual bersama guru.'],
-            ['image' => 'img/gallery/robotics-class.webp', 'tag' => 'Robotika', 'caption' => 'Merakit robot dan sensor di laboratorium sekolah.'],
-            ['image' => 'img/gallery/microbit.webp', 'tag' => 'Micro:bit', 'caption' => 'Eksplorasi Micro:bit untuk proyek IoT sederhana.'],
+            ['image' => 'img/gallery/coding-class.webp', 'tag' => 'Coding & Programming', 'title' => 'Belajar Coding Jadi Seru Sejak SD', 'caption' => 'Siswa SD belajar logika pemrograman visual bersama guru.'],
+            ['image' => 'img/gallery/robotics-class.webp', 'tag' => 'Robotika', 'title' => 'Rakit & Program Robot Sendiri', 'caption' => 'Merakit robot dan sensor di laboratorium sekolah.'],
+            ['image' => 'img/gallery/presentation.webp', 'tag' => 'Asesmen', 'title' => 'Asesmen Potensi Minat dan Bakat', 'caption' => 'Kenali potensi, minat, dan bakat siswa kelas 1–12 untuk panduan penjurusan dan karier.'],
         ],
     ],
 
