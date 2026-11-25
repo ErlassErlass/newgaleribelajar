@@ -108,7 +108,8 @@ class SiteSettings extends Page
                         Toggle::make('comments_auto_approve')->label('Tampilkan komentar langsung tanpa persetujuan')
                             ->helperText('Komentar yang mengandung kata tidak pantas, tautan, atau huruf kapital semua tetap ditahan untuk ditinjau.'),
                         TagsInput::make('blocked_words_extra')->label('Kata terlarang tambahan')
-                            ->helperText('Ditambahkan ke daftar bawaan. Ketik lalu tekan Enter.'),
+                            ->placeholder('Ketik kata lalu tekan Enter')
+                            ->helperText('Sudah ada ±170 kata bawaan (umpatan, kata cabul, singkatan kasar, ancaman, SARA, judi online/spam, bahasa Inggris), termasuk versi samaran seperti 4nj1ng atau a.n.j.i.n.g. Tambahkan di sini kata yang belum tertangkap. Kata 4 huruf atau kurang hanya dicocokkan sebagai kata utuh.'),
                     ]),
                 ]),
             ]);

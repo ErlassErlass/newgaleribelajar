@@ -42,6 +42,32 @@ class Partner extends Model
                 $partner->slug = Str::slug($partner->name . ($partner->city ? '-' . $partner->city : ''));
             }
         });
+
+        // Remove an uploaded logo file once it is replaced or the school is deleted
+        static::updated(function (Partner $partner) {
+            if ($partner->wasChanged('logo_url')) {
+                static::deleteUploadedLogo($partner->getOriginal('logo_url'));
+            }
+        });
+        static::deleted(fn (Partner $partner) => static::deleteUploadedLogo($partner->logo_url));
+    }
+
+    /** Public URL of the school logo, or null when none is set (an uploaded path or an external URL). */
+    public function logoUrl(): ?string
+    {
+        $logo = trim((string) $this->logo_url);
+        if ($logo === '') {
+            return null;
+        }
+
+        return Str::startsWith($logo, ['http://', 'https://']) ? $logo : asset($logo);
+    }
+
+    protected static function deleteUploadedLogo(?string $path): void
+    {
+        if ($path && Str::startsWith($path, 'uploads/partners/')) {
+            \Illuminate\Support\Facades\Storage::disk('uploads')->delete($path);
+        }
     }
 }
 
