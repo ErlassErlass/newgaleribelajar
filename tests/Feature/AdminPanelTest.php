@@ -372,6 +372,61 @@ class AdminPanelTest extends TestCase
         $this->assertFalse($this->super->can('delete', $log));
     }
 
+    public function test_guide_page_shows_each_role_its_own_guide(): void
+    {
+        $cases = [
+            [$this->writer, 'Panduan Content Writer (role Anda)', ['Panduan Admin', 'Panduan Super Admin']],
+            [$this->admin, 'Panduan Admin (role Anda)', ['Panduan Super Admin']],
+            [$this->super, 'Panduan Super Admin (role Anda)', []],
+        ];
+        foreach ($cases as [$user, $own, $hidden]) {
+            $this->flushSession();
+            $this->app['auth']->forgetGuards(); // fresh login per role (AuthenticateSession checks the password hash)
+            $res = $this->actingAs($user)->get('/admin/panduan')->assertOk()
+                ->assertSee($own)
+                ->assertSee('Berlaku untuk semua role')
+                ->assertSee('Ringkasan hak akses')
+                ->assertDontSee('href="PANDUAN', false); // links to repo files are flattened to plain text
+            foreach ($hidden as $text) {
+                $res->assertDontSee($text);
+            }
+        }
+    }
+
+    public function test_partner_logo_upload_shows_on_homepage_and_is_cleaned_up(): void
+    {
+        $this->actingAs($this->admin);
+
+        Livewire::test(Resources\Partners\Pages\CreatePartner::class)
+            ->fillForm([
+                'name' => 'SD Uji Logo', 'slug' => 'sd-uji-logo', 'city' => 'Bogor', 'level' => 'SD', 'type' => 'school',
+                'logo_url' => UploadedFile::fake()->image('logo.png', 200, 200),
+                'total_deals' => 3, 'is_featured' => true, 'sort_order' => -1,
+            ])
+            ->call('create')
+            ->assertHasNoFormErrors();
+
+        $partner = \App\Models\Partner::where('slug', 'sd-uji-logo')->firstOrFail();
+        $this->assertStringStartsWith('uploads/partners/', $partner->logo_url);
+        Storage::disk('uploads')->assertExists($partner->logo_url);
+
+        // Shown on the homepage marquee as an image
+        \App\Support\SiteCache::flush();
+        $this->get('/')->assertOk()->assertSee($partner->logo_url, false)->assertSee('SD Uji Logo');
+
+        // Admin list: filter by "has logo" and hide it from the homepage with the inline toggle
+        Livewire::test(Resources\Partners\Pages\ListPartners::class)
+            ->filterTable('has_logo', true)
+            ->assertCanSeeTableRecords([$partner])
+            ->call('updateTableColumnState', 'is_featured', (string) $partner->id, false);
+        $this->assertFalse($partner->fresh()->is_featured);
+
+        // Deleting the school removes its logo file
+        $path = $partner->logo_url;
+        $partner->delete();
+        Storage::disk('uploads')->assertMissing($path);
+    }
+
     public function test_product_table_toggles_and_filters(): void
     {
         $this->actingAs($this->admin);

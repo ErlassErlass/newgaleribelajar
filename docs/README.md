@@ -7,6 +7,7 @@ Dokumentasi website **erlass.co.id** (PT Erlass Prokreatif Indonesia): website k
 | Saya ingin... | Baca |
 |---|---|
 | Mengelola isi website (artikel, produk, pengaturan) | [PANDUAN_ADMIN.md](PANDUAN_ADMIN.md) |
+| Panduan singkat sesuai role (Content Writer, Admin, Super Admin) | [PANDUAN_PER_ROLE.md](PANDUAN_PER_ROLE.md) |
 | Menjalankan project di komputer sendiri | [PANDUAN_INSTALASI.md](PANDUAN_INSTALASI.md) |
 | Memasang / memperbarui website di server | [DEPLOYMENT.md](DEPLOYMENT.md) |
 | Memahami struktur kode | [ARSITEKTUR.md](ARSITEKTUR.md) |

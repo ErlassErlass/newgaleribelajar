@@ -2,6 +2,31 @@
 
 Catatan perubahan website erlass.co.id. Format: tanggal, lalu perubahan per kelompok.
 
+## 2026-11-26: Navbar Baru, Bahasa Inggris, Banner Geser, Halaman LMS
+
+> **Saat deploy wajib menjalankan `php artisan migrate`** (kolom versi bahasa Inggris untuk produk dan artikel), lalu `php artisan optimize:clear`.
+
+### Ditambahkan
+- **Navbar**: pencarian (katalog/artikel, pintasan `/`), pilihan bahasa **ID/EN**, lencana **LMS Erlass Academy** dengan tombol kecil Konsultasi di bawahnya.
+- **Halaman `/lms`**: Intrakurikuler, Course, dan Asesmen dengan LMS; tombol loncat per kolom juga tampil di beranda di bawah Pusat Sumber Daya Guru.
+- **Mode bahasa Inggris**: seluruh teks situs diterjemahkan; produk dan artikel punya isian **Versi Bahasa Inggris (EN)** di admin (kolom & filter "EN" di tabel). Produk dan 4 artikel bawaan sudah terisi.
+- **Banner geser di beranda** (autoplay, panah, titik, geser di HP); slide dan fotonya diatur di Pengaturan Beranda. Slide ke-4: Asesmen Potensi Minat dan Bakat.
+- **Logo sekolah mitra**: unggah logo di admin Sekolah Mitra, tampil di deretan "Telah dipercaya oleh"; filter "belum ada logo" dan sakelar tampil di beranda.
+- **Menu Panduan** di panel admin (di bawah Dashboard) dengan panduan sesuai role; sumbernya `docs/PANDUAN_PER_ROLE.md`.
+- Daftar kata terlarang komentar diperluas menjadi ±170 kata/frasa (umpatan, singkatan kasar, cabul, ancaman, SARA, judi online, bahasa Inggris).
+
+### Diubah
+- Warna situs lebih cerah: header halaman bertema terang, kontras teks/tombol mengikuti WCAG, hiasan banner berbeda tiap slide.
+- Bar pengumuman atas dan item LMS di dropdown Produk dihapus; bagian LMS di beranda diringkas.
+- Admin Sekolah Mitra dan Kategori Produk dirapikan (label Indonesia, slug otomatis, filter).
+- Tombol "Dokumentasi Kegiatan" di bagian Why Erlass dipindah ke bawah video; tombol konsultasi di bagian itu dihapus.
+- Bahasa bawaan situs selalu Indonesia.
+
+### Diperbaiki
+- Filter komentar tidak lagi salah menahan kata normal seperti "Kusuma Bangsa" dan "perekonomian".
+- Halaman produk error di mode EN; peringatan PHP di filter katalog.
+- Listing artikel tidak lagi memuat isi artikel penuh (lebih ringan); query beranda yang tidak terpakai dihapus.
+
 ## 2026-11-25: Katalog, Artikel, Panel Admin Berbasis Role
 
 ### Ditambahkan

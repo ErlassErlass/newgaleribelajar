@@ -16,6 +16,94 @@ class PublicSiteTest extends TestCase
 
     protected bool $seed = true;
 
+    public function test_navbar_search_language_and_lms_strip(): void
+    {
+        $group = \App\Models\LmsGroup::active()
+            ->where('slug', '!=', \App\Models\LmsGroup::BANNER)
+            ->whereHas('products', fn ($q) => $q->published())
+            ->firstOrFail();
+
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('id="nav-search"', false)
+            ->assertSee('name="q"', false)
+            ->assertSee(route('lang.switch', 'en'), false)
+            ->assertSee('href="'.route('lms.index').'"', false) // LMS badge beside search
+            ->assertSee('href="'.route('lms.index').'#lms-'.$group->slug.'"', false) // homepage: one button per column...
+            ->assertDontSee('id="lms-'.$group->slug.'"', false);                      // ...the columns themselves live on /lms
+
+        // The /lms page the badge opens: every LMS column with its products
+        $res = $this->get('/lms')->assertOk()
+            ->assertSee('aria-current="page"', false)
+            ->assertSee('#lms-'.$group->slug, false)
+            ->assertSee('id="lms-'.$group->slug.'"', false)
+            ->assertSee($group->title);
+        foreach ($group->products()->published()->get() as $product) {
+            $res->assertSee($product->name);
+        }
+        $this->get('/sitemap.xml')->assertSee(route('lms.index'), false);
+
+        // Switching language translates the header and sticks for the session
+        $this->from('/katalog')->get('/lang/en')->assertRedirect('/katalog');
+        $this->get('/katalog')->assertOk()->assertSee('Product Catalog')->assertSee('Erlass Academy LMS')->assertSee('<html lang="en"', false);
+        $this->get('/lang/xx')->assertRedirect();
+        $this->get('/')->assertSee('<html lang="en"', false);
+    }
+
+    public function test_english_mode_translates_every_public_page(): void
+    {
+        $article = Article::published()->first();
+        $product = Product::published()->first();
+        $this->get('/lang/en');
+
+        // Every page still renders in English (a bad __() key can return an array and crash a view)
+        foreach (['/', '/lms', '/katalog', '/katalog?jenis=jasa', '/katalog/'.$product->slug, '/artikel', '/artikel/'.$article->slug, '/gallery', '/kebijakan-privasi', '/syarat-ketentuan'] as $url) {
+            $this->get($url)->assertOk();
+        }
+
+        // Interface text, homepage settings, labels and FAQ templates come out in English…
+        $this->get('/')->assertOk()
+            ->assertSee('Explore Products')
+            ->assertSee('Building a Creative Generation Through')   // hero title from homepage settings
+            ->assertSee('Monday – Friday')                          // office hours in the footer
+            ->assertDontSee('Membangun Generasi Kreatif')
+            ->assertSee('Integrated Education Solutions for Your School')
+            ->assertSee('Teacher Resource Center')
+            ->assertSee('Subscribe to Our Newsletter')
+            ->assertDontSee('Jelajahi Produk')
+            ->assertDontSee('Berlangganan Buletin Informasi')
+            ->assertDontSee('Dipercaya oleh'); // top announcement bar was removed
+        $this->get('/katalog')->assertOk()->assertSee('Catalog FAQ')->assertSee('Which school levels are Erlass products for?');
+        $this->get('/kebijakan-privasi')->assertOk()->assertSee('Data We Collect');
+
+        // Database content: products and articles use their English columns
+        $scratch = Product::where('name', 'Modul Scratch Jilid 2')->firstOrFail();
+        $this->get('/katalog/'.$scratch->slug)->assertOk()
+            ->assertSee('Scratch Module Vol. 2')
+            ->assertSee('learning package (code: '.$scratch->sku.')', false)
+            ->assertDontSee('Paket pembelajaran')
+            ->assertDontSee('Program edukasi teknologi');
+        $this->get('/artikel/dokumentasi-kelas-robotika-sekolah-mitra')->assertOk()
+            ->assertSee('Activity Highlights: Robotics Class at a Partner School')
+            ->assertSee('Erlass robotics classes are designed so students learn by doing.')
+            ->assertSee('0 comments')
+            ->assertDontSee('Kelas robotika Erlass dirancang');
+
+        // Search also matches the English texts
+        $this->get('/artikel?q=Robotics+Class')->assertOk()->assertSee('Activity Highlights: Robotics Class at a Partner School');
+        $this->get('/katalog?q=Scratch+Module')->assertOk()->assertSee('Scratch Module Vol. 2');
+
+        // …and switching back restores Indonesian
+        $this->get('/lang/id');
+        $this->get('/')->assertOk()->assertSee('Jelajahi Produk')->assertDontSee('Explore Products');
+        $this->get('/katalog/'.$scratch->slug)->assertOk()->assertSee('Modul Scratch Jilid 2')->assertSee('Paket pembelajaran');
+        $this->get('/artikel/dokumentasi-kelas-robotika-sekolah-mitra')->assertOk()->assertSee('Kelas robotika Erlass dirancang');
+
+        // Outside public pages (admin, console) models always give the Indonesian original to edit
+        config(['erlass.content_locale' => null]);
+        $this->assertSame('Modul Scratch Jilid 2', $scratch->fresh()->name);
+    }
+
     public function test_public_pages_load(): void
     {
         $article = Article::published()->first();
@@ -26,7 +114,7 @@ class PublicSiteTest extends TestCase
             '/katalog?tersedia=shopee', '/katalog?tersedia=lms', '/katalog?q=scratch&urut=nama', '/katalog?urut=dilihat',
             '/katalog?urut=terbaru', '/katalog?page=2', '/katalog/'.$product->slug, '/katalog/cover/MSJ01.svg',
             '/artikel', '/artikel?kategori=kompetisi', '/artikel?q=coding', '/artikel/'.$article->slug,
-            '/gallery', '/gallery?kategori=siswa', '/gallery?kategori=siswa&sub=robotika', '/gallery?kategori=guru',
+            '/lms', '/gallery', '/gallery?kategori=siswa', '/gallery?kategori=siswa&sub=robotika', '/gallery?kategori=guru',
             '/kebijakan-privasi', '/syarat-ketentuan', '/sitemap.xml', '/llms.txt', '/admin/login',
         ];
         foreach ($ok as $url) {

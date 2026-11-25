@@ -1,6 +1,6 @@
 # Panduan Panel Admin
 
-Panduan untuk tim yang mengelola isi website lewat **`/admin`**. Setiap menu hanya tampil untuk role yang berhak.
+Panduan untuk tim yang mengelola isi website lewat **`/admin`**. Setiap menu hanya tampil untuk role yang berhak. Versi ringkas per role: [PANDUAN_PER_ROLE.md](PANDUAN_PER_ROLE.md).
 
 ## Daftar Isi
 
@@ -173,7 +173,7 @@ ID video YouTube adalah 11 karakter setelah `v=` atau `youtu.be/`.
 
 Menu: **Sistem › Pengaturan Beranda**.
 
-- **Hero**: label kecil, judul, kata yang diwarnai, deskripsi, teks dua tombol, dan **foto slider** (1–6 foto, bisa diurutkan).
+- **Hero (banner geser)**: slide pertama berisi label kecil, judul, kata yang diwarnai, deskripsi, teks dua tombol, dan foto. **Slide berikutnya** masing-masing berisi foto, label, judul, dan keterangan (bisa ditambah dan diurutkan).
 - **Bagian Beranda**: untuk tiap bagian (Sekolah Mitra, Produk LMS, Solusi, Tentang Kami, Why Erlass, Program, Katalog Unggulan, Aktivitas, Kemitraan, Formulir) bisa mengubah label, judul, deskripsi, dan **menyembunyikan** bagian tersebut.
 - Tombol kanan atas: **Lihat Beranda** dan **Kembalikan ke Bawaan**.
 
